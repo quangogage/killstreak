@@ -1,4 +1,5 @@
 @import 'App';
+@import 'Fonts';
 
 .Home {
   perspective:1000px;
@@ -39,6 +40,11 @@
       transform:translateZ(20px);
     }
   }   
+
+  .poison {
+    font-family:poison;
+    font-size:4vw;
+  }
 }
 
 

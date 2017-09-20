@@ -5,11 +5,11 @@ class Logo extends Component {
   render() {
     return (
       <div className="Logo">    
-        <img src={image} />
-        <img src={image} />
-        <img src={image} />
-        <img src={image} />
-        <img src={image} />          
+        <img src={image} alt='' />
+        <img src={image} alt='' />
+        <img src={image} alt='' />
+        <img src={image} alt='' />
+        <img src={image} alt='' />          
       </div>
     );
   }

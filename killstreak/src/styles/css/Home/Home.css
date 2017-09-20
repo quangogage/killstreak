@@ -7,6 +7,10 @@
   height: 100%; }
 
 /* Animation Mixin */
+@font-face {
+  font-family: pixel;
+  src: url("../../../fonts/pixel.ttf"); }
+
 .Home {
   perspective: 1000px;
   display: flex;
@@ -37,6 +41,9 @@
       transform: translateZ(15px); }
     .Home .Logo img:nth-child(5) {
       transform: translateZ(20px); }
+  .Home .poison {
+    font-family: poison;
+    font-size: 4vw; }
 
 /* Logo Spinning Animation */
 @-webkit-keyframes rotateLogo {
