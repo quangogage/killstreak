@@ -1,12 +1,47 @@
+@import 'Fonts';
 
 /* Container */
 .Nav {  
-  position:absolute;
-  left:50%;
-  top:70%;
-  width:60%;
-  transform:translateX(-50%);
+  position:relative;
+  width:80%;
+  height:auto;
+  margin-top:10vw;
   
   display:flex;
   justify-content: space-around;
+
+  .Item {
+    position:relative;
+    font-family:pixel;
+    font-size:2vw;
+    padding:10px 30px;
+    
+    .after {
+      content:'';
+      position:absolute;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      overflow:hidden;
+      left:0;
+      width:100%;
+      background:RGB(255,0,0);
+      z-index:1;
+
+      height:0;
+      top:50%;
+      transition:0.2s;
+    }
+
+    &:hover {
+      .after {
+        top:0;
+        height:100%;
+      }
+    }
+  }
+  .Item:hover {
+    cursor:pointer;
+  }  
 }

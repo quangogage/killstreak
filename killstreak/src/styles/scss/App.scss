@@ -10,7 +10,7 @@
 }
 
 
-/* Animations */
+/* Animation Mixin */
 @mixin keyframes( $animationName )
 {
   @-webkit-keyframes $animationName {

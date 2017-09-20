@@ -2,18 +2,19 @@
 
 .Home {
   perspective:1000px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
 
   /* Logo */
   .Logo {
     position:relative;
-    top:0;
-    width:40vw;
-    height:100%;
-    top:0;
+    top:0;    
     transform-style:preserve-3d;
     display:flex;
     align-items:center;
-    margin:auto;
+    width:40vw;
 
     animation-name:rotateLogo;
     animation-duration:5s;
@@ -22,8 +23,8 @@
 
     /* Layers that give 3d effect */
     img {  
-      position:absolute;
       width:100%;
+      position:absolute;
     }
     img:nth-child(2) {
       transform:translateZ(5px);
