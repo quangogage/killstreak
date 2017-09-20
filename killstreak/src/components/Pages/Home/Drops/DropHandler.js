@@ -11,6 +11,10 @@ class DropHandler extends Component {
     }
 
     this.createDrop=this.createDrop.bind(this);
+
+    setTimeout(function() {
+      this.createDrop();
+    }.bind(this),500)
   }
 
   // Make a drop
@@ -28,7 +32,16 @@ class DropHandler extends Component {
     return (
       <div className="DropHandler"> 
         {
-          this.state.drops
+          this.state.drops.map((drop,index) => {
+            return (
+              <Drop
+                key={index}
+                index={index}
+
+                x={drop.x}
+              />
+            )
+          })
         }
       </div>
     );
