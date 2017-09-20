@@ -15,7 +15,7 @@ class Home extends Component {
 
         {/* Navigation Menu */}
         <Nav />
-        
+                      
       </div>
     );
   }
