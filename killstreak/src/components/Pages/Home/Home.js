@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Logo from './Logo';
-import '../../../css/Home.css';
+import DropHandler from './Drops/DropHandler';
+import '../../../css/Home/Home.css';
 
 
 class Home extends Component {
@@ -10,7 +11,10 @@ class Home extends Component {
 
         {/* Logo */}
         <Logo />
-        
+
+        {/* Drops */}
+        <DropHandler />
+
       </div>
     );
   }
