@@ -1,1 +1,8 @@
 /* Container */
+.Nav {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around; }
