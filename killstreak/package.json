@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "concurrently": "^3.5.0",
     "jquery": "^3.2.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -10,8 +11,9 @@
     "react-scripts": "1.0.13"
   },
   "scripts": {
+    "dev": "concurrently --kill-others \"npm run start\" \"npm run sass\"",
     "start": "react-scripts start",
-    "sass" : "sass --watch ./src/styles/scss:./src/styles/css",
+    "sass": "sass --watch ./src/styles/scss:./src/styles/css",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
