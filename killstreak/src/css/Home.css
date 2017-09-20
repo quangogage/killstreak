@@ -1,0 +1,50 @@
+
+
+/* Page Wrapper */
+.Home {
+  perspective:1000px;
+}
+
+/* Logo */
+.Logo {
+  position:relative;
+  top:0;
+  width:40vw;
+  height:100%;
+  top:0;
+  transform-style:preserve-3d;
+  display:flex;
+  align-items:center;
+  margin:auto;
+
+  animation-name:rotateLogo;
+  animation-duration:5s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+}
+@keyframes rotateLogo {
+  0% {
+    transform:rotateY(0deg);
+  }  
+  100% {
+    transform:rotateY(360deg);
+  }
+}
+
+
+.Logo img {  
+  position:absolute;
+  width:100%;
+}
+.Logo img:nth-child(2) {
+  transform:translateZ(5px);
+}
+.Logo img:nth-child(3) {
+  transform:translateZ(10px);
+}
+.Logo img:nth-child(4) {
+  transform:translateZ(15px);
+}
+.Logo img:nth-child(5) {
+  transform:translateZ(20px);
+}
