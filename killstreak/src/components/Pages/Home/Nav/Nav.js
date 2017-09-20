@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import '../../../../styles/css/Home/Nav.css';
+import Pages from '../../../Pages';
 
 
 class Nav extends Component {
