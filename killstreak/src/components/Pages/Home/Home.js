@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Logo from './Logo';
-import DropHandler from './Drops/DropHandler';
 import '../../../css/Home/Home.css';
 
 
@@ -11,10 +10,7 @@ class Home extends Component {
 
         {/* Logo */}
         <Logo />
-
-        {/* Drops */}
-        <DropHandler />
-
+        
       </div>
     );
   }
