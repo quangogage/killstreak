@@ -11,7 +11,8 @@ class About extends Component {
     }
 
     return (
-      <div className="About">        
+      <div className="About"> 
+        asdf       
       </div>
     );
   }
