@@ -23,9 +23,16 @@ function createOverlay() {
   return overlay;
 }
 
+
 function animation(setPage,newPage) {  
   var overlay=createOverlay();
 
+  setTimeout(function() {
+    
+  },500);
+
+
+  // CUT IT!
   setTimeout(function(){
     overlay.empty();
     overlay.remove();
