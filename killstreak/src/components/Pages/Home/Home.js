@@ -7,10 +7,14 @@ import $ from 'jquery';
 
 import Nav from './Nav/Nav';
 
-
 class Home extends Component {
 
   componentDidMount() {
+
+    // Blood
+    this.splat();
+
+    // Shoot
     window.addEventListener('click',function(e) {
       this.createDecal(e)
       this.flash();
@@ -45,6 +49,37 @@ class Home extends Component {
       flash.remove();
     });    
   }
+
+  // Generate blood splatters
+  splat() {
+    var splatters=[
+      require('../../../images/splatters/1.png'),
+      require('../../../images/splatters/2.png'),
+      require('../../../images/splatters/3.png'),
+      require('../../../images/splatters/4.png')
+    ]
+    var amount=gageMath.getRandom(2,5);
+
+    for(var i=0;i<amount;i++) {
+      var imageIndex=Math.floor(gageMath.getRandom(0,splatters.length-1));
+      var size=gageMath.getRandom(75,175);      
+      var x=gageMath.getRandom(0,window.innerWidth-size);
+      var y=gageMath.getRandom(0,window.innerHeight-size);      
+      var rotation=gageMath.getRandom(-360,360);
+      var splat=$(`<img class='splatter' src=${splatters[imageIndex]}>`)                  
+      console.log(imageIndex);
+      splat.css({
+        left:x+'px',
+        top:y+'px',
+        transform:`rotate(${rotation}deg)`,
+        width:size+'px'
+      })
+
+      // Add to DOM
+      $('.Home').append(splat);
+    }
+  }
+
 
   render() {
     
