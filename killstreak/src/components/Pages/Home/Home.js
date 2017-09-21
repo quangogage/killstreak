@@ -58,11 +58,11 @@ class Home extends Component {
       require('../../../images/splatters/3.png'),
       require('../../../images/splatters/4.png')
     ]
-    var amount=gageMath.getRandom(2,5);
+    var amount=gageMath.getRandom(2,4);
 
     for(var i=0;i<amount;i++) {
       var imageIndex=Math.floor(gageMath.getRandom(0,splatters.length-1));
-      var size=gageMath.getRandom(75,175);      
+      var size=gageMath.getRandom(75,225);      
       var x=gageMath.getRandom(0,window.innerWidth-size);
       var y=gageMath.getRandom(0,window.innerHeight-size);      
       var rotation=gageMath.getRandom(-360,360);
