@@ -13,8 +13,8 @@ var duration=1500; // Total length of transition ( milliseconds )
 // Create the overlay
 function createOverlay() {
   var overlay=$('<div class="overlay"></div>');
-  var left=$('<div class="side left"></div>');
-  var right=$('<div class="side right"></div>');
+  var left=$(`<div class="side left"><img src=${logoImage} /></div>`);
+  var right=$(`<div class="side right"><img src=${logoImage} /></div>`);
 
   overlay.append(left, right);
 

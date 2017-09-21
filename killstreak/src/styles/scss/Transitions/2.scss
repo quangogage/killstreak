@@ -7,11 +7,19 @@
   width:100%;
   height:100%;
   background:red;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  
   &.left {
     clip-path: polygon(0% 0%,100% 0%, 0% 100%, 0% 0%);    
     z-index:5;
   }  
   &.right {
-    background:blue;
+    clip-path: polygon(100% 0%,100% 100%, 0% 100%, 100% 0%);
+  }
+  img {
+    width:80%;
+    height:auto;
   }
 }
