@@ -67,7 +67,6 @@ class Home extends Component {
       var y=gageMath.getRandom(0,window.innerHeight-size);      
       var rotation=gageMath.getRandom(-360,360);
       var splat=$(`<img class='splatter' src=${splatters[imageIndex]}>`)                  
-      console.log(imageIndex);
       splat.css({
         left:x+'px',
         top:y+'px',

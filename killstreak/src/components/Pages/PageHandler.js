@@ -1,16 +1,11 @@
 import React, { Component } from 'react'
+import gageMath from '../../gagelib/Math';
 
 /* Pages */
 import Home from './Home/Home';
 import About from './About/About';
 
-
-/* Transitions
-import Shootup from './Transitions/Shootup.js';
-var transitions=[
-  Shootup
-]
-*/
+var transitionCount=1; // Update this whenever you add a new animation to `./Transitions`
 
 class PageHandler extends Component {
 
@@ -32,8 +27,15 @@ class PageHandler extends Component {
     
     // Check for URL change
     if (nextProps.location.pathname !== this.props.location.pathname) {
-      console.log('new path');
+      this.initTransition(nextProps.location.pathname.substr(1));
     }
+  }
+
+  // Initialize page transition animation
+  initTransition(page) {
+    var animIndex=Math.floor(gageMath.getRandom(1,transitionCount));
+    var anim=require(`./Transitions/${animIndex}.js`);
+    console.log(page);
   }
 
 
