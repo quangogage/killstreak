@@ -22,10 +22,12 @@ class Home extends Component {
     var decal=$(`<img class="decal" src=${bulletDecal} />`);    
     var rotation=gageMath.getRandom(-360,360);
     var size=gageMath.getRandom(10,20);
-
+    var mouseX=e.pageX;
+    var mouseY=e.pageY;    
+    
     decal.css({
-      left:e.pageX,
-      top:e.pageY,
+      left:mouseX,
+      top:mouseY,
       transform:`translateX(-50%) translateY(-50%) rotate(${rotation}deg)`,
       width:`${size}px`,
       height:`${size}px`    
