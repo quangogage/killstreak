@@ -7,6 +7,13 @@ import Nav from './Nav/Nav';
 
 class Home extends Component {
   render() {
+    
+    // Don't render if this page isn't
+    // the current one.
+    if (this.props.currentPage!=="Home") {
+      return false;
+    }
+
     return (
       <div className="Home page"> 
 
@@ -14,7 +21,7 @@ class Home extends Component {
         <Logo />
 
         {/* Navigation Menu */}
-        <Nav />
+        <Nav pages={this.props.pages} />
                       
       </div>    
     );    

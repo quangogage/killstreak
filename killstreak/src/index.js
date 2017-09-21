@@ -4,13 +4,13 @@ import { HashRouter, Route } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
 
 import App from './App';
-import Home from './components/Pages/Home/Home';
+import PageHandler from './components/Pages/PageHandler';
 
 ReactDOM.render(
   <HashRouter>
     <div>
       <Route component={App} /> {/* Always render this */}
-      <Route exact path='/' component={Home} />
+      <Route path='/' component={PageHandler} />
     </div>
   </HashRouter>,
   document.getElementById('root')
