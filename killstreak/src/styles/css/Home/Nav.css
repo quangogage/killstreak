@@ -1,6 +1,7 @@
 @font-face {
   font-family: pixel;
   src: url("../../../fonts/pixel.ttf"); }
+
 /* Container */
 .Nav {
   position: relative;
@@ -16,6 +17,8 @@
     padding: 10px 30px;
     text-align: center;
     /* Hover Content */ }
+    .Nav .Item .text {
+      color: black; }
     .Nav .Item .after {
       content: '';
       position: absolute;
@@ -37,5 +40,3 @@
       top: 0;
       height: 100%;
       padding: 1px 1px; }
-
-/*# sourceMappingURL=Nav.css.map */

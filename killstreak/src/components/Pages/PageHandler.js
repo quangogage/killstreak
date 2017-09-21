@@ -13,8 +13,6 @@ var transitions=[
 
 class PageHandler extends Component {
 
-  
-
   constructor(props) {
     super(props);
     this.state={      
@@ -27,6 +25,10 @@ class PageHandler extends Component {
         "Contact"
       ]
     }    
+  }
+
+  componentWillReceiveProps(nextProps) {
+    
   }
 
 
