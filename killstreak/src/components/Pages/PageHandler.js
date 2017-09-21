@@ -5,11 +5,12 @@ import Home from './Home/Home';
 import About from './About/About';
 
 
-/* Transitions */
+/* Transitions
 import Shootup from './Transitions/Shootup.js';
 var transitions=[
   Shootup
 ]
+*/
 
 class PageHandler extends Component {
 
@@ -29,6 +30,10 @@ class PageHandler extends Component {
 
   componentWillReceiveProps(nextProps) {
     
+    // Check for URL change
+    if (nextProps.location.pathname !== this.props.location.pathname) {
+      console.log('new path');
+    }
   }
 
 
