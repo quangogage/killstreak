@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import Home from './Home/Home';
+import About from './About/About';
 
 class PageHandler extends Component {
   constructor(props) {
@@ -23,6 +24,10 @@ class PageHandler extends Component {
     return (
       <div className="PageHandler">
         <Home
+          currentPage={this.state.currentPage}
+          pages={this.state.pages}
+        />        
+        <About
           currentPage={this.state.currentPage}
           pages={this.state.pages}
         />        

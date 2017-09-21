@@ -82,7 +82,6 @@ class Home extends Component {
 
 
   render() {
-    
     // Don't render if this page isn't
     // the current one.
     if (this.props.currentPage!=="Home") {
