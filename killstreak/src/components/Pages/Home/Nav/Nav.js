@@ -10,14 +10,16 @@ class Nav extends Component {
       <div className="Nav">
         {
           Pages.map((page,index) => {
-            return (
-              <Item
-                key={index}
-                index={index}
+            if (index!==0) {
+              return (
+                <Item
+                  key={index}
+                  index={index}
 
-                page={page}
-              />
-            )
+                  page={page}
+                />
+              )
+            }
           })
         }
       </div>
