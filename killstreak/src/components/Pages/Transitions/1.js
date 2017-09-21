@@ -3,11 +3,16 @@ import $ from 'jquery';
 import gageMath from '../../../gagelib/Math';
 
 import decalImage from '../../../images/transitions/shooting/decal.png';
+import logoImage from '../../../images/logo/white.png';
 
+
+
+var bulletAmount=15; // How many shots?
+var bulletRate=250; // Milliseconds between shots
 
 // Create the red overlay element
 function createOverlay() {
-  var overlay=$('<div class="overlay"></div>');
+  var overlay=$(`<div class="overlay"></div>`);
   overlay.css({
     position:'absolute',
     left:0,
@@ -16,8 +21,17 @@ function createOverlay() {
     height:'100%',
     zIndex:2,
     background:'RGB(255,0,0)',
-    opacity:0
+    opacity:0,
+    display:'flex',
+    alignItems:'center',
+    justifyContent:'center'
   })
+  var logo=$(`<img src=${logoImage} />`);
+  logo.css({
+    zIndex:2,
+    width:'80%'
+  })
+  overlay.append(logo);
   
   $('body').append(overlay);
   return overlay;
@@ -50,10 +64,10 @@ function createDecal(overlay) {
 function beginShooting(overlay) {
   var shooting=setInterval(function() {
     createDecal(overlay);
-    if ($(".overlay .decal").length>=5) {
+    if ($(".overlay .decal").length>=bulletAmount) {
       clearInterval(shooting);
     }
-  },250)    
+  },bulletRate)    
 }
 
 
