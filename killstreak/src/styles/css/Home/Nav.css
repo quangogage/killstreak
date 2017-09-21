@@ -9,8 +9,6 @@
   display: flex;
   flex-direction: column;
   /* Menu Items */ }
-  .Nav:hover {
-    cursor: url("../../../images/icons/crosshair.png"), default !important; }
   .Nav .Item {
     position: relative;
     font-family: pixel;

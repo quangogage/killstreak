@@ -4,10 +4,7 @@
 .Nav {  
   position:relative;
   height:auto;
-  margin-top:10vw;
-  &:hover{
-    cursor: url('../../../images/icons/crosshair.png'), default !important;
-  }
+  margin-top:10vw;  
   
   display:flex;
   flex-direction: column;

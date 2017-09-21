@@ -3,14 +3,14 @@
 
 
 body {
-  cursor: url('../../../images/icons/crosshair.png'), default;
+  cursor: url('../../../images/icons/crosshair.png') 16 16 , default !important;
 }
 .Home {
   perspective:2000px;
   display:flex;
   flex-direction:column;
   align-items:center;
-  justify-content: center;  
+  justify-content: center;
 
   /* Logo */
   .Logo {
@@ -45,9 +45,21 @@ body {
     }
   }   
 
-  .poison {
-    font-family:poison;
-    font-size:4vw;
+  /* Decals */
+  .decal {
+    width:20px;
+    height:20px;
+    position:absolute;
+  }
+  
+  /* Shooting Flash */
+  .flash {
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:white;
   }
 }
 
