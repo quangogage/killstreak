@@ -1,18 +1,41 @@
-.side {
+.overlay {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
+  background: RGB(255, 0, 0);
   background: red;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .side.left {
-    clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 0% 0%);
-    z-index: 5; }
-  .side.right {
-    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 100% 0%); }
-  .side img {
-    width: 80%;
-    height: auto; }
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-delay: 200;
+  /* Each Half */ }
+  .overlay .side {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Logo */ }
+    .overlay .side.left {
+      left: 0px;
+      clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 0% 0%);
+      z-index: 5; }
+    .overlay .side.right {
+      clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 100% 0%); }
+    .overlay .side img {
+      width: 80%;
+      height: auto; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }

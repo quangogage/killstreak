@@ -7,7 +7,7 @@ import logoImage from '../../../images/logo/white.png';
 
 
 // ** Animation Variables ** \\
-var duration=1500; // Total length of transition ( milliseconds )
+var duration=50000; // Total length of transition ( milliseconds )
 
 
 // Create the overlay
@@ -19,12 +19,16 @@ function createOverlay() {
   overlay.append(left, right);
 
   $('body').append(overlay);
+
+  return overlay;
 }
 
 function animation(setPage,newPage) {  
   var overlay=createOverlay();
 
   setTimeout(function(){
+    overlay.empty();
+    overlay.remove();
     setPage(newPage);
   },duration);
 }
