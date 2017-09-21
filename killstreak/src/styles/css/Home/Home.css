@@ -10,6 +10,8 @@
 @font-face {
   font-family: pixel;
   src: url("../../../fonts/pixel.ttf"); }
+body {
+  cursor: url("../../../images/icons/crosshair.png"), default; }
 
 .Home {
   perspective: 2000px;
@@ -46,30 +48,25 @@
     font-size: 4vw; }
 
 /* Logo Spinning Animation */
-@-webkit-keyframes rotateLogo {
+@-webkit-keyframes $animationName {
   0% {
     transform: rotateY(0deg); }
-
+  100% {
+    transform: rotateY(360deg); } }
+@-moz-keyframes $animationName {
+  0% {
+    transform: rotateY(0deg); }
+  100% {
+    transform: rotateY(360deg); } }
+@-o-keyframes $animationName {
+  0% {
+    transform: rotateY(0deg); }
+  100% {
+    transform: rotateY(360deg); } }
+@keyframes $animationName {
+  0% {
+    transform: rotateY(0deg); }
   100% {
     transform: rotateY(360deg); } }
 
-@-moz-keyframes rotateLogo {
-  0% {
-    transform: rotateY(0deg); }
-
-  100% {
-    transform: rotateY(360deg); } }
-
-@-o-keyframes rotateLogo {
-  0% {
-    transform: rotateY(0deg); }
-
-  100% {
-    transform: rotateY(360deg); } }
-
-@keyframes rotateLogo {
-  0% {
-    transform: rotateY(0deg); }
-
-  100% {
-    transform: rotateY(360deg); } }
+/*# sourceMappingURL=Home.css.map */

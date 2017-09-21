@@ -5,6 +5,9 @@
   position:relative;
   height:auto;
   margin-top:10vw;
+  &:hover{
+    cursor: url('../../../images/icons/crosshair.png'), default !important;
+  }
   
   display:flex;
   flex-direction: column;
@@ -15,10 +18,10 @@
     font-family:pixel;
     font-size:2vw;
     padding:10px 30px;
-    text-align:center;
+    text-align:center;   
         
     /* Hover Content */
-    .after {
+    .after {      
       content:'';
       position:absolute;
       color:white;
@@ -46,7 +49,4 @@
       }
     }
   }
-  .Item:hover {
-    cursor:pointer;
-  }    
 }

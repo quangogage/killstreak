@@ -1,12 +1,16 @@
 @import 'App';
 @import 'Fonts';
 
+
+body {
+  cursor: url('../../../images/icons/crosshair.png'), default;
+}
 .Home {
   perspective:2000px;
   display:flex;
   flex-direction:column;
   align-items:center;
-  justify-content: center;
+  justify-content: center;  
 
   /* Logo */
   .Logo {
