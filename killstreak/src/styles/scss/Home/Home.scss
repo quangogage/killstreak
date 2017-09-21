@@ -65,7 +65,7 @@ body {
 
 
 /* Logo Spinning Animation */
-@include keyframes(rotateLogo) {
+@keyframes rotateLogo {
   0% {
     transform:rotateY(0deg);
   }  
