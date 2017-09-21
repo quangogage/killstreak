@@ -1,0 +1,60 @@
+
+@import '../assets/globals.postcss.css';
+
+$gap: 10;
+.curve {
+  position:       absolute;
+  left:           0;
+  top:            calc( $gap * $PX );
+  right:          calc( $gap * $PX );
+  bottom:         calc( $gap * $PX );
+  border-radius:  calc( 2 * $PX );
+  background:     rgba( 58, 8, 58, .75 );
+  border:         1px solid $c-pastel-purple;
+  box-shadow:     inset calc( 4 * $PX ) calc( 4 * $PX ) 0 rgba(0,0,0,0.5);
+  z-index:        2;
+  overflow:       hidden;
+
+  $size: 350;
+  &__background {
+    position:   absolute;
+    z-index:    0;
+    top:        0;
+    bottom:     0;
+    width:      calc( $size * $PX );
+    left:       0;
+    opacity:    0.5;
+    border-radius: inherit;
+
+    & svg {
+      width: 100%;
+    }
+
+    & path {
+      vector-effect: non-scaling-stroke;
+    }
+  }
+
+  &__svg-wrapper {
+    position:   absolute;
+    z-index:    1;
+    left:       calc( -1*$PX );
+    right:      calc( -1*$PX );
+  }
+
+  &__svg {
+    display:    block;
+    overflow:   visible;
+    width:      100%;
+    position:   relative;
+    z-index:    1;
+  }
+  &__svg-segment {
+    stroke:       white;
+    stroke-width: 2px;
+    cursor:       crosshair;
+    &:hover {
+      stroke:     $c-orange;
+    }
+  }
+}
