@@ -12,7 +12,7 @@ var duration=2500; // Total length of transition ( milliseconds )
 
 var sliceDuration=1000; // How long does the slice take?
 
-var flashDelay=950; // How long after slice should it flash?
+var flashDelay=875; // How long after slice should it flash?
 var flashDuration=500; // How long does the flash last?
 
 
