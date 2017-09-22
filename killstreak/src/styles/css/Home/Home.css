@@ -27,9 +27,6 @@
   font-family: hunt;
   src: url("../../../fonts/hunt.ttf"); }
 
-body {
-  cursor: url("../../../images/icons/crosshair.png") 16 16, default !important; }
-
 .Home {
   perspective: 2000px;
   display: flex;
@@ -38,6 +35,7 @@ body {
   justify-content: center;
   overflow-x: hidden;
   overflow-y: hidden;
+  cursor: url("../../../images/icons/crosshair.png") 16 16, default !important;
   /* Logo */
   /* Decals */
   /* Shooting Flash */
