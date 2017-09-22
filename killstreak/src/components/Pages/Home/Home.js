@@ -8,20 +8,34 @@ import $ from 'jquery';
 import Nav from './Nav/Nav';
 
 class Home extends Component {
-  
 
-
-  // Set up splatters and decals
-  setup() {
-    // Blood
+  componentDidMount() {
     this.splat();
-    
+
     // Shoot
     window.addEventListener('click',function(e) {
       this.createDecal(e)
       this.flash();
     }.bind(this))
+  } // Setup the first time it's loaded
+
+  componentWillReceiveProps(nextProps) {
+    
+    // Check for new load
+    if (nextProps.currentPage==='Home' || nextProps.currentPage==='') {
+      if (nextProps.currentPage!==this.props.currentPage) {
+        console.log('setting up...');
+        setTimeout(function() {
+          this.splat();
+        }.bind(this),100)        
+      }
+
+    // Check for leaving
+    } else {
+
+    }
   }
+
 
   // Make a decal when you click anywhere
   createDecal(e) {
