@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import '../../../styles/css/About/About.css';
-import $ from 'jquery';
-import bg from '../../../images/tron/1.png';
 import Header from './Header';
 
 
