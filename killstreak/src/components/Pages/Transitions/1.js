@@ -37,7 +37,7 @@ function createOverlay() {
     opacity:0,
     display:'flex',
     alignItems:'center',
-    justifyContent:'center'
+    justifyContent:'center',
   })
   var logo=$(`<img src=${logoImage} />`);
   logo.css({
@@ -124,6 +124,9 @@ function beginShooting(overlay) {
 function animation(setPage,newPage) {  
   var overlay=createOverlay();
 
+  // No scroll body
+  $('body').css({overflow:'hidden'});
+
   // Fade overlay in
   overlay.animate({
     opacity:1,
@@ -145,6 +148,7 @@ function animation(setPage,newPage) {
         },fadeOutTime, function() {
           overlay.empty();
           overlay.remove();          
+          $('body').css({overflow:''});
         })        
       },duration)
     },400)
