@@ -20,7 +20,7 @@ class About extends Component {
 
         {/* Title */}
         <div className='text title'>
-          About Killstreak
+          Tron Beats
         </div>
 
       </div>
