@@ -2,9 +2,11 @@
 
 .About {  
 
-  .text {
-    color:white;    
-  }      
+  .content {
+    position:relative;
+    top:205px; /* Right below the header */
+    
+  }
 }
 
 @keyframes spinAnim {

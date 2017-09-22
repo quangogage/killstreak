@@ -1,5 +1,7 @@
-.About .text {
-  color: white; }
+.About .content {
+  position: relative;
+  top: 205px;
+  /* Right below the header */ }
 
 @keyframes spinAnim {
   0% {

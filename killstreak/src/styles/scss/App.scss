@@ -9,6 +9,10 @@
   height:100%;
 }
 
+/* Get rid of default body margins */
+body {
+    margin:0;
+}
 
 /* Animation Mixin */
 @mixin keyframes( $animationName )

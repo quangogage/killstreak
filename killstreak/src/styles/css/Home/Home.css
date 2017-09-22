@@ -6,6 +6,10 @@
   width: 100%;
   height: 100%; }
 
+/* Get rid of default body margins */
+body {
+  margin: 0; }
+
 /* Animation Mixin */
 @font-face {
   font-family: pixel;
