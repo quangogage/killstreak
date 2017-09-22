@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import '../../../styles/css/About/About.css';
+import bg from '../../../images/tron/1.png';
 
 
 class About extends Component {
   render() {
-    console.log(this.props.currentPage);
+
     // Don't render if this page isn't
     // the current one.
     if (this.props.currentPage!=="About") {
@@ -13,6 +14,15 @@ class About extends Component {
 
     return (
       <div className="About"> 
+        
+        {/* Background Image */}
+        <div className='background-image' style={{backgroundImage:`url(${bg})`}}/>
+
+        {/* Title */}
+        <div className='text title'>
+          About Killstreak
+        </div>
+
       </div>
     );
   }
