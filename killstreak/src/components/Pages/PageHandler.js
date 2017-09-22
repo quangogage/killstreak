@@ -36,7 +36,6 @@ class PageHandler extends Component {
   // Initialize page transition animation
   initTransition(page) {
     var animIndex=Math.floor(gageMath.getRandom(1,transitionCount));
-    animIndex=2; // TESTING *!!!!*!*!*!(*!02-9381-2039812-03489)
     var anim=require(`./Transitions/${animIndex}.js`);
 
     // Run it!

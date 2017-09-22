@@ -1,4 +1,4 @@
-.overlay {
+.overlay-2 {
   position: absolute;
   left: 0;
   top: 0;
@@ -10,7 +10,7 @@
   animation-fill-mode: forwards;
   animation-delay: 200;
   /* Each Half */ }
-  .overlay .side {
+  .overlay-2 .side {
     position: absolute;
     left: 0;
     top: 0;
@@ -27,24 +27,24 @@
     transition-timing-function: cubic-bezier(0.15, 0.505, 0.565, 0.79);
     /* custom */
     /* Logo */ }
-    .overlay .side.left {
+    .overlay-2 .side.left {
       left: 0px;
       clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 0% 0%);
       z-index: 5; }
-    .overlay .side.right {
+    .overlay-2 .side.right {
       clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 100% 0%); }
-    .overlay .side.sliced.left {
+    .overlay-2 .side.sliced.left {
       top: 100%;
       left: -125%;
       transform: rotate(-45deg); }
-    .overlay .side.sliced.right {
+    .overlay-2 .side.sliced.right {
       top: 100%;
       left: 125%;
       transform: rotate(45deg); }
-    .overlay .side img {
+    .overlay-2 .side img {
       width: 80%;
       height: auto; }
-  .overlay .flash {
+  .overlay-2 .flash {
     position: absolute;
     left: 0;
     top: 0;

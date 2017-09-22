@@ -18,7 +18,7 @@ var flashDuration=500; // How long does the flash last?
 
 // Create the overlay
 function createOverlay() {
-  var overlay=$('<div class="overlay" id="transition"></div>');
+  var overlay=$('<div class="overlay-2" id="transition"></div>');
   var left=$(`<div class="side left"><img src=${logoImage} /></div>`);
   var right=$(`<div class="side right"><img src=${logoImage} /></div>`);
 
