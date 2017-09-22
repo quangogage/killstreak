@@ -10,6 +10,9 @@
 .About .text {
   color: white; }
 .About .title {
-  font-size: 4.5vw;
-  font-family: gothic;
+  position: relative;
+  margin-top: 50px;
+  color: white;
+  font-size: 8vw;
+  font-family: bubble;
   text-align: center; }
