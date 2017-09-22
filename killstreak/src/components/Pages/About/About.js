@@ -22,6 +22,7 @@ class About extends Component {
         <div className='text title'>
           Tron Beats
         </div>
+        <div className='underline'></div>
 
       </div>
     );

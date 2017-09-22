@@ -12,6 +12,7 @@
     background-position:fixed;
     background-size:55%;
     z-index:-1;
+    filter:brightness(80%);
   }
 
   .text {
@@ -23,6 +24,11 @@
     margin-top:50px;
     color:white;
     font-size:8vw;
-    text-align:center;
+    font-family:pixel;
+  }
+  .underline {
+    background:white;
+    width:80%;
+    height:1px;
   }
 }
