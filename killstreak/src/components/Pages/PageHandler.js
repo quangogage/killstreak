@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import $ from 'jquery';
 import gageMath from '../../gagelib/Math';
 
 /* Pages */
@@ -37,6 +38,12 @@ class PageHandler extends Component {
   initTransition(page) {
     var animIndex=Math.floor(gageMath.getRandom(1,transitionCount));
     var anim=require(`./Transitions/${animIndex}.js`);
+
+    // Check if one is already running ( if so, stahp! )
+    if ($('.transition').length!==0) {
+      $('.transition').empty();
+      $('.transition').remove();
+    }
 
     // Run it!
     anim.default.animation(this.setPage,page);
