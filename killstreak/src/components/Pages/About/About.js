@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../../../styles/css/About/About.css';
-import bg from '../../../images/tron/1.png';
+import bg from '../../../images/tron/2.jpg';
 import title from '../../../images/misc/tron beats.png'
 
 
