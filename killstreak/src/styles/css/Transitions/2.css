@@ -4,8 +4,6 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: RGB(255, 0, 0);
-  background: red;
   opacity: 0;
   animation-name: fadeIn;
   animation-duration: 0.2s;
@@ -18,10 +16,16 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: red;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 1.25s;
+    background: red;
+    -webkit-transition-timing-function: cubic-bezier(0.15, 0.505, 0.565, 0.79);
+    -moz-transition-timing-function: cubic-bezier(0.15, 0.505, 0.565, 0.79);
+    -o-transition-timing-function: cubic-bezier(0.15, 0.505, 0.565, 0.79);
+    transition-timing-function: cubic-bezier(0.15, 0.505, 0.565, 0.79);
+    /* custom */
     /* Logo */ }
     .overlay .side.left {
       left: 0px;
@@ -29,9 +33,29 @@
       z-index: 5; }
     .overlay .side.right {
       clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 100% 0%); }
+    .overlay .side.sliced.left {
+      top: 100%;
+      left: -125%;
+      transform: rotate(-45deg); }
+    .overlay .side.sliced.right {
+      top: 100%;
+      left: 125%;
+      transform: rotate(45deg); }
     .overlay .side img {
       width: 80%;
       height: auto; }
+  .overlay .flash {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 100;
+    background: white;
+    animation-name: flash;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s; }
 
 @keyframes fadeIn {
   0% {
@@ -39,3 +63,13 @@
 
   100% {
     opacity: 1; } }
+
+@keyframes flash {
+  0% {
+    opacity: 0; }
+
+  50% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
