@@ -13,7 +13,6 @@ class Header extends Component {
 
             {/* Text */}
             <div className='text title'>Tron Beats</div>
-            <div className='underline'></div>
 
             {/* Guns */}
             <div className='gun-container'>  

@@ -1,5 +1,10 @@
 /* About Page Header */
 .Header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
   /* Title / Guns */ }
   .Header .title-container {
     /* Text */
@@ -14,7 +19,8 @@
     .Header .title-container .title {
       font-size: 8vw;
       font-family: hunt;
-      text-align: center; }
+      text-align: center;
+      color: black; }
     .Header .title-container .underline {
       background: white;
       width: 80%;
