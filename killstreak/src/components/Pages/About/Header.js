@@ -17,7 +17,7 @@ class Header extends Component {
   createWave() {
     var container=$('.wave-container');
     for(var i=0;i<waveDensity;i++) {
-      var bar=$('<div class="bar"></div>');
+      var bar=$('<div class="bar-height"><div class="bar"></div></div>');
       bar.css({
         width:(window.innerWidth/waveDensity)+'px',
         animationDelay:i*waveDelay+'s',
