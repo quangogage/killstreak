@@ -8,12 +8,11 @@ import $ from 'jquery';
 import Nav from './Nav/Nav';
 
 class Home extends Component {
-
+  
   componentDidMount() {
-
     // Blood
     this.splat();
-
+    
     // Shoot
     window.addEventListener('click',function(e) {
       this.createDecal(e)

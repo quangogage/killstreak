@@ -38,6 +38,7 @@ function createSlice() {
   const nScaleCurve = (p) => { return 1 - scaleCurveBase(p)/10; };
   var screenWidth=window.innerWidth;
   var screenHeight=window.innerHeight;
+  var angle=gageMath.toDegrees(Math.atan2((window.innerWidth-0),(window.innerHeight-0))-Math.PI/2);
   const circle = new mojs.Shape({
     parent:        '#transition',
     shape:        'circle',
@@ -49,7 +50,7 @@ function createSlice() {
     scaleX:       { 10 : 10, curve: scaleCurve },
     scaleY:       { 1 : 1, curve: nScaleCurve },
     origin:       { '0 50%' : '100% 50%', easing: shiftCurve },
-    angle:[-30],
+    angle: angle,
     
     isYoyo:       false,
     delay:        500,
