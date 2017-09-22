@@ -3,7 +3,7 @@ import $ from 'jquery';
 import '../../../styles/css/About/Header.css';
 
 
-var waveDensity=25; // How many bars in the wave?
+var waveDensity=15; // How many bars in the wave?
 var waveDelay=0.1; // Delay between each bars wave animation.
 var waveTime='2.25s' // Time for each bar to go up and down once
 
