@@ -9,7 +9,10 @@ import Nav from './Nav/Nav';
 
 class Home extends Component {
   
-  componentDidMount() {
+
+
+  // Set up splatters and decals
+  setup() {
     // Blood
     this.splat();
     

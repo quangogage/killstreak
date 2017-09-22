@@ -13,7 +13,6 @@ class About extends Component {
 
     return (
       <div className="About"> 
-        asdf       
       </div>
     );
   }
