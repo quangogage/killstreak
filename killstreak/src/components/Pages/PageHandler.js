@@ -26,6 +26,17 @@ class PageHandler extends Component {
     this.setPage=this.setPage.bind(this);
   }
 
+  // Set initial page. This is for if you
+  // enter a custom URL, click a link, or
+  // navigate the site any way besides
+  // using the Links within.
+  componentDidMount() {
+    this.setState({
+      currentPage:this.props.location.pathname.substr(1)
+    })
+  }
+
+
   componentWillReceiveProps(nextProps) {
     
     // Check for URL change

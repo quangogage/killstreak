@@ -41,7 +41,7 @@ class Home extends Component {
   createDecal(e) {
     var decal=$(`<img class="decal" src=${bulletDecal} />`);    
     var rotation=gageMath.getRandom(-360,360);
-    var size=gageMath.getRandom(10,20);
+    var size=gageMath.getRandom(20,32);
     var mouseX=e.pageX;
     var mouseY=e.pageY;    
     
