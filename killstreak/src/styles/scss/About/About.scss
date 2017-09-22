@@ -19,14 +19,26 @@
     color:white;    
   }
 
+  /*
   .title {
     position:relative;
     margin-top:50px;
     color:white;
     font-size:8vw;
-    
+    font-family:zou;  
   }
-  .underline {
+  */
+  .title-container {
+    position:relative;
+    margin-top:50px;
+    width:100%;
+  }
+  .title {       
+    margin:auto;
+    position:relative; 
+    width:50%;        
+  }
+  .underline {    
     background:white;
     width:80%;
     height:1px;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../../../styles/css/About/About.css';
 import bg from '../../../images/tron/1.png';
+import title from '../../../images/misc/tron beats.png'
 
 
 class About extends Component {
@@ -19,10 +20,10 @@ class About extends Component {
         <div className='background-image' style={{backgroundImage:`url(${bg})`}}/>
 
         {/* Title */}
-        <div className='text title'>
-          Tron Beats
+        <div className='title-container'>
+          <img src={title} className='title' />
+          <div className='underline'></div>
         </div>
-        <div className='underline'></div>
 
       </div>
     );
