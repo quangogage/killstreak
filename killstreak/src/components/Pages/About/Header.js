@@ -8,23 +8,21 @@ class Header extends Component {
       <div className="Header">
 
         {/* Title */}
-        <div className='header'>
-          <div className='title-container'>         
+        <div className='title-container'>         
 
-            {/* Text */}
-            <div className='text title'>Tron Beats</div>
+          {/* Text */}
+          <div className='text title'>Tron Beats</div>
 
-            {/* Guns */}
-            <div className='gun-container'>  
-              <div className='spinner'>         
-                <div className='gun'>e</div>
-              </div>
-              <div className='spinner'>         
-                <div className='gun'>e</div>
-              </div>
+          {/* Guns */}
+          <div className='gun-container'>  
+            <div className='spinner'>         
+              <div className='gun'>e</div>
             </div>
-
+            <div className='spinner'>         
+              <div className='gun'>e</div>
+            </div>
           </div>
+
         </div>
       </div>
     );
