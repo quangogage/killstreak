@@ -31,6 +31,10 @@ body {
   font-family: hunt;
   src: url("../../../fonts/hunt.ttf"); }
 
+@font-face {
+  font-family: napo;
+  src: url("../../../fonts/napo.ttf"); }
+
 .Home {
   perspective: 2000px;
   display: flex;

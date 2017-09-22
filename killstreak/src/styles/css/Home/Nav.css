@@ -18,6 +18,10 @@
   font-family: hunt;
   src: url("../../../fonts/hunt.ttf"); }
 
+@font-face {
+  font-family: napo;
+  src: url("../../../fonts/napo.ttf"); }
+
 /* Container */
 .Nav {
   position: relative;
