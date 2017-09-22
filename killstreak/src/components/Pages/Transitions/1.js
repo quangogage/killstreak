@@ -46,7 +46,6 @@ function createOverlay() {
   })
   overlay.append(logo);
   
-  $('body').append(overlay);
   return overlay;
 }
 
@@ -120,9 +119,18 @@ function beginShooting(overlay) {
 }
 
 
+// Create container for the entire transition
+function createContainer() {
+  var container=$("<div class='transition'></div>");
+  $('body').append(container);
+  return container;
+}
+
 // Master Function \\
-function animation(setPage,newPage) {  
+function animation(setPage,newPage) {
+  var container=createContainer();  
   var overlay=createOverlay();
+  container.append(overlay);
 
   // No scroll body
   $('body').css({overflow:'hidden'});
@@ -146,8 +154,8 @@ function animation(setPage,newPage) {
           opacity:0,
           top:'100%'
         },fadeOutTime, function() {
-          overlay.empty();
-          overlay.remove();          
+          container.empty();
+          container.remove();          
           $('body').css({overflow:''});
         })        
       },duration)

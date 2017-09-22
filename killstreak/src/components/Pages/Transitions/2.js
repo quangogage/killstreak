@@ -16,6 +16,14 @@ var flashDelay=875; // How long after slice should it flash?
 var flashDuration=500; // How long does the flash last?
 
 
+
+// Create container for entire transition
+function createContainer() {
+  var container=$("<div class='transition'></div>");
+  $('body').append(container);
+  return container;
+}
+
 // Create the overlay
 function createOverlay() {
   var overlay=$('<div class="overlay-2" id="transition"></div>');
@@ -23,8 +31,6 @@ function createOverlay() {
   var right=$(`<div class="side right"><img src=${logoImage} /></div>`);
 
   overlay.append(left, right);
-
-  $('body').append(overlay);
 
   return overlay;
 }
@@ -75,8 +81,11 @@ function createFlash(overlay) {
 }
 
 
-function animation(setPage,newPage) {  
+function animation(setPage,newPage) { 
+  var container=createContainer(); 
   var overlay=createOverlay();
+
+  container.append(overlay);
 
   setTimeout(function() {
     createSlice();
@@ -97,8 +106,8 @@ function animation(setPage,newPage) {
 
   // CUT IT!
   setTimeout(function(){
-    overlay.empty();
-    overlay.remove();
+    container.empty();
+    container.remove();
     setPage(newPage);
   },duration);
 }
