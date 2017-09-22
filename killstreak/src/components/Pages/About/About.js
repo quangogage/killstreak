@@ -15,13 +15,14 @@ class About extends Component {
     }
 
     return (
-      <div className="About"> 
-        
-        {/* Background Image */}
-        <div className='background-image' style={{backgroundImage:`url(${bg})`}}/>
+      <div className="About">         
 
         {/* Page Header */}
         <Header />
+
+        {/* Content */}
+        <div className='content'>
+        </div>
 
       </div>
     );
