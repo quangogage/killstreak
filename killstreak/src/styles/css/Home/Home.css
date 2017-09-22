@@ -19,6 +19,10 @@
   font-family: bubble;
   src: url("../../../fonts/bubble.ttf"); }
 
+@font-face {
+  font-family: guns;
+  src: url("../../../fonts/guns.ttf"); }
+
 body {
   cursor: url("../../../images/icons/crosshair.png") 16 16, default !important; }
 

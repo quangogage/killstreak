@@ -10,6 +10,10 @@
   font-family: bubble;
   src: url("../../../fonts/bubble.ttf"); }
 
+@font-face {
+  font-family: guns;
+  src: url("../../../fonts/guns.ttf"); }
+
 /* Container */
 .Nav {
   position: relative;
