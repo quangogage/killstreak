@@ -1,6 +1,6 @@
 
 
-.About {
+.About {  
 
   .background-image {
     position:absolute;
@@ -19,30 +19,82 @@
     color:white;    
   }
 
-  /*
-  .title {
-    position:relative;
-    margin-top:50px;
-    color:white;
-    font-size:8vw;
-    font-family:zou;  
-  }
-  */
   .title-container {
+    /* Text */
     position:relative;
     top:0;
     left:0;
     padding-top:50px;
-    width:100%;
+    width:50%;
+    margin:auto;   
+    perspective:800px;
+
+    .title {       
+      font-size:8vw;
+      font-family:hunt;  
+      text-align:center; 
+    }
+    .underline {    
+      background:white;
+      width:80%;
+      height:1px;
+      margin:auto;
+    }   
+    
+    /* Guns */
+    .gun-container {
+      position:absolute;
+      top:50px;
+      left:5%;
+      width:90%;
+      height:100%;    
+      display:flex;
+      justify-content:space-between;
+      align-items:center;        
+
+      .spinner {
+        animation-name:spinAnim;
+        animation-duration:3s;
+        animation-iteration-count: infinite;
+        animation-timing-function:linear;     
+        transform-style:preserve-3d;        
+
+        .gun {                
+          font-size:8vw;
+          font-family:guns;   
+
+          animation-name:gunAnim;
+          animation-duration:5s;
+          animation-iteration-count: infinite;
+          animation-timing-function:linear;           
+        }              
+      }
+    }
+  }    
+}
+
+@keyframes spinAnim {
+  0% {
+    transform:rotateY(0deg);
   }
-  .title {       
-    margin:auto;
-    position:relative; 
-    width:50%;        
+  100% {
+    transform:rotateY(360deg);
   }
-  .underline {    
-    background:white;
-    width:80%;
-    height:1px;
+}
+@keyframes gunAnim {
+  0% {
+    color:red;
+  }
+  25% {
+    color:white;
+  }
+  50% {
+    color:#00FFF2;
+  }
+  75% {
+    color:#FBFF00;
+  }
+  100% {
+    color:red;
   }
 }
