@@ -1,7 +1,6 @@
 .About .content {
   position: relative;
-  top: 205px;
-  /* Right below the header */ }
+  margin-top: 40px; }
 
 @keyframes spinAnim {
   0% {
