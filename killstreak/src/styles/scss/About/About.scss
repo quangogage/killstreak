@@ -17,60 +17,7 @@
 
   .text {
     color:white;    
-  }
-
-  .title-container {
-    /* Text */
-    position:relative;
-    top:0;
-    left:0;
-    padding-top:50px;
-    width:50%;
-    margin:auto;   
-    perspective:800px;
-
-    .title {       
-      font-size:8vw;
-      font-family:hunt;  
-      text-align:center; 
-    }
-    .underline {    
-      background:white;
-      width:80%;
-      height:1px;
-      margin:auto;
-    }   
-    
-    /* Guns */
-    .gun-container {
-      position:absolute;
-      top:50px;
-      left:5%;
-      width:90%;
-      height:100%;    
-      display:flex;
-      justify-content:space-between;
-      align-items:center;        
-
-      .spinner {
-        animation-name:spinAnim;
-        animation-duration:3s;
-        animation-iteration-count: infinite;
-        animation-timing-function:linear;     
-        transform-style:preserve-3d;        
-
-        .gun {                
-          font-size:8vw;
-          font-family:guns;   
-
-          animation-name:gunAnim;
-          animation-duration:5s;
-          animation-iteration-count: infinite;
-          animation-timing-function:linear;           
-        }              
-      }
-    }
-  }    
+  }      
 }
 
 @keyframes spinAnim {

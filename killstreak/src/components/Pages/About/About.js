@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../../../styles/css/About/About.css';
 import $ from 'jquery';
 import bg from '../../../images/tron/1.png';
+import Header from './Header';
 
 
 class About extends Component {
@@ -19,23 +20,8 @@ class About extends Component {
         {/* Background Image */}
         <div className='background-image' style={{backgroundImage:`url(${bg})`}}/>
 
-        {/* Title */}
-        <div className='title-container'>         
-
-          {/* Text */}
-          <div className='text title'>Tron Beats</div>
-          <div className='underline'></div>
-
-          {/* Guns */}
-          <div className='gun-container'>  
-            <div className='spinner'>         
-              <div className='gun'>e</div>
-            </div>
-            <div className='spinner'>         
-              <div className='gun'>e</div>
-            </div>
-          </div>
-        </div>
+        {/* Page Header */}
+        <Header />
 
       </div>
     );
