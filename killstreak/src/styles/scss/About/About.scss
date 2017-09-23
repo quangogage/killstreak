@@ -12,9 +12,10 @@
     perspective:500px;
 
     .title-container {   
+      padding-top:50px;
       display:flex;
       align-items:center; 
-      justify-content: center;
+      justify-content: center;      
 
       img {   
         width:25vw;
@@ -32,6 +33,17 @@
       background-size:20%;
       background-repeat: repeat-x;
     }
+  }
+
+
+  .content {
+    font-size:2.5vw;
+    color:white;
+    text-align:center;
+    width:50%;
+    margin:auto;
+    font-family:gothic;
+    padding-bottom:100px;    
   }
 
 }

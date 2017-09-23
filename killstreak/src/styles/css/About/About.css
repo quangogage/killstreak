@@ -8,6 +8,7 @@
     width: 100%;
     perspective: 500px; }
     .About .header .title-container {
+      padding-top: 50px;
       display: flex;
       align-items: center;
       justify-content: center; }
@@ -22,5 +23,13 @@
       background-image: url("../../../images/misc/drip.png");
       background-size: 20%;
       background-repeat: repeat-x; }
+  .About .content {
+    font-size: 2.5vw;
+    color: white;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-family: gothic;
+    padding-bottom: 100px; }
 
 /*# sourceMappingURL=About.css.map */
