@@ -22,6 +22,10 @@
   font-family: napo;
   src: url("../../../fonts/napo.ttf"); }
 
+@font-face {
+  font-family: arvin;
+  src: url("../../../fonts/arvin.ttf"); }
+
 /* Container */
 .Nav {
   position: relative;
