@@ -1,3 +1,14 @@
-
+.About .header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%; }
+  .About .header .title-container {
+    margin-top: 50px;
+    padding-bottom: 50px; }
+    .About .header .title-container .text {
+      font-family: gothic;
+      font-size: 4.5vw;
+      text-align: center; }
 
 /*# sourceMappingURL=About.css.map */
