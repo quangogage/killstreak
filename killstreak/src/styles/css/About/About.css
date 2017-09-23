@@ -1,14 +1,17 @@
-.About .header {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  perspective: 500px; }
-  .About .header .title-container {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .About .header .title-container img {
-      width: 25vw; }
+.About {
+  background: red;
+  min-height: 100vh; }
+  .About .header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    perspective: 500px; }
+    .About .header .title-container {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .About .header .title-container img {
+        width: 25vw; }
 
 /*# sourceMappingURL=About.css.map */
