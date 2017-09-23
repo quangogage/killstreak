@@ -34,12 +34,12 @@ class About extends Component {
             of the pacific northwest providing a versatile
             set of products.<br />
             <br />
+            <img src={photo} className='photo' />
             By incorporating every day life into my work,
             I try to focus on capturing the smaller things
             in life that people tend to pass up by bringing
             them into the bigger picture.
-          </div>
-
+          </div>          
         </div>
 
       </div>

@@ -12,25 +12,20 @@
     height:100%;    
     padding-top:50px;
 
+    perspective:750px;
+
     /* Descriptive Text */
     .desc {
       
       position:relative;
       width:80%;
-      margin:auto;          
+      margin:auto;
+      margin-bottom:250px;          
 
       font-family:arvin;
       font-size:3vw;
       text-align:center;
-      color:black;
-
-      margin-bottom:100px;
-
-      img {
-        position:relative;
-        width:20vw;
-        display:inline;
-      }
+      color:black;      
     }
 
     /* Border Columns */
@@ -47,6 +42,21 @@
         left:100%;
         transform:translateX(-100%);
       }      
+    }
+
+    /* photo */
+    .photo {      
+      display:block;
+      position:relative;
+      top:0px;
+      width:20%;
+      margin:auto;    
+      margin-bottom:50px;
+
+      animation-name:spinImage;
+      animation-iteration-count:infinite;
+      animation-duration:2s;
+      animation-timing-function:linear;
     }
   }
 }
@@ -75,4 +85,9 @@
   100% {
     color:red;
   }
+}
+
+@keyframes spinImage {
+  0% {transform:rotateY(0deg)}
+  100% {transform:rotateY(360deg)}
 }
