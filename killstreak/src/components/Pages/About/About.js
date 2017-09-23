@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../../../styles/css/About/About.css';
+import logo from '../../../images/logo/simple red.png';
 
 
 class About extends Component {
@@ -19,7 +20,7 @@ class About extends Component {
 
           {/* Title */}
           <div className='title-container'>
-            <div className='text'>Killstreak</div>
+            <img src={logo} alt='Killstreak' />
           </div>          
 
         </div>

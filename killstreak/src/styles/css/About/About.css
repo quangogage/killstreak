@@ -2,13 +2,13 @@
   position: relative;
   top: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  perspective: 500px; }
   .About .header .title-container {
-    margin-top: 50px;
-    padding-bottom: 50px; }
-    .About .header .title-container .text {
-      font-family: gothic;
-      font-size: 4.5vw;
-      text-align: center; }
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .About .header .title-container img {
+      width: 25vw; }
 
 /*# sourceMappingURL=About.css.map */
