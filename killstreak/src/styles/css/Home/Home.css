@@ -14,31 +14,27 @@ body {
 @font-face {
   font-family: pixel;
   src: url("../../../fonts/pixel.ttf"); }
-
 @font-face {
   font-family: gothic;
   src: url("../../../fonts/gothic.ttf"); }
-
 @font-face {
   font-family: bubble;
   src: url("../../../fonts/bubble.ttf"); }
-
 @font-face {
   font-family: guns;
   src: url("../../../fonts/guns.ttf"); }
-
 @font-face {
   font-family: hunt;
   src: url("../../../fonts/hunt.ttf"); }
-
 @font-face {
   font-family: napo;
   src: url("../../../fonts/napo.ttf"); }
-
 @font-face {
   font-family: arvin;
   src: url("../../../fonts/arvin.ttf"); }
-
+@font-face {
+  font-family: bloodblocks;
+  src: url("../../../fonts/bloodblocks.ttf"); }
 .Home {
   perspective: 2000px;
   display: flex;
@@ -98,6 +94,7 @@ body {
 @keyframes rotateLogo {
   0% {
     transform: rotateY(0deg); }
-
   100% {
     transform: rotateY(360deg); } }
+
+/*# sourceMappingURL=Home.css.map */
