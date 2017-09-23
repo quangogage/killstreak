@@ -13,10 +13,11 @@ class About extends Component {
     }
 
     return (
-      <div className="About">         
-
+      <div className="About">                 
         {/* Header */}
         <div className='header'>
+
+          <div className='drip' />
 
           {/* Title */}
           <div className='title-container'>
