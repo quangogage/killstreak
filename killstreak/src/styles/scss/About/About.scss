@@ -3,6 +3,8 @@
 .About {  
   overflow-y:scroll;
 
+  cursor: url('../../../images/icons/middle-finger.png') 16 16 , default !important;
+
   /* Everything below the header */
   .content {
     position:relative;
@@ -22,7 +24,7 @@
       text-align:center;
       color:black;
 
-      margin-bottom:50px;
+      margin-bottom:100px;
 
       img {
         position:relative;
@@ -44,7 +46,7 @@
       &.right {
         left:100%;
         transform:translateX(-100%);
-      }
+      }      
     }
   }
 }
