@@ -11,7 +11,8 @@
     padding-top:50px;
 
     /* Descriptive Text */
-    .text {
+    .desc {
+      
       position:relative;
       width:80%;
       margin:auto;          
@@ -22,6 +23,12 @@
       color:black;
 
       margin-bottom:50px;
+
+      img {
+        position:relative;
+        width:20vw;
+        display:inline;
+      }
     }
   }
 }

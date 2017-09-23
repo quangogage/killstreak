@@ -7,7 +7,7 @@
     height: 100%;
     padding-top: 50px;
     /* Descriptive Text */ }
-    .About .content .text {
+    .About .content .desc {
       position: relative;
       width: 80%;
       margin: auto;
@@ -16,6 +16,10 @@
       text-align: center;
       color: black;
       margin-bottom: 50px; }
+      .About .content .desc img {
+        position: relative;
+        width: 20vw;
+        display: inline; }
 
 @keyframes spinAnim {
   0% {

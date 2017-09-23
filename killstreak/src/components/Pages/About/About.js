@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../../../styles/css/About/About.css';
 import Header from './Header';
+import photo from '../../../images/tron/1.png';
 
 
 class About extends Component {
@@ -23,11 +24,11 @@ class About extends Component {
 
           <div className='background-image' />
 
-          <div className='text'>
+          <div className='desc'>
             I started Killstreak to help create a platform
             for underground artists such as myself to be
             heard and have a voice.<br />
-            <br />
+            <br />                       
             We are an independently owned brand based out
             of the pacific northwest providing a versatile
             set of products.<br />
