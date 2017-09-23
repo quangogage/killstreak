@@ -22,7 +22,8 @@ class About extends Component {
         {/* Content */}
         <div className='content'>
 
-          <div className='background-image' />
+          <div className='image-column' />
+          <div className='image-column right' />
 
           <div className='desc'>
             I started Killstreak to help create a platform
