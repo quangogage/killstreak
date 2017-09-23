@@ -30,11 +30,11 @@ class About extends Component {
             for underground artists such as myself to be
             heard and have a voice.<br />
             <br />                       
+            <img src={photo} className='photo' />
             We are an independently owned brand based out
             of the pacific northwest providing a versatile
             set of products.<br />
-            <br />
-            <img src={photo} className='photo' />
+            <br />            
             By incorporating every day life into my work,
             I try to focus on capturing the smaller things
             in life that people tend to pass up by bringing
