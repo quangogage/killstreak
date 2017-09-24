@@ -33,7 +33,7 @@ class About extends Component {
 
     for(var i=0;i<amount;i++) {
       var imageIndex=Math.floor(gageMath.getRandom(0,splatters.length-1));
-      var size=gageMath.getRandom(75,225);      
+      var size=gageMath.getRandom(200,225);      
       var x=gageMath.getRandom(0,window.innerWidth-size);
       var y=gageMath.getRandom(0,window.innerHeight-size);      
       var rotation=gageMath.getRandom(-360,360);
