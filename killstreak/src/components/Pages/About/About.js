@@ -1,9 +1,43 @@
 import React, { Component } from 'react';
+import gageMath from '../../../gagelib/Math';
+import $ from 'jquery';
 import '../../../styles/css/About/About.css';
 import logo from '../../../images/logo/simple white.png';
 
 
 class About extends Component {
+
+  componentDidMount() {
+    this.splat();
+  }
+
+  // Generates someblood splatters
+  splat() {
+    var splatters=[
+      require('../../../images/splatters/thin/1.png'),
+      require('../../../images/splatters/thin/2.png')
+    ]
+    var amount=gageMath.getRandom(2,4);
+
+    for(var i=0;i<amount;i++) {
+      var imageIndex=Math.floor(gageMath.getRandom(0,splatters.length-1));
+      var size=gageMath.getRandom(75,225);      
+      var x=gageMath.getRandom(0,window.innerWidth-size);
+      var y=gageMath.getRandom(0,window.innerHeight-size);      
+      var rotation=gageMath.getRandom(-360,360);
+      var splat=$(`<img class='splatter' src=${splatters[imageIndex]}>`)                  
+      splat.css({
+        left:x+'px',
+        top:y+'px',
+        transform:`rotate(${rotation}deg)`,
+        width:size+'px'
+      })
+      console.log(splat);
+      // Add to DOM
+      $('.About').append(splat);
+    }
+  }
+
   render() {
 
     // Don't render if this page isn't
