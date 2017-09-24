@@ -24,7 +24,6 @@ class Home extends Component {
     // Check for new load
     if (nextProps.currentPage==='Home' || nextProps.currentPage==='') {
       if (nextProps.currentPage!==this.props.currentPage) {
-        console.log('setting up...');
         setTimeout(function() {
           this.splat();
         }.bind(this),100)        
