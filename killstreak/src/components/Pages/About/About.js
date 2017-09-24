@@ -32,7 +32,6 @@ class About extends Component {
         transform:`rotate(${rotation}deg)`,
         width:size+'px'
       })
-      console.log(splat);
       // Add to DOM
       $('.About').append(splat);
     }
