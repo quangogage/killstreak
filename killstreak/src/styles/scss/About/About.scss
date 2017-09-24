@@ -45,4 +45,11 @@
     padding-bottom:100px;
   }
 
+  /* Blood Splatter */
+  .splatter {
+    position:absolute;
+    z-index:-1;
+    user-select:none;
+  }
+
 }
