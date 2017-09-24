@@ -1,5 +1,6 @@
 .About {
   background: red;
+  overflow-x: hidden;
   /* Blood Splatter */ }
   .About .header {
     position: relative;
