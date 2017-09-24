@@ -84,7 +84,8 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background: white; }
+    background: white;
+    z-index: 10; }
   .Home .splatter {
     position: absolute;
     z-index: -1;
