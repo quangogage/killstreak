@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 
 class Form extends Component {
   constructor(props) {
@@ -8,6 +9,9 @@ class Form extends Component {
       email:'',
       body:''
     }
+
+    this.validateEmail=this.validateEmail.bind(this);
+    this.sendEmail=this.sendEmail.bind(this);
   }
 
   // Handling email input
@@ -22,6 +26,41 @@ class Form extends Component {
     this.setState({
       body:e.target.value
     })
+  }
+
+  // Validate email field
+  validateEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+  }
+
+  // Send the message
+  sendEmail() {
+    var isEmailValid=this.validateEmail(this.state.email);
+
+    if (isEmailValid) { 
+
+      // Send it to back-end
+      $.ajax({
+        type: 'POST',
+        url: '/text',
+        data: { q:this.state.body, e:this.state.email },
+        dataType: 'json',
+        success: function (response) {
+          // console.log('it worked!');
+        },
+        error: function (xhr, status, error) {
+          var err = eval("(" + xhr.responseText + ")");
+          alert(err.Message);
+        }
+      })
+
+      // Clear the fields
+      this.setState({email:'',body:''})
+      
+    } else {
+      alert('Invalid email address');
+    }
   }
 
   render() {
@@ -43,7 +82,7 @@ class Form extends Component {
           placeholder="Your Message."
         />
 
-        <div className='submit-button'>
+        <div className='submit-button' onClick={this.sendEmail}>
           <div className='text'>Send <div className='die'>9</div></div>
         </div>
 
