@@ -24,9 +24,21 @@ class Success extends Component {
   open() {
     var contactPage=$('.Contact');
     var container=$('.Success');
+    var content=$('.Success .content');
 
     // Disable scrolling on contact page
     contactPage.addClass('noscroll');
+
+    // Fade in container
+    container.css({display:'block'}); // Must set this before any sort of transition can happen.
+    setTimeout(function() {
+      container.addClass('shown');
+    },50)
+
+    // Content
+    setTimeout(function() {
+      content.addClass('shown');
+    },250)
   }
 
   render() {
