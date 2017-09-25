@@ -35,3 +35,8 @@ body {
 /* Chrome input blue outlining */
 input:focus{outline:none}
 textarea:focus{outline:none}
+
+/* Disable Scrolling */
+.noscroll {
+    overflow-y:hidden;
+}

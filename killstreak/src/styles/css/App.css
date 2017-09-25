@@ -1,47 +1,36 @@
 @font-face {
   font-family: pixel;
   src: url("../../fonts/pixel.ttf"); }
-
 @font-face {
   font-family: gothic;
   src: url("../../fonts/gothic.ttf"); }
-
 @font-face {
   font-family: bubble;
   src: url("../../fonts/bubble.ttf"); }
-
 @font-face {
   font-family: guns;
   src: url("../../fonts/guns.ttf"); }
-
 @font-face {
   font-family: hunt;
   src: url("../../fonts/hunt.ttf"); }
-
 @font-face {
   font-family: napo;
   src: url("../../fonts/napo.ttf"); }
-
 @font-face {
   font-family: arvin;
   src: url("../../fonts/arvin.ttf"); }
-
 @font-face {
   font-family: bloodblocks;
   src: url("../../fonts/bloodblocks.ttf"); }
-
 @font-face {
   font-family: death;
   src: url("../../fonts/death.ttf"); }
-
 @font-face {
   font-family: mexcellent2d;
   src: url("../../fonts/mexcellent2d.ttf"); }
-
 @font-face {
   font-family: mexcellent3d;
   src: url("../../fonts/mexcellent3d.ttf"); }
-
 /* Pages */
 .page {
   position: absolute;
@@ -62,3 +51,9 @@ input:focus {
 
 textarea:focus {
   outline: none; }
+
+/* Disable Scrolling */
+.noscroll {
+  overflow-y: hidden; }
+
+/*# sourceMappingURL=App.css.map */
