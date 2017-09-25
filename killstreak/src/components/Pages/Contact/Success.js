@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 import '../../../styles/css/Contact/Success.css';
 
 class Success extends Component {
@@ -8,6 +9,24 @@ class Success extends Component {
     this.state={
       isOpen:props.isOpen
     }
+  }
+
+  // Checking if it's getting closed or opened
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.isOpen && !this.props.isOpen) {
+      this.open();
+    } else if (!nextProps.isOpen && this.props.isOpen) {
+      // Close
+    }
+  }
+
+  // Open 'er up.
+  open() {
+    var contactPage=$('.Contact');
+    var container=$('.Success');
+
+    // Disable scrolling on contact page
+    contactPage.addClass('noscroll');
   }
 
   render() {

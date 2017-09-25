@@ -18,6 +18,12 @@ class Contact extends Component {
     this.state={
       promptIsOpen:false
     }
+
+    this.togglePrompt=this.togglePrompt.bind(this);
+
+    setTimeout(function() {
+      this.togglePrompt();
+    }.bind(this),500)
   }
 
 
