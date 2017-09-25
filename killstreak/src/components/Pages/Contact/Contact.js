@@ -5,6 +5,11 @@ import Title from './Title';
 import Form from './Form';
 import Success from './Success';
 
+/*
+  Notes:
+    - Text field information and values are
+      stored in the "Form" component.
+*/
 
 class Contact extends Component {  
   constructor(props) {
