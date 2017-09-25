@@ -1,6 +1,6 @@
 .Success {
   position: fixed;
-  display: block;
+  display: none;
   top: 0;
   left: 0;
   width: 100vw;
@@ -17,7 +17,8 @@
     .Success .content .die {
       font-family: death;
       font-size: 25vw;
-      color: white; }
+      color: white;
+      text-shadow: 0px 0px 10px RGBA(255, 0, 0, 0.8); }
     .Success .content .text {
       color: red;
       font-size: 4vw;

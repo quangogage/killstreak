@@ -6,7 +6,23 @@ import Form from './Form';
 import Success from './Success';
 
 
-class Contact extends Component {
+class Contact extends Component {  
+  constructor(props) {
+    super(props);
+
+    this.state={
+      promptIsOpen:false
+    }
+  }
+
+
+  // Open/Close successful message prompt
+  togglePrompt(state) {
+    var newState=state || !this.state.promptIsOpen;
+    this.setState({
+      promptIsOpen:newState
+    })
+  }
 
   render() {
 
@@ -27,7 +43,7 @@ class Contact extends Component {
         <Form />
         
         {/* Successful Send */}
-        <Success />
+        <Success isOpen={this.state.promptIsOpen} />
       </div>
     );
   }
