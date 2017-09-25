@@ -47,17 +47,17 @@ class Form extends Component {
         data: { q:this.state.body, e:this.state.email },
         dataType: 'json',
         success: function (response) {
-          // console.log('it worked!');
+          
+          // Clear the fields
+          this.setState({email:'',body:''})          
+
         },
         error: function (xhr, status, error) {
           var err = eval("(" + xhr.responseText + ")");
           alert(err.Message);
         }
-      })
+      })      
 
-      // Clear the fields
-      this.setState({email:'',body:''})
-      
     } else {
       alert('Invalid email address');
     }

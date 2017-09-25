@@ -3,6 +3,7 @@ import '../../../styles/css/Contact/Contact.css';
 
 import Title from './Title';
 import Form from './Form';
+import Success from './Success';
 
 
 class Contact extends Component {
@@ -25,6 +26,8 @@ class Contact extends Component {
         {/* Form (text fields, etc) */}
         <Form />
         
+        {/* Successful Send */}
+        <Success />
       </div>
     );
   }
