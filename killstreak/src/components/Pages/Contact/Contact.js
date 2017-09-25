@@ -14,7 +14,10 @@ class Contact extends Component {
 
     return (
       <div className="Contact page">
-        
+      
+        <div className='title-container'>
+          <div className='text'>Contact Us</div>
+        </div>
       </div>
     );
   }
