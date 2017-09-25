@@ -14,7 +14,7 @@ class Contact extends Component {
 
     return (
       <div className="Contact page">
-        what is up.
+        
       </div>
     );
   }
