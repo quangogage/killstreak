@@ -1,6 +1,7 @@
 
 
 .Gallery {
+  overflow-x:hidden;
 
   .Header {
     position:relative;
@@ -8,7 +9,7 @@
     left:0;
     width:100%;
 
-    .title-container {      
+    .title-container {            
       width:100%;
       display:flex;
       flex-direction:column;
