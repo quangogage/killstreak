@@ -28,6 +28,10 @@ class Form extends Component {
           placeholder="Your Email Address"
         />
 
+        <textarea
+          value={this.state.body}
+        />
+
       </div>
     );
   }
