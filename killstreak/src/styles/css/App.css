@@ -30,6 +30,10 @@
   font-family: bloodblocks;
   src: url("../../fonts/bloodblocks.ttf"); }
 
+@font-face {
+  font-family: death;
+  src: url("../../fonts/death.ttf"); }
+
 /* Pages */
 .page {
   position: absolute;
