@@ -53,19 +53,23 @@
       margin:auto;
       margin-bottom:250px;
 
-      width:10vw;
+      width:20vw;
       height:3.5vw;
       background:red;
 
+      transition:0.2s;
+
       .text {
         position:relative;
-        font-family:pixel;
+        font-family:gothic;
         font-size:2vw;
         color:white;        
 
         text-align:center;
         top:50%;
         transform:translateY(-50%);
+
+        transition:inherit;
 
         .die {
           display:inline;
@@ -75,6 +79,10 @@
       
       &:hover {
         cursor:pointer;
+        background:black;
+        .text {
+          color:red;
+        }
       }
     }
 

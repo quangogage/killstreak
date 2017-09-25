@@ -33,22 +33,27 @@
       display: block;
       margin: auto;
       margin-bottom: 250px;
-      width: 10vw;
+      width: 20vw;
       height: 3.5vw;
-      background: red; }
+      background: red;
+      transition: 0.2s; }
       .Contact .Form .submit-button .text {
         position: relative;
-        font-family: pixel;
+        font-family: gothic;
         font-size: 2vw;
         color: white;
         text-align: center;
         top: 50%;
-        transform: translateY(-50%); }
+        transform: translateY(-50%);
+        transition: inherit; }
         .Contact .Form .submit-button .text .die {
           display: inline;
           font-family: death; }
       .Contact .Form .submit-button:hover {
-        cursor: pointer; }
+        cursor: pointer;
+        background: black; }
+        .Contact .Form .submit-button:hover .text {
+          color: red; }
     .Contact .Form input {
       height: 40px; }
     .Contact .Form textarea {
