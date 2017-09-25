@@ -17,7 +17,7 @@
     .Success .content .die {
       font-family: death;
       font-size: 25vw;
-      color: red; }
+      color: white; }
     .Success .content .text {
       color: red;
       font-size: 4vw;
@@ -54,3 +54,5 @@
         font-size: 5vw;
         padding-top: 0.5vw;
         transition: 0.2s; }
+
+/*# sourceMappingURL=Success.css.map */

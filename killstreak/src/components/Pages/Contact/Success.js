@@ -2,9 +2,17 @@ import React, { Component } from 'react';
 import '../../../styles/css/Contact/Success.css';
 
 class Success extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state={
+      isOpen:props.isOpen
+    }
+  }
+
   render() {
     return (
-      <div className={"Success" + (this.props.isOpen ? "" : " hidden")}>
+      <div className="Success">
 
         <div className='content'>
           <div className='die'>ú</div>
