@@ -51,7 +51,9 @@ class Contact extends Component {
         <Title />       
 
         {/* Form (text fields, etc) */}
-        <Form />
+        <Form 
+        open={() => this.togglePrompt(true)}
+        />
         
         {/* Successful Send */}
         <Success 

@@ -60,9 +60,11 @@ class Success extends Component {
     // Hide container
     setTimeout(function() {      
       container.removeClass('shown');
-      container.on('transitionend',function() {
+      setTimeout(function() {
+        // Hide skull
+        skull.removeClass('shown');
         container.css({display:'none'});
-      })
+      },500)
     },1500)
   }
 

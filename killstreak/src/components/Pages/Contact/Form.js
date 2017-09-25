@@ -82,7 +82,7 @@ class Form extends Component {
           placeholder="Your Message."
         />
 
-        <div className='submit-button' onClick={this.sendEmail}>
+        <div className='submit-button' onClick={this.props.open}>
           <div className='text'>Send <div className='die'>9</div></div>
         </div>
 
