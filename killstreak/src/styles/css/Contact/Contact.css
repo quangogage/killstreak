@@ -17,14 +17,18 @@
       max-width: 18%; }
   .Contact .Form {
     padding-top: 50px; }
-    .Contact .Form input {
-      display: block;
-      width: 80%;
-      height: 40px;
-      margin: auto;
-      border: 1px solid #C2C2C2;
-      border-radius: 5px;
+    .Contact .Form .input-text {
       font-family: pixel;
       font-size: 30px;
       padding: 10px 20px;
       color: black; }
+    .Contact .Form .field {
+      display: block;
+      width: 80%;
+      margin: auto;
+      border: 1px solid #C2C2C2;
+      border-radius: 5px; }
+    .Contact .Form input {
+      height: 40px; }
+    .Contact .Form textarea {
+      resize: none; }

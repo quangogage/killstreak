@@ -17,6 +17,13 @@ class Form extends Component {
     })
   }
 
+  // Handling body input
+  handleBody(e) {
+    this.setState({
+      body:e.target.value
+    })
+  }
+
   render() {
     return (
       <div className="Form">
@@ -26,10 +33,13 @@ class Form extends Component {
           value={this.state.email} 
           onChange={(e) => this.handleEmail(e)} 
           placeholder="Your Email Address"
+          className='field input-text'
         />
 
         <textarea
           value={this.state.body}
+          onChange={(e) => this.handleBody(e)}
+          className='field input-text'
         />
 
       </div>

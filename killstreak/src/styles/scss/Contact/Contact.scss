@@ -29,19 +29,29 @@
   /* Form Stuff */
   .Form {
     padding-top:50px;
-    input {
-      display:block;
-      width:80%;
-      height:40px;
-      margin:auto;
 
-      border:1px solid #C2C2C2;
-      border-radius:5px;
-
+    .input-text {
       font-family:pixel;
       font-size:30px;
       padding:10px 20px;
       color:black;
     }
-  }
+
+    .field {
+      display:block;
+      width:80%;      
+      margin:auto;
+
+      border:1px solid #C2C2C2;
+      border-radius:5px;
+      
+    }
+
+    input {
+      height:40px;
+    }
+    textarea {
+      resize:none;
+    }
+  }  
 }
