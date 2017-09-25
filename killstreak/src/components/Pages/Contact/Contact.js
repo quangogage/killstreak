@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import underline from '../../../images/misc/blood underline.png';
 import '../../../styles/css/Contact/Contact.css';
+
+import Title from './Title';
+import Form from './Form';
 
 
 class Contact extends Component {
@@ -13,15 +15,15 @@ class Contact extends Component {
       return false;
     }
 
-
+    
     return (
-      <div className="Contact page">
-      
-        <div className='title-container'>
-          <div className='death'>c</div>
-          <div className='text'>Contact Us</div>
-          <img src={underline} alt='' />
-        </div>
+      <div className="Contact page">     
+
+        {/* Page Title */}
+        <Title />       
+
+        {/* Form (text fields, etc) */}
+        <Form />
       </div>
     );
   }
