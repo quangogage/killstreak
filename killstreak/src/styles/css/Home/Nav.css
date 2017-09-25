@@ -12,6 +12,7 @@
     font-size: 2vw;
     padding: 10px 30px;
     text-align: center;
+    user-select: none;
     /* Hover Content */ }
     .Nav .Item .text {
       color: black; }
@@ -36,3 +37,5 @@
       top: 0;
       height: 100%;
       padding: 1px 1px; }
+
+/*# sourceMappingURL=Nav.css.map */
