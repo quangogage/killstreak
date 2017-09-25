@@ -56,3 +56,6 @@ body {
   margin: 0; }
 
 /* Animation Mixin */
+/* Chrome input blue outlining */
+input:focus {
+  outline: none; }

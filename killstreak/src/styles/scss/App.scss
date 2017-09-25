@@ -31,3 +31,6 @@ body {
       @content;
   }
 }
+
+/* Chrome input blue outlining */
+input:focus{outline:none}
