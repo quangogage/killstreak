@@ -2,6 +2,7 @@
 
 .Contact {
   
+  /* Header Stuff */
   .title-container {
     text-align:center;
 
@@ -24,4 +25,23 @@
       max-width:18%;
     }
   }  
+
+  /* Form Stuff */
+  .Form {
+    padding-top:50px;
+    input {
+      display:block;
+      width:80%;
+      height:40px;
+      margin:auto;
+
+      border:1px solid #BBBBBB;
+      border-radius:5px;
+
+      font-family:pixel;
+      font-size:35px;
+      padding:10px 20px;
+      color:red;
+    }
+  }
 }
