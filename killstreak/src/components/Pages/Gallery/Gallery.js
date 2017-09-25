@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../../../styles/css/Gallery/Gallery.css';
+import Header from './Header';
 
 
 class Gallery extends Component {
@@ -13,7 +14,10 @@ class Gallery extends Component {
 
     return (
       <div className="Gallery page">
-        asdf
+
+        {/* Header */}
+        <Header />
+        
       </div>
     );
   }
