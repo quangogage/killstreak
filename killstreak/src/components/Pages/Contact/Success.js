@@ -16,7 +16,7 @@ class Success extends Component {
     if (nextProps.isOpen && !this.props.isOpen) {
       this.open();
     } else if (!nextProps.isOpen && this.props.isOpen) {
-      // Close
+      this.close();
     }
   }
 
@@ -41,6 +41,14 @@ class Success extends Component {
     },250)
   }
 
+  // Shut it down!!
+  close() {
+    var contactPage=$('.Contact');
+
+    //Enable scrolling on contact page
+    contactPage.removeClass('noscroll');
+  }
+
   render() {
     return (
       <div className="Success">
@@ -49,7 +57,7 @@ class Success extends Component {
           <div className='die'>ú</div>
           <div className='text'>Your message has been sent.</div>
 
-          <div className='button'>Okay</div>
+          <div className='button' onClick={this.props.close}>Okay</div>
         </div>
 
       </div>

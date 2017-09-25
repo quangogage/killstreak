@@ -54,7 +54,10 @@ class Contact extends Component {
         <Form />
         
         {/* Successful Send */}
-        <Success isOpen={this.state.promptIsOpen} />
+        <Success 
+          isOpen={this.state.promptIsOpen} 
+          close={() => this.togglePrompt(false)}
+        />
       </div>
     );
   }
