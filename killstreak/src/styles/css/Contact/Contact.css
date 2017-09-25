@@ -31,4 +31,7 @@
     .Contact .Form input {
       height: 40px; }
     .Contact .Form textarea {
+      position: relative;
+      top: 50px;
+      height: 400px;
       resize: none; }

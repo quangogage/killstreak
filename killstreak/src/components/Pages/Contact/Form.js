@@ -32,7 +32,7 @@ class Form extends Component {
           type='text' 
           value={this.state.email} 
           onChange={(e) => this.handleEmail(e)} 
-          placeholder="Your Email Address"
+          placeholder="Your Email Address."
           className='field input-text'
         />
 
@@ -40,6 +40,7 @@ class Form extends Component {
           value={this.state.body}
           onChange={(e) => this.handleBody(e)}
           className='field input-text'
+          placeholder="Your Message."
         />
 
       </div>
