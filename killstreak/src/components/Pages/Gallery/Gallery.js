@@ -13,6 +13,7 @@ class Gallery extends Component {
 
     return (
       <div className="Gallery page">
+        asdf
       </div>
     );
   }
