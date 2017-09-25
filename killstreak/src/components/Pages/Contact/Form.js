@@ -21,7 +21,13 @@ class Form extends Component {
     return (
       <div className="Form">
 
-        <input type='text' value={this.state.email} onChange={(e) => this.handleEmail(e)}/>
+        <input 
+          type='text' 
+          value={this.state.email} 
+          onChange={(e) => this.handleEmail(e)} 
+          placeholder="Your Email Address"
+        />
+
       </div>
     );
   }
