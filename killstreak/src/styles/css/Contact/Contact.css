@@ -30,7 +30,25 @@
       border: 1px solid #C2C2C2;
       border-radius: 5px; }
     .Contact .Form .submit-button {
-      display: block; }
+      display: block;
+      margin: auto;
+      margin-bottom: 250px;
+      width: 175px;
+      height: 50px;
+      background: red; }
+      .Contact .Form .submit-button .text {
+        position: relative;
+        font-family: pixel;
+        font-size: 3vw;
+        color: white;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%); }
+        .Contact .Form .submit-button .text .die {
+          display: inline;
+          font-family: death; }
+      .Contact .Form .submit-button:hover {
+        cursor: pointer; }
     .Contact .Form input {
       height: 40px; }
     .Contact .Form textarea {

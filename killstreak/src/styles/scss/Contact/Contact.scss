@@ -50,6 +50,32 @@
 
     .submit-button {
       display:block;
+      margin:auto;
+      margin-bottom:250px;
+
+      width:175px;
+      height:50px;
+      background:red;
+
+      .text {
+        position:relative;
+        font-family:pixel;
+        font-size:3vw;
+        color:white;        
+
+        text-align:center;
+        top:50%;
+        transform:translateY(-50%);
+
+        .die {
+          display:inline;
+          font-family:death;
+        }
+      }  
+      
+      &:hover {
+        cursor:pointer;
+      }
     }
 
     input {

@@ -43,7 +43,9 @@ class Form extends Component {
           placeholder="Your Message."
         />
 
-        <div className='submit-button'>Send</div>
+        <div className='submit-button'>
+          <div className='text'>Send <div className='die'>9</div></div>
+        </div>
 
       </div>
     );
