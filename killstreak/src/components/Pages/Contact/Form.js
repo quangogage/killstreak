@@ -43,6 +43,8 @@ class Form extends Component {
           placeholder="Your Message."
         />
 
+        <div className='submit-button'>Send</div>
+
       </div>
     );
   }

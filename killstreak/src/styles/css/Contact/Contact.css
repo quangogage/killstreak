@@ -26,12 +26,13 @@
       display: block;
       width: 80%;
       margin: auto;
+      margin-bottom: 50px;
       border: 1px solid #C2C2C2;
       border-radius: 5px; }
+    .Contact .Form .submit-button {
+      display: block; }
     .Contact .Form input {
       height: 40px; }
     .Contact .Form textarea {
-      position: relative;
-      top: 50px;
       height: 400px;
       resize: none; }

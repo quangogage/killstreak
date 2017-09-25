@@ -40,19 +40,22 @@
     .field {
       display:block;
       width:80%;      
-      margin:auto;
+      margin:auto;    
+      margin-bottom:50px;  
 
       border:1px solid #C2C2C2;
-      border-radius:5px;
+      border-radius:5px;      
       
     }
 
+    .submit-button {
+      display:block;
+    }
+
     input {
-      height:40px;
+      height:40px;      
     }
     textarea {
-      position:relative;
-      top:50px;
       height:400px;
       resize:none;
     }
