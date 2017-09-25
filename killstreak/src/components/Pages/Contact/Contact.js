@@ -20,10 +20,6 @@ class Contact extends Component {
     }
 
     this.togglePrompt=this.togglePrompt.bind(this);
-
-    setTimeout(function() {
-      this.togglePrompt();
-    }.bind(this),500)
   }
 
 
