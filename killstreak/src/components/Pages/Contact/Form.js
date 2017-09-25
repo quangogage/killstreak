@@ -10,9 +10,18 @@ class Form extends Component {
     }
   }
 
+  // Handling email input
+  handleEmail(e) {
+    this.setState({
+      email:e.target.value
+    })
+  }
+
   render() {
     return (
       <div className="Form">
+
+        <input type='text' value={this.state.email} onChange={(e) => this.handleEmail(e)}/>
       </div>
     );
   }
