@@ -3,10 +3,18 @@
 .Contact {
   
   .title-container {
-    .text {
+    text-align:center;
+
+    .text { 
+      padding-top:100px;
+
       font-family:mexcellent3d;
       color:red;
       font-size:4.5vw;
+    }
+
+    img {
+      max-width:18%;
     }
   }
 }

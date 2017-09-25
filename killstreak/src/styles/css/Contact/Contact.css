@@ -1,4 +1,9 @@
-.Contact .title-container .text {
-  font-family: mexcellent3d;
-  color: red;
-  font-size: 4.5vw; }
+.Contact .title-container {
+  text-align: center; }
+  .Contact .title-container .text {
+    padding-top: 100px;
+    font-family: mexcellent3d;
+    color: red;
+    font-size: 4.5vw; }
+  .Contact .title-container img {
+    max-width: 18%; }

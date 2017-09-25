@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import underline from '../../../images/misc/blood underline.png';
 import '../../../styles/css/Contact/Contact.css';
 
 
@@ -17,6 +18,7 @@ class Contact extends Component {
       
         <div className='title-container'>
           <div className='text'>Contact Us</div>
+          <img src={underline} alt='' />
         </div>
       </div>
     );
