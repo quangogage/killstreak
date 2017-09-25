@@ -15,7 +15,7 @@ class Contact extends Component {
       return false;
     }
 
-    
+
     return (
       <div className="Contact page">     
 
@@ -24,6 +24,7 @@ class Contact extends Component {
 
         {/* Form (text fields, etc) */}
         <Form />
+        
       </div>
     );
   }
