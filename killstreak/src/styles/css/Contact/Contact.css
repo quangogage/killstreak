@@ -5,5 +5,10 @@
     font-family: mexcellent3d;
     color: red;
     font-size: 4.5vw; }
+  .Contact .title-container .death {
+    font-family: death;
+    color: red;
+    font-size: 25vw;
+    margin-bottom: -13vw; }
   .Contact .title-container img {
     max-width: 18%; }

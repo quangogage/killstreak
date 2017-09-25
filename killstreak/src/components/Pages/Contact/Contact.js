@@ -4,6 +4,7 @@ import '../../../styles/css/Contact/Contact.css';
 
 
 class Contact extends Component {
+
   render() {
 
     // Don't render if this page isn't
@@ -17,6 +18,7 @@ class Contact extends Component {
       <div className="Contact page">
       
         <div className='title-container'>
+          <div className='death'>c</div>
           <div className='text'>Contact Us</div>
           <img src={underline} alt='' />
         </div>
