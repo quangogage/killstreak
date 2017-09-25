@@ -44,9 +44,26 @@ class Success extends Component {
   // Shut it down!!
   close() {
     var contactPage=$('.Contact');
+    var skull=$('.Success .skull');
+    var container=$('.Success');
+    var content=$('.Success .content');
 
     //Enable scrolling on contact page
     contactPage.removeClass('noscroll');
+
+    // Show skull
+    skull.addClass('shown');
+
+    // Hide Content
+    content.removeClass('shown');
+
+    // Hide container
+    setTimeout(function() {      
+      container.removeClass('shown');
+      container.on('transitionend',function() {
+        container.css({display:'none'});
+      })
+    },1500)
   }
 
   render() {
@@ -57,8 +74,11 @@ class Success extends Component {
           <div className='die'>ú</div>
           <div className='text'>Your message has been sent.</div>
 
-          <div className='button' onClick={this.props.close}>Okay</div>
+          <div className='button' onClick={this.props.close}>Okay</div>          
+
         </div>
+
+        <div className='skull'>(</div>
 
       </div>
     );

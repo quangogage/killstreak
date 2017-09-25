@@ -95,4 +95,41 @@
       }
     }
   }
+
+  .skull {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+    opacity:0;    
+    
+    font-family:death;
+    font-size:10vw;
+    color:#6E6E6E;
+    z-index:2;
+    
+    transition:1s;        
+
+    &.shown {
+      opacity:1;
+
+      animation-name:skullAnim;
+      animation-duration:1.5s;
+      animation-fill-mode:forwards;
+      animation-delay:0.5s;
+      animation-timing-function: linear;
+      
+    }
+  }
+}
+
+@keyframes skullAnim {
+  0% {
+    color:#6E6E6E;
+    transform:translateX(-50%) translateY(-50%) scale(1);
+  }
+  100% {
+    color:#8A2E2E;
+    transform:translateX(-50%) translateY(-50%) scale(1.1);
+  }
 }
