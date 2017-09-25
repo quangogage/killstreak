@@ -59,7 +59,7 @@ class About extends Component {
     }
 
     return (
-      <div className="About">      
+      <div className="About page">      
 
         {/* Header */}
         <div className='header'>
