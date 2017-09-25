@@ -39,27 +39,28 @@ class Form extends Component {
     var isEmailValid=this.validateEmail(this.state.email);
 
     if (isEmailValid) { 
-
-      // Send it to back-end
+        
+      // Send it to back-end 
       $.ajax({
         type: 'POST',
         url: '/text',
         data: { q:this.state.body, e:this.state.email },
         dataType: 'json',
-        success: function (response) {
+        success: function (response) {                  
           
-          // Clear the fields
-          this.setState({email:'',body:''})          
-
         },
         error: function (xhr, status, error) {
           var err = eval("(" + xhr.responseText + ")");
           alert(err.Message);
         }
-      })      
+      }) 
+
+      // Assuming it goes through 100% of the time.
+      this.setState({email:'',body:''});   
+      this.props.triggerSuccess();
 
     } else {
-      alert('Invalid email address');
+      // If one or more of the fields is not valid
     }
   }
 
