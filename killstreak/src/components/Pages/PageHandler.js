@@ -73,7 +73,7 @@ class PageHandler extends Component {
   renderNav() {
     if (this.state.currentPage!=="Home" &&
         this.state.currentPage!=='') {
-        return <Nav />;
+        return <Nav pages={this.state.pages} currentPage={this.state.currentPage} />;
     }
   }
 
