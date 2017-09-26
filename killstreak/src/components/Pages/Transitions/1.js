@@ -32,7 +32,7 @@ function createOverlay() {
     top:'-100%',
     width:'100%',
     height:'100%',
-    zIndex:2,
+    zIndex:10,
     background:'RGB(255,0,0)',
     opacity:0,
     display:'flex',

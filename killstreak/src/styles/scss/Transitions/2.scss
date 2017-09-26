@@ -12,6 +12,7 @@
   animation-fill-mode:forwards;
   animation-delay:200;  
   overflow:hidden;
+  z-index:10;
 
   /* Each Half */
   .side {
