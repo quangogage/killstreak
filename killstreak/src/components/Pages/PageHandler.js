@@ -93,8 +93,9 @@ class PageHandler extends Component {
         <Contact
           currentPage={this.state.currentPage}
           pages={this.state.pages}
-        />
+        /> 
 
+        {/* Render nav (conditionally ;) */}
         {this.renderNav()}
       </div>
     );
