@@ -12,7 +12,8 @@
       font-family: death;
       color: red;
       font-size: 25vw;
-      margin-bottom: -13vw; }
+      margin-bottom: -13vw;
+      user-select: none; }
     .Contact .title-container img {
       max-width: 18%; }
   .Contact .Form {
