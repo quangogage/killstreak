@@ -4,6 +4,8 @@ import '../../../styles/css/Nav/Nav.css';
 class Nav extends Component {
 
   render() {
+    
+    /* All pages (except the one you're on!) */
     var items=this.props.pages.map((page,index) => {
       if (page!==this.props.currentPage) {
         return <div className='item' key={index}>
@@ -11,8 +13,9 @@ class Nav extends Component {
         </div>;
       }
     })
+
     return (
-      <div className="Nav">
+      <div className="Page-Nav">
         {items}
       </div>
     );
