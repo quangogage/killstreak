@@ -46,6 +46,10 @@
       border:1px solid #C2C2C2;
       border-radius:5px;      
       
+      transition: 0.5s;      
+      &::placeholder {
+        transition:0.5s;
+      }
     }
 
     .submit-button {
@@ -83,6 +87,14 @@
         .text {
           color:red;
         }
+      }
+    }
+    
+    .invalid {
+      border:1px solid red;
+      
+      &::placeholder {
+        color:red;
       }
     }
 

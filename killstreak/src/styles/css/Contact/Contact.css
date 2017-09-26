@@ -28,7 +28,10 @@
       margin: auto;
       margin-bottom: 50px;
       border: 1px solid #C2C2C2;
-      border-radius: 5px; }
+      border-radius: 5px;
+      transition: 0.5s; }
+      .Contact .Form .field::placeholder {
+        transition: 0.5s; }
     .Contact .Form .submit-button {
       display: block;
       margin: auto;
@@ -54,6 +57,10 @@
         background: black; }
         .Contact .Form .submit-button:hover .text {
           color: red; }
+    .Contact .Form .invalid {
+      border: 1px solid red; }
+      .Contact .Form .invalid::placeholder {
+        color: red; }
     .Contact .Form input {
       height: 40px; }
     .Contact .Form textarea {

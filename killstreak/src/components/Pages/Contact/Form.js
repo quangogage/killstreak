@@ -16,16 +16,32 @@ class Form extends Component {
 
   // Handling email input
   handleEmail(e) {
+    var email=$('.email');
+
+    // Enter it
     this.setState({
       email:e.target.value
     })
+
+    // If was invalid, check if it no longer is
+    if (email.hasClass('invalid') && this.validateEmail(e.target.value)) {
+      email.removeClass('invalid');
+    }
   }
 
   // Handling body input
   handleBody(e) {
+    var body=$('.body');
+
+    // Enter it
     this.setState({
       body:e.target.value
     })
+
+    // If it was invalid, make it not
+    if (body.hasClass('invalid')) {
+      body.removeClass('invalid');
+    }
   }
 
   // Validate email field
@@ -34,11 +50,22 @@ class Form extends Component {
     return regex.test(email);
   }
 
+  // Validate body field
+  // Basically, check if it's empty.
+  validateBody(body) {
+    if (body==='') {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
   // Send the message
   sendEmail() {
     var isEmailValid=this.validateEmail(this.state.email);
+    var isBodyValid=this.validateBody(this.state.body);
 
-    if (isEmailValid) { 
+    if (isEmailValid && isBodyValid) { 
         
       // Send it to back-end 
       $.ajax({
@@ -61,6 +88,8 @@ class Form extends Component {
 
     } else {
       // If one or more of the fields is not valid
+      if (!isBodyValid) {$('.body').addClass('invalid');}      
+      if (!isEmailValid) {$('.email').addClass('invalid');}
     }
   }
 
@@ -73,14 +102,14 @@ class Form extends Component {
           value={this.state.email} 
           onChange={(e) => this.handleEmail(e)} 
           placeholder="Your Email Address."
-          className='field input-text'
+          className='email field input-text'          
         />
 
         <textarea
           value={this.state.body}
-          onChange={(e) => this.handleBody(e)}
-          className='field input-text'
+          onChange={(e) => this.handleBody(e)}          
           placeholder="Your Message."
+          className='body field input-text'
         />
 
         <div className='submit-button' onClick={this.sendEmail}>
