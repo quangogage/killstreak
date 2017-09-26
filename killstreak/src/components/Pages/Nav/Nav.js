@@ -15,7 +15,7 @@ class Nav extends Component {
     })
 
     return (
-      <div className="Page-Nav">
+      <div className="Page-Nav">        
         {items}
       </div>
     );

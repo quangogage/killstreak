@@ -1,6 +1,15 @@
 .Page-Nav {
   position: fixed;
   top: 0;
-  left: 0; }
+  left: 0;
+  background: red;
+  z-index: 6; }
+  .Page-Nav .item {
+    display: inline-block;
+    position: relative;
+    padding: 15px 30px;
+    font-family: pixel;
+    color: white;
+    z-index: 6; }
 
 /*# sourceMappingURL=Nav.css.map */
