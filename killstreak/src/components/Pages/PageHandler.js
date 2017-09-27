@@ -82,6 +82,10 @@ class PageHandler extends Component {
   render() {
     return (
       <div className="PageHandler">
+
+        {/* Render nav (conditionally ;) */}
+        {this.renderNav()}
+
         <Home
           currentPage={this.state.currentPage}
           pages={this.state.pages}
@@ -93,10 +97,7 @@ class PageHandler extends Component {
         <Contact
           currentPage={this.state.currentPage}
           pages={this.state.pages}
-        /> 
-
-        {/* Render nav (conditionally ;) */}
-        {this.renderNav()}
+        />         
       </div>
     );
   }

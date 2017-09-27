@@ -2,6 +2,7 @@
   /* Header Stuff */
   /* Form Stuff */ }
   .Contact .title-container {
+    position: relative;
     text-align: center; }
     .Contact .title-container .text {
       padding-top: 100px;

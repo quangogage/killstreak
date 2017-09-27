@@ -1,7 +1,12 @@
 .Page-Nav {
-  position: fixed;
+  position: relative;
+  display: flex;
   top: 0;
   left: 0;
-  z-index: 6; }
+  width: 50%;
+  margin: auto;
+  z-index: 6;
+  padding: 25px 5px;
+  justify-content: space-around; }
 
 /*# sourceMappingURL=Nav.css.map */
