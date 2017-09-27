@@ -24,15 +24,28 @@
       margin-bottom:5px;
 
       .text {
+        position:relative;
         font-family:paint;
         color:red;
         font-size:2vw;
         text-decoration:none;
-      }
 
-      &:hover {
-        cursor:pointer;
-      }
+        &:after {
+          content:'';
+          position:absolute;
+          top:50%;
+          left:50%;
+          width:0%;
+          height:20%;
+          background:red;
+          transition:0.2s;
+        }
+
+        &:hover {
+          cursor:pointer;
+          &:after {left:-10%;width:110%;}
+        }
+      }      
 
       .seperator {
         margin-left:1.5vw;

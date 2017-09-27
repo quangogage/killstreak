@@ -18,12 +18,25 @@
       margin-right: 1.5vw;
       margin-bottom: 5px; }
       .Page-Nav .item-container .item .text {
+        position: relative;
         font-family: paint;
         color: red;
         font-size: 2vw;
         text-decoration: none; }
-      .Page-Nav .item-container .item:hover {
-        cursor: pointer; }
+        .Page-Nav .item-container .item .text:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 0%;
+          height: 20%;
+          background: red;
+          transition: 0.2s; }
+        .Page-Nav .item-container .item .text:hover {
+          cursor: pointer; }
+          .Page-Nav .item-container .item .text:hover:after {
+            left: -10%;
+            width: 110%; }
       .Page-Nav .item-container .item .seperator {
         margin-left: 1.5vw;
         margin-right: 2.5vw;
