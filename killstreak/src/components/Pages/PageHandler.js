@@ -6,6 +6,7 @@ import gageMath from '../../gagelib/Math';
 import Home from './Home/Home';
 import About from './About/About';
 import Contact from './Contact/Contact';
+import Shop from './Shop/Shop';
 
 var transitionCount=2; // Update this whenever you add a new animation to `./Transitions`
 
@@ -82,6 +83,10 @@ class PageHandler extends Component {
           pages={this.state.pages}
         />
         <Contact
+          currentPage={this.state.currentPage}
+          pages={this.state.pages}
+        />         
+        <Shop
           currentPage={this.state.currentPage}
           pages={this.state.pages}
         />         
