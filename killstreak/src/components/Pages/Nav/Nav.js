@@ -11,17 +11,19 @@ class Nav extends Component {
 
     return (
       <div className="Page-Nav"> 
-        {
-          this.props.pages.map((page,index) => {     
-            if (page!==this.props.currentPage) {
-              return <div className='item-container'>          
-                <div className='item' key={index}>
-                  {page}
-                </div>
-              </div>;
-            }
-          })
-        }
+        <div className='item-container'>
+          {
+            this.props.pages.map((page,index) => {
+              if (page!==this.props.currentPage) {
+                return (
+                  <div className='item'>
+                    {page}
+                  </div>
+                );
+              }
+            })
+          }
+        </div>
       </div>
     );
   }

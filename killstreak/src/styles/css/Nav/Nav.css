@@ -1,10 +1,21 @@
 .Page-Nav {
   position: relative;
-  display: flex;
-  top: 0;
   left: 0;
-  width: 50%;
-  margin: auto;
-  z-index: 6; }
+  width: 100%;
+  z-index: 6;
+  background: white;
+  display: flex;
+  justify-content: flex-end; }
+  .Page-Nav .item-container {
+    display: flex;
+    position: relative;
+    margin-right: 50px; }
+    .Page-Nav .item-container .item {
+      margin-top: 50px;
+      margin-right: 50px;
+      margin-bottom: 50px;
+      font-family: paint;
+      color: red;
+      font-size: 30px; }
 
 /*# sourceMappingURL=Nav.css.map */

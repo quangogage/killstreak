@@ -1,11 +1,27 @@
 
 .Page-Nav {
   position:relative;
-  display:flex;  
-  top:0;
   left:0;
-  width:50%;
-  margin:auto;
+  width:100%;
   z-index:6;
+  background:white;
+  display:flex;
+  justify-content: flex-end;
 
+  .item-container {
+    display:flex;
+
+    position:relative;
+    margin-right:50px;    
+
+    .item {
+      margin-top:50px;
+      margin-right:50px;
+      margin-bottom:50px;
+
+      font-family:paint;
+      color:red;
+      font-size:30px;
+    }
+  }
 }

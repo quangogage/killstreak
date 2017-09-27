@@ -31,6 +31,9 @@
 @font-face {
   font-family: mexcellent3d;
   src: url("../../fonts/mexcellent3d.ttf"); }
+@font-face {
+  font-family: paint;
+  src: url("../../fonts/paint.otf"); }
 /* Pages */
 .page {
   top: 0;
