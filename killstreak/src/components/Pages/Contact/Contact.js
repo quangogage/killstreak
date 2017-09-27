@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import '../../../styles/css/Contact/Contact.css';
+import Nav from '../Nav/Nav';
 
 import Title from './Title';
 import Form from './Form';
 import Success from './Success';
+
 
 /*
   Notes:
@@ -42,6 +44,7 @@ class Contact extends Component {
 
     return (
       <div className="Contact page">     
+        <Nav currentPage={this.props.currentPage} pages={this.props.pages} />
 
         {/* Page Title */}
         <Title />       

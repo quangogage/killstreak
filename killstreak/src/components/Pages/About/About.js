@@ -3,6 +3,7 @@ import gageMath from '../../../gagelib/Math';
 import $ from 'jquery';
 import '../../../styles/css/About/About.css';
 import logo from '../../../images/logo/simple white.png';
+import Nav from '../Nav/Nav';
 
 
 class About extends Component {
@@ -59,7 +60,8 @@ class About extends Component {
     }
 
     return (
-      <div className="About page">      
+      <div className="About page">    
+        <Nav currentPage={this.props.currentPage} pages={this.props.pages} /> 
 
         {/* Header */}
         <div className='header'>

@@ -6,7 +6,6 @@ import gageMath from '../../gagelib/Math';
 import Home from './Home/Home';
 import About from './About/About';
 import Contact from './Contact/Contact';
-import Nav from './Nav/Nav';
 
 var transitionCount=2; // Update this whenever you add a new animation to `./Transitions`
 
@@ -25,7 +24,6 @@ class PageHandler extends Component {
     }  
     
     this.setPage=this.setPage.bind(this);
-    this.renderNav=this.renderNav.bind(this);
   }
 
   // Set initial page. This is for if you
@@ -69,22 +67,11 @@ class PageHandler extends Component {
     })
   }
 
-  // Render nav if you're NOT on the home page
-  renderNav() {
-    if (this.state.currentPage!=="Home" &&
-        this.state.currentPage!=='') {
-        return <Nav pages={this.state.pages} currentPage={this.state.currentPage} />;
-    }
-  }
-
 
   // required for react Component class extension
   render() {
     return (
-      <div className="PageHandler">
-
-        {/* Render nav (conditionally ;) */}
-        {this.renderNav()}
+      <div className="PageHandler">        
 
         <Home
           currentPage={this.state.currentPage}
