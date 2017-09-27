@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../../../styles/css/Nav/Nav.css';
+import underline from '../../../images/misc/blood underline.png';
 
 class Nav extends Component {
 
@@ -23,8 +24,9 @@ class Nav extends Component {
                 );
               }
             })
-          }
+          }          
         </div>
+        <img src={underline} alt='' />
       </div>
     );
   }

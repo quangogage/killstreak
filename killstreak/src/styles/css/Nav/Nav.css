@@ -5,7 +5,9 @@
   z-index: 6;
   background: white;
   display: flex;
-  justify-content: flex-end; }
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 20px; }
   .Page-Nav .item-container {
     display: flex;
     position: relative;
@@ -13,17 +15,20 @@
     .Page-Nav .item-container .item {
       display: flex;
       align-items: center;
-      margin-top: 50px;
-      margin-right: 50px;
-      margin-bottom: 50px;
+      margin-top: 3vw;
+      margin-right: 3vw;
+      margin-bottom: 5px;
       font-family: paint;
       color: red;
-      font-size: 30px; }
+      font-size: 2.5vw; }
       .Page-Nav .item-container .item .seperator {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 3vw;
+        margin-right: 3vw;
         transform: translateX(100%) translateY(15%);
-        font-family: death;
-        font-size: 30px; }
+        font-family: death; }
+  .Page-Nav img {
+    margin-right: 70px;
+    width: 30vw;
+    height: 35px; }
 
 /*# sourceMappingURL=Nav.css.map */
