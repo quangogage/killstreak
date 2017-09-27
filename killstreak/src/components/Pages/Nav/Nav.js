@@ -14,8 +14,11 @@ class Nav extends Component {
       }
     })
 
+    // White color theme
+    var theme=(this.props.currentPage==='About' ? 'white' : '')
+
     return (
-      <div className="Page-Nav">                
+      <div className={"Page-Nav" + theme}> 
         {items}
       </div>
     );
