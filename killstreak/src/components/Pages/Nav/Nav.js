@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../../../styles/css/Nav/Nav.css';
-import underline from '../../../images/misc/blood underline.png';
+import underline from '../../../images/misc/blood underline black.png';
 import { Link } from 'react-router-dom';
 
 class Nav extends Component {

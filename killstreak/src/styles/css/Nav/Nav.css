@@ -20,7 +20,7 @@
       .Page-Nav .item-container .item .text {
         position: relative;
         font-family: paint;
-        color: red;
+        color: black;
         font-size: 2vw;
         text-decoration: none; }
         .Page-Nav .item-container .item .text:after {
@@ -30,7 +30,7 @@
           left: 50%;
           width: 0%;
           height: 20%;
-          background: red;
+          background: black;
           transition: 0.2s; }
         .Page-Nav .item-container .item .text:hover {
           cursor: pointer; }
@@ -42,7 +42,7 @@
         margin-right: 2.5vw;
         transform: translateX(100%) translateY(15%);
         font-family: death;
-        color: red; }
+        color: black; }
   .Page-Nav img {
     margin-right: 25px;
     width: 20vw;
