@@ -2,6 +2,7 @@ const bodyParser=require('body-parser');
 const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
+let config=require('config');
 
 const app = express();
 
@@ -28,7 +29,7 @@ app.post('/text', function (req, res) {
   var options;
   options={
     from: `"Killstreak Contact" <${req.body.e}>`, // sender address
-    to: 'gage@quangoinc.com', // list of receivers
+    to: config.get('mailer.email'), // list of receivers
     subject: '[Contact Page Message]', // Subject line
     text: `From: ${req.body.e} <br /> <br /> ${req.body.q}`, // plaintext body
     html: `From: ${req.body.e} <br /> <br /> ${req.body.q}` // html body
