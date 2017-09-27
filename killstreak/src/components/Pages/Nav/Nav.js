@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../../../styles/css/Nav/Nav.css';
 import underline from '../../../images/misc/blood underline.png';
+import { Link } from 'react-router-dom';
 
 class Nav extends Component {
 
@@ -27,8 +28,8 @@ class Nav extends Component {
             renderedPages.map((page,index) => {
                 return (
                   <div className='item'>
-                    {page}
-                    {(index!==this.props.pages.length) ? <div className='seperator'>k</div> : <div />}
+                    <Link to={page} style={{textDecoration:'none'}}><div className='text'>{page}</div></Link>
+                    {(index!==renderedPages.length-1) ? <div className='seperator'>k</div> : <div />}
                   </div>
                 );
             })

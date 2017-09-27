@@ -7,27 +7,32 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-bottom: 20px; }
+  padding-bottom: 10px; }
   .Page-Nav .item-container {
     display: flex;
     position: relative;
-    margin-right: 50px; }
+    margin-right: 0px; }
     .Page-Nav .item-container .item {
       display: flex;
       align-items: center;
-      margin-top: 3vw;
-      margin-right: 3vw;
-      margin-bottom: 5px;
-      font-family: paint;
-      color: red;
-      font-size: 2.5vw; }
+      margin-top: 1.5vw;
+      margin-right: 1.5vw;
+      margin-bottom: 5px; }
+      .Page-Nav .item-container .item .text {
+        font-family: paint;
+        color: red;
+        font-size: 2vw;
+        text-decoration: none; }
+      .Page-Nav .item-container .item:hover {
+        cursor: pointer; }
       .Page-Nav .item-container .item .seperator {
-        margin-left: 3vw;
-        margin-right: 3vw;
+        margin-left: 1.5vw;
+        margin-right: 2.5vw;
         transform: translateX(100%) translateY(15%);
-        font-family: death; }
+        font-family: death;
+        color: red; }
   .Page-Nav img {
-    margin-right: 70px;
+    margin-right: 25px;
     width: 30vw;
     height: 35px; }
 
