@@ -6,8 +6,7 @@
   background: white;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  padding-bottom: 10px; }
+  align-items: flex-end; }
   .Page-Nav .item-container {
     display: flex;
     position: relative;
