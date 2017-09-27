@@ -18,6 +18,7 @@ class Nav extends Component {
                 return (
                   <div className='item'>
                     {page}
+                    {(this.props.pages[index+1]!==null && this.props.pages[index+1]!==this.props.currentPage) ? <div className='seperator'>k</div> : <div />}
                   </div>
                 );
               }

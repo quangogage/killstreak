@@ -15,6 +15,9 @@
     margin-right:50px;    
 
     .item {
+      display:flex;
+      align-items:center;
+
       margin-top:50px;
       margin-right:50px;
       margin-bottom:50px;
@@ -22,6 +25,15 @@
       font-family:paint;
       color:red;
       font-size:30px;
+
+      .seperator {
+        margin-left:50px;
+        margin-right:50px;        
+        transform:translateX(100%) translateY(15%);
+
+        font-family:death;
+        font-size:30px;
+      }
     }
   }
 }
