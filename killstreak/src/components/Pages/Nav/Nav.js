@@ -10,19 +10,27 @@ class Nav extends Component {
 
     // White color theme
 
+    var renderedPages=this.props.pages.filter((page,index) => {
+      if (page!==this.props.currentPage ) {
+        return true
+      } else {
+        return false;
+      }
+    })
+    console.log(renderedPages)
+    
+
     return (
       <div className="Page-Nav"> 
         <div className='item-container'>
           {
-            this.props.pages.map((page,index) => {
-              if (page!==this.props.currentPage) {
+            renderedPages.map((page,index) => {
                 return (
                   <div className='item'>
                     {page}
-                    {(this.props.pages[index+1]!==null && this.props.pages[index+1]!==this.props.currentPage) ? <div className='seperator'>k</div> : <div />}
+                    {(index!==this.props.pages.length) ? <div className='seperator'>k</div> : <div />}
                   </div>
                 );
-              }
             })
           }          
         </div>
