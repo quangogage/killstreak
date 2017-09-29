@@ -15,6 +15,11 @@ class Shop extends Component {
       <div className="Shop">
         <Nav pages={this.props.pages} currentPage={this.props.currentPage} />
         <Header />
+
+        {/* Products */}
+        <div className="product-bar">
+          <div className="title">Products</div>
+        </div>
       </div>
     );
   }

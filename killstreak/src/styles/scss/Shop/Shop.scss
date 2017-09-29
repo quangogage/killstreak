@@ -41,6 +41,22 @@ $logo-size: 15vw;
       }
     }
   }
+  .product-bar {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    border-bottom: 3px solid red;
+
+    .title {
+      margin-left: 50px;
+      margin-bottom: 10px;
+
+      font-family: paint;
+      font-size: 3vw;
+      color: red;
+    }
+  }
 }
 
 /* Logo Spinning Animation */
