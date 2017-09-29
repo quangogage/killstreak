@@ -16,6 +16,7 @@ class Products extends Component {
                 index={index}
                 name={product.name}
                 images={product.images}
+                price={product.price}
                 tags={product.tags}
               />
             );

@@ -7,12 +7,15 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     width: 100%; }
-    .Shop .Products .grid .cell {
-      flex: 1 1 33%;
-      padding: 20px 1px; }
-      .Shop .Products .grid .cell .thumbnail {
+    .Shop .Products .grid .ProductItem {
+      flex: 1 1 25%;
+      padding: 50px 20px; }
+      .Shop .Products .grid .ProductItem .thumbnail {
         width: 100%;
         height: 100%; }
+      .Shop .Products .grid .ProductItem .text {
+        font-family: pixel; }
 
 /*# sourceMappingURL=Products.css.map */

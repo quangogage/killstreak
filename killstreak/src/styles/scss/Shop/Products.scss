@@ -8,14 +8,20 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     width: 100%;
 
-    .cell {
-      flex: 1 1 33%;
-      padding: 20px 1px;
+    .ProductItem {
+      flex: 1 1 25%;
+      padding: 50px 20px;
+
       .thumbnail {
         width: 100%;
         height: 100%;
+      }
+
+      .text {
+        font-family: pixel;
       }
     }
   }

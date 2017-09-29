@@ -9,6 +9,7 @@ var list = [
       "/shirts/basic white/2.jpg",
       "/shirts/basic white/3.jpg"
     ],
+    price: 200,
     tags: ["shirt", "white"]
   },
   {
@@ -18,6 +19,7 @@ var list = [
       "/shirts/basic white/2.jpg",
       "/shirts/basic white/3.jpg"
     ],
+    price: 200,
     tags: ["shirt", "white"]
   },
   {
@@ -27,6 +29,7 @@ var list = [
       "/shirts/basic white/2.jpg",
       "/shirts/basic white/3.jpg"
     ],
+    price: 200,
     tags: ["shirt", "white"]
   },
 
@@ -40,6 +43,7 @@ var list = [
       "/pants/gangster pants/2.jpg",
       "/pants/gangster pants/3.jpg"
     ],
+    price: 200,
     tags: ["pants", "swaggy"]
   },
   {
@@ -49,6 +53,7 @@ var list = [
       "/pants/slacks/2.jpg",
       "/pants/slacks/3.jpg"
     ],
+    price: 200,
     tags: ["pants", "swaggy"]
   },
   {
@@ -66,6 +71,7 @@ var list = [
       "/accessories/matte black watch/1.jpg",
       "/accessories/matte black watch/2.jpg"
     ],
+    price: 200,
     tags: ["accessory", "watch", "black"]
   },
   {
@@ -74,6 +80,7 @@ var list = [
       "/accessories/steel watch/1.jpg",
       "/accessories/steel watch/2.jpg"
     ],
+    price: 200,
     tags: ["accessory", "watch", "black"]
   },
 
@@ -87,6 +94,7 @@ var list = [
       "/shoes/bitch mob 1s/2.jpg",
       "/shoes/bitch mob 1s/3.jpg"
     ],
+    price: 200,
     tags: ["shoes", "camo"]
   }
 ];
