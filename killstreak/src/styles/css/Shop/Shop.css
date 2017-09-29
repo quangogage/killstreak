@@ -10,7 +10,6 @@
     perspective: 1000px; }
     .Shop .Header .logo-container {
       position: relative;
-      margin-top: 50px;
       width: 15vw;
       height: 15vw;
       transform: rotateY(60deg);
