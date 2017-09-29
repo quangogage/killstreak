@@ -21,6 +21,9 @@ class Shop extends Component {
         <div className="product-bar">
           <div className="title">Products</div>
         </div>
+
+        {/* Products */}
+        <Products />
       </div>
     );
   }
