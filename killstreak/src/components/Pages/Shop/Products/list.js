@@ -43,21 +43,17 @@ var list = [
     tags: ["pants", "swaggy"]
   },
   {
-    name: "gangster pants",
+    name: "slacks",
     images: [
-      "/pants/gangster pants/1.jpg",
-      "/pants/gangster pants/2.jpg",
-      "/pants/gangster pants/3.jpg"
+      "/pants/slacks/1.jpg",
+      "/pants/slacks/2.jpg",
+      "/pants/slacks/3.jpg"
     ],
     tags: ["pants", "swaggy"]
   },
   {
     name: "swag",
-    images: [
-      "/pants/gangster pants/1.jpg",
-      "/pants/gangster pants/2.jpg",
-      "/pants/gangster pants/3.jpg"
-    ],
+    images: ["/pants/swag/1.jpg", "/pants/swag/2.jpg", "/pants/swag/3.jpg"],
     tags: ["pants", "swaggy"]
   },
 
