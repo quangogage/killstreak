@@ -3,6 +3,7 @@ import "../../../styles/css/Shop/Shop.css";
 
 import Nav from "../Nav/Nav";
 import Header from "./Header";
+import Products from "./Products/Products";
 
 class Shop extends Component {
   render() {
