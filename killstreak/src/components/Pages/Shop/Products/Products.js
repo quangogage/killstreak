@@ -8,17 +8,19 @@ class Products extends Component {
   render() {
     return (
       <div className="Products">
-        {list.map((product, index) => {
-          return (
-            <ProductItem
-              key={index}
-              index={index}
-              name={product.name}
-              images={product.images}
-              tags={product.tags}
-            />
-          );
-        })}
+        <div className="grid">
+          {list.map((product, index) => {
+            return (
+              <ProductItem
+                key={index}
+                index={index}
+                name={product.name}
+                images={product.images}
+                tags={product.tags}
+              />
+            );
+          })}
+        </div>
       </div>
     );
   }
