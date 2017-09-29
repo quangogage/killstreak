@@ -2,5 +2,12 @@
   position: relative;
   width: 90%;
   margin: auto; }
+  .Shop .Products .grid {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+    .Shop .Products .grid .cell {
+      flex: 0 0 33%; }
 
 /*# sourceMappingURL=Products.css.map */
