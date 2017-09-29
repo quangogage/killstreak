@@ -58,18 +58,20 @@ $logo-size: 15vw;
         text-align: center;
 
         font-family: mexcellent3d;
-        font-size: 3vw;
+        font-size: 4vw;
         color: red;
       }
       .death {
         display: inline-block;
         position: relative;
-        margin: 10px;
+        margin: 0px 27px;
 
         font-family: death;
-        font-size: 4vw;
+        font-size: 7vw;
+        color: red;
+        transform: translateY(10%);
         &.flipped {
-          transform: scaleX(-1);
+          transform: scaleX(-1) translateY(10%);
         }
       }
     }

@@ -6,7 +6,9 @@ import Nav from "../Nav/Nav";
 import Header from "./Header";
 import Products from "./Products/Products";
 
-var deathCharacters = ["@"];
+// Random list of characters to be placed
+// to the left and right of the grid header.
+var deathCharacters = ["K", "S", "t", "ò"];
 
 class Shop extends Component {
   render() {

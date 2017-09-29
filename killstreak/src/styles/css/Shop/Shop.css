@@ -44,16 +44,18 @@
         display: inline;
         text-align: center;
         font-family: mexcellent3d;
-        font-size: 3vw;
+        font-size: 4vw;
         color: red; }
       .Shop .grid-header .text-container .death {
         display: inline-block;
         position: relative;
-        margin: 10px;
+        margin: 0px 27px;
         font-family: death;
-        font-size: 4vw; }
+        font-size: 7vw;
+        color: red;
+        transform: translateY(10%); }
         .Shop .grid-header .text-container .death.flipped {
-          transform: scaleX(-1); }
+          transform: scaleX(-1) translateY(10%); }
 
 /* Logo Spinning Animation */
 @keyframes rotateLogo {
