@@ -1,5 +1,6 @@
 {
   "mailer": {
-    "email":"gage@quangoinc.com"
-  }
+    "email": "gage@quangoinc.com"
+  },
+  "port": 9000
 }
