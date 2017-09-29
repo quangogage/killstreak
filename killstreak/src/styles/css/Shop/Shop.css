@@ -29,18 +29,31 @@
           transform: translateZ(8px); }
         .Shop .Header .logo-container img:nth-child(4) {
           transform: translateZ(12px); }
-  .Shop .product-bar {
+  .Shop .grid-header {
     position: relative;
     width: 90%;
     margin: auto;
-    margin-top: 20px;
-    border-bottom: 3px solid red; }
-    .Shop .product-bar .title {
-      margin-left: 50px;
-      margin-bottom: 10px;
-      font-family: paint;
-      font-size: 3vw;
-      color: red; }
+    margin-top: 40px;
+    border-bottom: 3px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .Shop .grid-header .text-container {
+      margin: auto; }
+      .Shop .grid-header .text-container .title {
+        display: inline;
+        text-align: center;
+        font-family: mexcellent3d;
+        font-size: 3vw;
+        color: red; }
+      .Shop .grid-header .text-container .death {
+        display: inline-block;
+        position: relative;
+        margin: 10px;
+        font-family: death;
+        font-size: 4vw; }
+        .Shop .grid-header .text-container .death.flipped {
+          transform: scaleX(-1); }
 
 /* Logo Spinning Animation */
 @keyframes rotateLogo {

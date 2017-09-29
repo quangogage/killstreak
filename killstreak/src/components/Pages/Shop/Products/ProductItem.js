@@ -7,7 +7,7 @@ class ProductItem extends Component {
     return (
       <div className="ProductItem">
         <img src={thumbnail} className="thumbnail" alt="" />
-        <div className="text">
+        <div className="text-container">
           <div className="name">{this.props.name}</div>
           <div className="price">${this.props.price}</div>
         </div>

@@ -41,20 +41,37 @@ $logo-size: 15vw;
       }
     }
   }
-  .product-bar {
+  .grid-header {
     position: relative;
     width: 90%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 40px;
     border-bottom: 3px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .title {
-      margin-left: 50px;
-      margin-bottom: 10px;
+    .text-container {
+      margin: auto;
+      .title {
+        display: inline;
+        text-align: center;
 
-      font-family: paint;
-      font-size: 3vw;
-      color: red;
+        font-family: mexcellent3d;
+        font-size: 3vw;
+        color: red;
+      }
+      .death {
+        display: inline-block;
+        position: relative;
+        margin: 10px;
+
+        font-family: death;
+        font-size: 4vw;
+        &.flipped {
+          transform: scaleX(-1);
+        }
+      }
     }
   }
 }
