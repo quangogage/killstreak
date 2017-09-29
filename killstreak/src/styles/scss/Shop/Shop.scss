@@ -1,0 +1,55 @@
+$logo-size: 15vw;
+
+.Shop {
+  /* Header */
+  .Header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+
+    .logo-container {
+      position: relative;
+      margin-top: 50px;
+      width: $logo-size;
+      height: $logo-size;
+      transform: rotateY(60deg);
+      transform-style: preserve-3d;
+      animation-name: rotateLogo;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+
+      img {
+        position: absolute;
+        width: $logo-size;
+        height: $logo-size;
+        transform: translateZ(0);
+
+        &:nth-child(2) {
+          transform: translateZ(4px);
+        }
+        &:nth-child(3) {
+          transform: translateZ(8px);
+        }
+        &:nth-child(4) {
+          transform: translateZ(12px);
+        }
+      }
+    }
+  }
+}
+
+/* Logo Spinning Animation */
+@keyframes rotateLogo {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}

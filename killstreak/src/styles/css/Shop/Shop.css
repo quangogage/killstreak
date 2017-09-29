@@ -1,3 +1,41 @@
+.Shop {
+  /* Header */ }
+  .Shop .Header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    perspective: 1000px; }
+    .Shop .Header .logo-container {
+      position: relative;
+      margin-top: 50px;
+      width: 15vw;
+      height: 15vw;
+      transform: rotateY(60deg);
+      transform-style: preserve-3d;
+      animation-name: rotateLogo;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+      .Shop .Header .logo-container img {
+        position: absolute;
+        width: 15vw;
+        height: 15vw;
+        transform: translateZ(0); }
+        .Shop .Header .logo-container img:nth-child(2) {
+          transform: translateZ(4px); }
+        .Shop .Header .logo-container img:nth-child(3) {
+          transform: translateZ(8px); }
+        .Shop .Header .logo-container img:nth-child(4) {
+          transform: translateZ(12px); }
 
+/* Logo Spinning Animation */
+@keyframes rotateLogo {
+  0% {
+    transform: rotateY(0deg); }
+  100% {
+    transform: rotateY(360deg); } }
 
 /*# sourceMappingURL=Shop.css.map */
