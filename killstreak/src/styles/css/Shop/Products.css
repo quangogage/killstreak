@@ -23,7 +23,7 @@
         filter: grayscale(0%);
         transition: 0.25s; }
         .Shop .Products .grid .ProductItem .thumbnail:hover {
-          cursor: pointer;
+          cursor: url("../../../images/icons/middle-finger.png") 16 16, default !important;
           filter: grayscale(100%); }
       .Shop .Products .grid .ProductItem .text {
         margin-top: 10px;
