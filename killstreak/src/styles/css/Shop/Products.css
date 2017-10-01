@@ -1,3 +1,7 @@
+/*
+  This file is used to style the product grid
+  section of the shop page.
+*/
 .Shop .Products {
   position: relative;
   width: 90%;
@@ -15,8 +19,14 @@
       transition: 0.5s; }
       .Shop .Products .grid .ProductItem .thumbnail {
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        filter: grayscale(0%);
+        transition: 0.25s; }
+        .Shop .Products .grid .ProductItem .thumbnail:hover {
+          cursor: pointer;
+          filter: grayscale(100%); }
       .Shop .Products .grid .ProductItem .text {
+        margin-top: 10px;
         font-family: paint;
         text-align: center; }
         .Shop .Products .grid .ProductItem .text .name {

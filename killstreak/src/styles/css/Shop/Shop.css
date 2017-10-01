@@ -1,3 +1,8 @@
+/*
+  This stylesheet is for everything on the shop
+  page BESIDES the product grid ( refer to 
+  `./Products.scss` for that. )
+*/
 .Shop {
   /* Header */ }
   .Shop .Header {
