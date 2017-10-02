@@ -133,6 +133,7 @@ function animation(setPage, newPage) {
 
   // No scroll body
   $(".page").addClass("noscroll");
+  $("body").addClass("noscroll");
 
   // Fade overlay in
   overlay.animate(
@@ -144,6 +145,7 @@ function animation(setPage, newPage) {
     function() {
       // Change pages while they can't see it!
       setPage(newPage);
+      $(".page").addClass("noscroll");
 
       // BRRRrrrrRRrrrrrrrrrrrRRRRRAAAAAP🔫
       setTimeout(function() {
@@ -161,6 +163,7 @@ function animation(setPage, newPage) {
               container.empty();
               container.remove();
               $(".page").removeClass("noscroll");
+              $("body").removeClass("noscroll");
             }
           );
         }, duration);

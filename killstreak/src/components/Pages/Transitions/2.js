@@ -95,6 +95,7 @@ function animation(setPage, newPage) {
 
   // Disable page scrolling
   $(".page").addClass("noscroll");
+  $("body").addClass("noscroll");
 
   setTimeout(function() {
     createSlice();
@@ -119,6 +120,7 @@ function animation(setPage, newPage) {
 
     // Re-allow scrolling
     $(".page").removeClass("noscroll");
+    $("body").removeClass("noscroll");
   }, duration);
 }
 
