@@ -24,7 +24,7 @@
         font-size: 2vw;
         text-decoration: none; }
         .Page-Nav .item-container .item .text:after {
-          content: '';
+          content: "";
           position: absolute;
           top: 50%;
           left: 50%;
@@ -42,7 +42,8 @@
         margin-right: 2.5vw;
         transform: translateX(100%) translateY(15%);
         font-family: death;
-        color: black; }
+        color: #ff5151;
+        font-size: 2vw; }
   .Page-Nav img {
     margin-right: 25px;
     width: 20vw;
