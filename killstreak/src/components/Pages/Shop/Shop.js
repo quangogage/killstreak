@@ -14,7 +14,7 @@ class Shop extends Component {
   render() {
     // Don't render if this page isn't
     // the current one.
-    if (this.props.currentPage !== "Shop") {
+    if (this.props.currentPage.substring(0, 4) !== "Shop") {
       return false;
     }
 
