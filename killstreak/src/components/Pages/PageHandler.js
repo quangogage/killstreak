@@ -67,7 +67,7 @@ class PageHandler extends Component {
     if (newPath !== currentPath) {
       // Don't do any animation if you're just clicking an item in the shop
       if (
-        currentPath === "/Shop" &&
+        currentPath.substring(0, 5) === "/Shop" &&
         newPath.substring(0, 5) === "/Shop" &&
         newPath.length > 5
       ) {
