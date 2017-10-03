@@ -68,7 +68,7 @@ class PageHandler extends Component {
       // Don't do any animation if you're just clicking an item in the shop
       if (
         newPath.substring(0, 5) === "/Shop" &&
-        this.state.currentPage === "Shop"
+        this.state.currentPage.substring(0, 4) === "Shop"
       ) {
       } else {
         this.initTransition(nextProps.location.pathname.substr(1));
