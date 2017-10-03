@@ -3,12 +3,6 @@ import $ from "jquery";
 import gageMath from "../../gagelib/Math";
 import Pages from "./Pages";
 
-/* Pages */
-import Home from "./Home/Home";
-import About from "./About/About";
-import Contact from "./Contact/Contact";
-import Shop from "./Shop/Shop";
-
 var transitionCount = 2; // Update this whenever you add a new animation to `./Transitions`
 
 /*

@@ -12,12 +12,6 @@ var deathCharacters = ["K", "S", "t", "ò"];
 
 class Shop extends Component {
   render() {
-    // Don't render if this page isn't
-    // the current one.
-    if (this.props.currentPage.substring(0, 4) !== "Shop") {
-      return false;
-    }
-
     var deathChar =
       deathCharacters[
         Math.floor(gageMath.getRandom(0, deathCharacters.length - 1))
