@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import $ from "jquery";
 import gageMath from "../../gagelib/Math";
+import Pages from "./Pages";
 
 /* Pages */
 import Home from "./Home/Home";
@@ -103,13 +104,7 @@ class PageHandler extends Component {
   render() {
     return (
       <div className="PageHandler">
-        <Home currentPage={this.state.currentPage} pages={this.state.pages} />
-        <About currentPage={this.state.currentPage} pages={this.state.pages} />
-        <Contact
-          currentPage={this.state.currentPage}
-          pages={this.state.pages}
-        />
-        <Shop currentPage={this.state.currentPage} pages={this.state.pages} />
+        <Pages currentPage={this.state.currentPage} pages={this.state.pages} />
       </div>
     );
   }
