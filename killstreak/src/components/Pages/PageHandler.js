@@ -66,9 +66,14 @@ class PageHandler extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
+    var currentPath = this.props.location.pathname;
+    var newPath = nextProps.location.pathname;
     // Check for URL change
-    if (nextProps.location.pathname !== this.props.location.pathname) {
-      this.initTransition(nextProps.location.pathname.substr(1));
+    if (newPath !== currentPath) {
+      // Don't do any animation if you're just clicking an item in the shop
+      if (currentPath !== "/Shop" && newPath.substring(0, 5) !== "/Shop") {
+        this.initTransition(nextProps.location.pathname.substr(1));
+      }
     }
   }
 
