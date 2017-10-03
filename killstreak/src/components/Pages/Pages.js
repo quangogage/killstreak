@@ -44,7 +44,7 @@ class Pages extends Component {
     var renderedPage;
     pages.map((page, index) => {
       // Most Pages
-      if (this.props.currentPage === page.name)
+      if (this.props.currentPage.substring(0, page.name.length) === page.name)
         renderedPage = <div>{page.component}</div>;
     });
     if (this.props.currentPage === "") {
