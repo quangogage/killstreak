@@ -5,6 +5,7 @@ import gageMath from "../../../gagelib/Math";
 import Nav from "../Nav/Nav";
 import Header from "./Header";
 import Products from "./Products/Products";
+import Modal from "./Modal/Modal";
 
 // Random list of characters to be placed
 // to the left and right of the grid header.
@@ -32,6 +33,9 @@ class Shop extends Component {
 
         {/* Products */}
         <Products />
+
+        {/* Product Modal */}
+        <Modal />
       </div>
     );
   }
