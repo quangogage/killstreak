@@ -10,7 +10,7 @@ class Nav extends Component {
     // White color theme
 
     var renderedPages = this.props.pages.filter((page, index) => {
-      if (page !== this.props.currentPage) {
+      if (this.props.currentPage.indexOf(page) === -1) {
         return true;
       } else {
         return false;
@@ -24,7 +24,7 @@ class Nav extends Component {
             return (
               <div className="item">
                 <Link
-                  to={page}
+                  to={"/" + page}
                   replace={true}
                   style={{ textDecoration: "none" }}
                 >
