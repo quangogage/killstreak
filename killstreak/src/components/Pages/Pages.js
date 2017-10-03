@@ -50,6 +50,7 @@ class Pages extends Component {
     if (this.props.currentPage === "") {
       renderedPage = pages[0].component;
     }
+    console.log(this.props.currentPage);
     return <div className="Pages">{renderedPage}</div>;
   }
 }

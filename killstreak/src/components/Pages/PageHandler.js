@@ -66,7 +66,12 @@ class PageHandler extends Component {
     // Check for URL change
     if (newPath !== currentPath) {
       // Don't do any animation if you're just clicking an item in the shop
-      if (currentPath !== "/Shop" && newPath.substring(0, 5) !== "/Shop") {
+      if (
+        currentPath === "/Shop" &&
+        newPath.substring(0, 5) === "/Shop" &&
+        newPath.length > 5
+      ) {
+      } else {
         this.initTransition(nextProps.location.pathname.substr(1));
       }
     }
