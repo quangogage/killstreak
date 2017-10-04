@@ -58,14 +58,13 @@ class Modal extends Component {
       250,
       function() {
         container.css({ display: "none" });
-      }
+        this.images.resetImage();
+      }.bind(this)
     );
 
     // Reallow scrolling
     $("body").removeClass("noscroll");
     this.setState({ isOpen: false });
-
-    this.images.resetImage();
   }
 
   render() {
