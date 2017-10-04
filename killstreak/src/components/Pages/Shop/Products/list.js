@@ -14,7 +14,7 @@ var list = [
     notes: [
       "It's tight.",
       "Buy dis shit.",
-      "blah a;slkdfha;slkdfh easd fw efodfaib usdo we rw dfpaiu",
+      "blah blah blah blahblah blah blah blah blah blah blah",
       "a;skd asd  e f df we fw dfd fs dfsdif owueor "
     ]
   },
@@ -30,7 +30,7 @@ var list = [
     notes: [
       "It's tight.",
       "Buy dis shit.",
-      "blah a;slkdfha;slkdfh easd fw efodfaib usdo we rw dfpaiu",
+      "blah blah blah blahblah blah blah blah blah blah blah",
       "a;skd asd  e f df we fw dfd fs dfsdif owueor "
     ]
   },
@@ -46,7 +46,7 @@ var list = [
     notes: [
       "It's tight.",
       "Buy dis shit.",
-      "blah a;slkdfha;slkdfh easd fw efodfaib usdo we rw dfpaiu",
+      "blah blah blah blahblah blah blah blah blah blah blah",
       "a;skd asd  e f df we fw dfd fs dfsdif owueor "
     ]
   },
@@ -66,7 +66,7 @@ var list = [
     notes: [
       "It's tight.",
       "Buy dis shit.",
-      "blah a;slkdfha;slkdfh easd fw efodfaib usdo we rw dfpaiu",
+      "blah blah blah blahblah blah blah blah blah blah blah",
       "a;skd asd  e f df we fw dfd fs dfsdif owueor "
     ]
   },
@@ -82,7 +82,7 @@ var list = [
     notes: [
       "It's tight.",
       "Buy dis shit.",
-      "blah a;slkdfha;slkdfh easd fw efodfaib usdo we rw dfpaiu",
+      "blah blah blah blahblah blah blah blah blah blah blah",
       "a;skd asd  e f df we fw dfd fs dfsdif owueor "
     ]
   },
@@ -93,7 +93,7 @@ var list = [
     notes: [
       "It's tight.",
       "Buy dis shit.",
-      "blah a;slkdfha;slkdfh easd fw efodfaib usdo we rw dfpaiu",
+      "blah blah blah blahblah blah blah blah blah blah blah",
       "a;skd asd  e f df we fw dfd fs dfsdif owueor "
     ]
   },
@@ -112,7 +112,7 @@ var list = [
     notes: [
       "It's tight.",
       "Buy dis shit.",
-      "blah a;slkdfha;slkdfh easd fw efodfaib usdo we rw dfpaiu",
+      "blah blah blah blahblah blah blah blah blah blah blah",
       "a;skd asd  e f df we fw dfd fs dfsdif owueor "
     ]
   },
@@ -127,7 +127,7 @@ var list = [
     notes: [
       "It's tight.",
       "Buy dis shit.",
-      "blah a;slkdfha;slkdfh easd fw efodfaib usdo we rw dfpaiu",
+      "blah blah blah blahblah blah blah blah blah blah blah",
       "a;skd asd  e f df we fw dfd fs dfsdif owueor "
     ]
   },
@@ -147,7 +147,7 @@ var list = [
     notes: [
       "It's tight.",
       "Buy dis shit.",
-      "blah a;slkdfha;slkdfh easd fw efodfaib usdo we rw dfpaiu",
+      "blah blah blah blahblah blah blah blah blah blah blah",
       "a;skd asd  e f df we fw dfd fs dfsdif owueor "
     ]
   }
