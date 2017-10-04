@@ -36,7 +36,9 @@ class Shop extends Component {
   checkPath(path) {
     // If there is a custom item entered in the URL
     if (path.length > 6) {
-      var newProduct = this.getProduct(path.substring(6));
+      var productName = path.substring(6);
+      productName.replace("%20", "");
+      var newProduct = this.getProduct(productName);
 
       // If the modal isn't open
       if (this.state.modalIsOpen === false) {
@@ -57,7 +59,7 @@ class Shop extends Component {
   getProduct(name) {
     for (var i = 0; i < productList.length; i++) {
       var thisProduct = productList[i];
-      if (thisProduct.name === name) {
+      if (thisProduct.name.toLowerCase() === name.toLowerCase()) {
         return i;
       }
     }
