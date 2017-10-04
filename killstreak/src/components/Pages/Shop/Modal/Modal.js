@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../../../../styles/css/Shop/Modal.css";
 import productList from "../Products/list";
+import { Link } from "react-router-dom";
 import $ from "jquery";
 
 import Images from "./Images";
@@ -70,11 +71,15 @@ class Modal extends Component {
   render() {
     return (
       <div className="Modal">
-        <div className="background-overlay" onClick={this.props.close} />
+        <Link to="/Shop">
+          <div className="background-overlay" onClick={this.props.close} />
+        </Link>
         <div className="window">
-          <div className="close-button" onClick={this.props.close}>
-            &#10006;
-          </div>
+          <Link to="/Shop">
+            <div className="close-button" onClick={this.props.close}>
+              &#10006;
+            </div>
+          </Link>
           <div className="background-image" />
           <div className="section-container">
             <Images

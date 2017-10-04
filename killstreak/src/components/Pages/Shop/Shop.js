@@ -23,11 +23,48 @@ class Shop extends Component {
     };
 
     this.toggleModal = this.toggleModal.bind(this);
+    this.checkPath = this.checkPath.bind(this);
+  }
+
+  componentDidMount() {
+    this.checkPath(this.props.path);
+  }
+  componentWillReceiveProps(nextProps) {
+    this.checkPath(nextProps.path);
+  }
+
+  checkPath(path) {
+    // If there is a custom item entered in the URL
+    if (path.length > 6) {
+      var newProduct = this.getProduct(path.substring(6));
+
+      // If the modal isn't open
+      if (this.state.modalIsOpen === false) {
+        // Set new product/open modal.
+        this.selectProduct(newProduct);
+        this.toggleModal(true);
+      } else if (newProduct !== this.state.selectedProduct) {
+        this.selectProduct(newProduct);
+      }
+    } else {
+      if (this.state.modalIsOpen === true) {
+        this.toggleModal(false);
+      }
+    }
+  }
+
+  // Get a product index based on it's name
+  getProduct(name) {
+    for (var i = 0; i < productList.length; i++) {
+      var thisProduct = productList[i];
+      if (thisProduct.name === name) {
+        return i;
+      }
+    }
   }
 
   // Open/Close modal.
   toggleModal(state) {
-    console.log("state", state);
     var newState = state || !this.state.modalIsOpen;
     this.setState({ modalIsOpen: newState });
   }
