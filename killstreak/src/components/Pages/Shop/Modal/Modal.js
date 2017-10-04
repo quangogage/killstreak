@@ -9,7 +9,12 @@ class Modal extends Component {
   render() {
     return (
       <div className="Modal">
-        <div className="window" />
+        <div className="window">
+          <div className="section-container">
+            <Images list={this.props.images} />
+            <Details name={this.props.name} />
+          </div>
+        </div>
       </div>
     );
   }
