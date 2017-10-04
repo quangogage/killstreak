@@ -9,7 +9,12 @@ class ProductItem extends Component {
       <div className="ProductItem">
         {/* image */}
         <Link to={`/Shop/${this.props.name}`}>
-          <img src={thumbnail} className="thumbnail" alt="" />
+          <img
+            src={thumbnail}
+            className="thumbnail"
+            alt=""
+            onClick={() => this.props.handleClick(this.props.index)}
+          />
         </Link>
 
         {/* Sub-Text */}

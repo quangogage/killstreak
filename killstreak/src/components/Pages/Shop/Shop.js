@@ -16,9 +16,25 @@ class Shop extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedProduct: 1
+      selectedProduct: 1,
+      modalIsOpen: false
     };
+
+    this.toggleModal = this.toggleModal.bind(this);
   }
+
+  // Open/Close modal.
+  toggleModal(state) {
+    console.log("state", state);
+    var newState = state || !this.state.modalIsOpen;
+    this.setState({ modalIsOpen: newState });
+  }
+
+  // Change selected item
+  selectProduct(index) {
+    this.setState({ selectedProduct: index });
+  }
+
   render() {
     var deathChar =
       deathCharacters[
@@ -39,13 +55,18 @@ class Shop extends Component {
         </div>
 
         {/* Products */}
-        <Products />
+        <Products
+          openModal={() => this.toggleModal(true)}
+          selectProduct={index => this.selectProduct(index)}
+        />
 
         {/* Product Modal */}
         <Modal
           name={productList[this.state.selectedProduct].name}
           notes={productList[this.state.selectedProduct].notes}
           images={productList[this.state.selectedProduct].images}
+          isOpen={this.state.modalIsOpen}
+          close={() => this.toggleModal(false)}
         />
       </div>
     );
