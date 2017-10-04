@@ -62,15 +62,11 @@
             cursor: pointer; }
     .Modal .window .Details {
       display: flex;
-      justify-content: center;
-      /* Basic grid stuff */ }
-      .Modal .window .Details .full {
-        flex-basis: 100%; }
-      .Modal .window .Details .half {
-        flex-basis: 50%; }
+      flex-direction: column; }
       .Modal .window .Details .title {
         font-family: paint;
         font-size: 3vw;
-        margin-top: 50px; }
+        margin-top: 50px;
+        white-space: nowrap; }
 
 /*# sourceMappingURL=Modal.css.map */

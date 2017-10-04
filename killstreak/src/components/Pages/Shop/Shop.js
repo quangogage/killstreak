@@ -44,6 +44,7 @@ class Shop extends Component {
         {/* Product Modal */}
         <Modal
           name={productList[this.state.selectedProduct].name}
+          notes={productList[this.state.selectedProduct].notes}
           images={productList[this.state.selectedProduct].images}
         />
       </div>

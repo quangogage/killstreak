@@ -10,7 +10,13 @@ var list = [
       "/shirts/basic white/3.jpg"
     ],
     price: 200,
-    tags: ["shirt", "white"]
+    tags: ["shirt", "white"],
+    notes: [
+      "It's tight.",
+      "Buy dis shit.",
+      "blah a;slkdfha;slkdfh easd fw efodfaib usdo we rw dfpaiu",
+      "a;skd asd  e f df we fw dfd fs dfsdif owueor "
+    ]
   },
   {
     name: "white shirt",
@@ -20,7 +26,13 @@ var list = [
       "/shirts/basic white/3.jpg"
     ],
     price: 200,
-    tags: ["shirt", "white"]
+    tags: ["shirt", "white"],
+    notes: [
+      "It's tight.",
+      "Buy dis shit.",
+      "blah a;slkdfha;slkdfh easd fw efodfaib usdo we rw dfpaiu",
+      "a;skd asd  e f df we fw dfd fs dfsdif owueor "
+    ]
   },
   {
     name: "white shirt boy",
@@ -30,7 +42,13 @@ var list = [
       "/shirts/basic white/3.jpg"
     ],
     price: 200,
-    tags: ["shirt", "white"]
+    tags: ["shirt", "white"],
+    notes: [
+      "It's tight.",
+      "Buy dis shit.",
+      "blah a;slkdfha;slkdfh easd fw efodfaib usdo we rw dfpaiu",
+      "a;skd asd  e f df we fw dfd fs dfsdif owueor "
+    ]
   },
 
   /*********/
@@ -44,7 +62,13 @@ var list = [
       "/pants/gangster pants/3.jpg"
     ],
     price: 200,
-    tags: ["pants", "swaggy"]
+    tags: ["pants", "swaggy"],
+    notes: [
+      "It's tight.",
+      "Buy dis shit.",
+      "blah a;slkdfha;slkdfh easd fw efodfaib usdo we rw dfpaiu",
+      "a;skd asd  e f df we fw dfd fs dfsdif owueor "
+    ]
   },
   {
     name: "slacks",
@@ -54,12 +78,24 @@ var list = [
       "/pants/slacks/3.jpg"
     ],
     price: 200,
-    tags: ["pants", "swaggy"]
+    tags: ["pants", "swaggy"],
+    notes: [
+      "It's tight.",
+      "Buy dis shit.",
+      "blah a;slkdfha;slkdfh easd fw efodfaib usdo we rw dfpaiu",
+      "a;skd asd  e f df we fw dfd fs dfsdif owueor "
+    ]
   },
   {
     name: "swag",
     images: ["/pants/swag/1.jpg", "/pants/swag/2.jpg", "/pants/swag/3.jpg"],
-    tags: ["pants", "swaggy"]
+    tags: ["pants", "swaggy"],
+    notes: [
+      "It's tight.",
+      "Buy dis shit.",
+      "blah a;slkdfha;slkdfh easd fw efodfaib usdo we rw dfpaiu",
+      "a;skd asd  e f df we fw dfd fs dfsdif owueor "
+    ]
   },
 
   /***************/
@@ -72,7 +108,13 @@ var list = [
       "/accessories/matte black watch/2.jpg"
     ],
     price: 200,
-    tags: ["accessory", "watch", "black"]
+    tags: ["accessory", "watch", "black"],
+    notes: [
+      "It's tight.",
+      "Buy dis shit.",
+      "blah a;slkdfha;slkdfh easd fw efodfaib usdo we rw dfpaiu",
+      "a;skd asd  e f df we fw dfd fs dfsdif owueor "
+    ]
   },
   {
     name: "steel watch",
@@ -81,7 +123,13 @@ var list = [
       "/accessories/steel watch/2.jpg"
     ],
     price: 200,
-    tags: ["accessory", "watch", "black"]
+    tags: ["accessory", "watch", "black"],
+    notes: [
+      "It's tight.",
+      "Buy dis shit.",
+      "blah a;slkdfha;slkdfh easd fw efodfaib usdo we rw dfpaiu",
+      "a;skd asd  e f df we fw dfd fs dfsdif owueor "
+    ]
   },
 
   /*********/
@@ -95,7 +143,13 @@ var list = [
       "/shoes/bitch mob 1s/3.jpg"
     ],
     price: 200,
-    tags: ["shoes", "camo"]
+    tags: ["shoes", "camo"],
+    notes: [
+      "It's tight.",
+      "Buy dis shit.",
+      "blah a;slkdfha;slkdfh easd fw efodfaib usdo we rw dfpaiu",
+      "a;skd asd  e f df we fw dfd fs dfsdif owueor "
+    ]
   }
 ];
 

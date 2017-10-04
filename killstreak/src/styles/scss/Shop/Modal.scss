@@ -82,19 +82,12 @@
 
     .Details {
       display: flex;
-      justify-content: center;
-      /* Basic grid stuff */
-      .full {
-        flex-basis: 100%;
-      }
-      .half {
-        flex-basis: 50%;
-      }
-
+      flex-direction: column;
       .title {
         font-family: paint;
         font-size: 3vw;
         margin-top: 50px;
+        white-space: nowrap;
       }
     }
   }
