@@ -79,5 +79,23 @@
         }
       }
     }
+
+    .Details {
+      display: flex;
+      justify-content: center;
+      /* Basic grid stuff */
+      .full {
+        flex-basis: 100%;
+      }
+      .half {
+        flex-basis: 50%;
+      }
+
+      .title {
+        font-family: paint;
+        font-size: 3vw;
+        margin-top: 50px;
+      }
+    }
   }
 }

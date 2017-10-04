@@ -60,5 +60,17 @@
             border: 2px solid red; }
           .Modal .window .Images .thumb-container .thumb:hover {
             cursor: pointer; }
+    .Modal .window .Details {
+      display: flex;
+      justify-content: center;
+      /* Basic grid stuff */ }
+      .Modal .window .Details .full {
+        flex-basis: 100%; }
+      .Modal .window .Details .half {
+        flex-basis: 50%; }
+      .Modal .window .Details .title {
+        font-family: paint;
+        font-size: 3vw;
+        margin-top: 50px; }
 
 /*# sourceMappingURL=Modal.css.map */
