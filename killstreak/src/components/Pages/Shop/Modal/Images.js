@@ -10,8 +10,14 @@ class Images extends Component {
 
     this.handleClick = this.handleClick.bind(this);
   }
+
   handleClick(index) {
     this.setState({ selected: index });
+  }
+
+  // Set selected image back to 1.
+  resetImage() {
+    this.setState({ selected: 0 });
   }
 
   render() {

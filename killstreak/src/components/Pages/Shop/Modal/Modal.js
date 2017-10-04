@@ -31,6 +31,7 @@ class Modal extends Component {
 
   open() {
     var container = $(".Modal");
+    this.images.resetImage();
     container.css({ display: "flex" });
     this.setState({ isOpen: true });
   }
@@ -38,6 +39,7 @@ class Modal extends Component {
     var container = $(".Modal");
     container.css({ display: "none" });
     this.setState({ isOpen: false });
+    this.images.resetImage();
   }
 
   render() {
@@ -50,7 +52,12 @@ class Modal extends Component {
           </div>
           <div className="background-image" />
           <div className="section-container">
-            <Images list={this.props.images} />
+            <Images
+              ref={instance => {
+                this.images = instance;
+              }}
+              list={this.props.images}
+            />
             <Details
               name={this.props.name}
               notes={this.props.notes}
