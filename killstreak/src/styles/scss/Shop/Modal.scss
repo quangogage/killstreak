@@ -19,6 +19,23 @@
     background-color: RGBA(0, 0, 0, 0.5);
     z-index: 9;
   }
+  .close-button {
+    position: absolute;
+    font-size: 35px;
+    top: 0px;
+    right: 0px;
+    margin: 10px 15px;
+    z-index: 12;
+    color: black;
+    text-shadow: 0px 1px red, 0px 2px red, 0px 3px red, 0px 4px red;
+    transition: 0.1s;
+
+    &:hover {
+      cursor: pointer;
+      transform: translateY(2px);
+      text-shadow: 0px 1px red, 0px 2px red, 0px 2px red, 0px 2px red;
+    }
+  }
 
   .window {
     position: relative;

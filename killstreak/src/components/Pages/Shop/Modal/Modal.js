@@ -45,6 +45,9 @@ class Modal extends Component {
       <div className="Modal">
         <div className="background-overlay" onClick={this.props.close} />
         <div className="window">
+          <div className="close-button" onClick={this.props.close}>
+            &#10006;
+          </div>
           <div className="background-image" />
           <div className="section-container">
             <Images list={this.props.images} />
