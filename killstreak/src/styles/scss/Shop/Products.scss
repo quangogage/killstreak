@@ -25,6 +25,9 @@
         height: 100%;
         filter: grayscale(0%);
         transition: 0.25s;
+        &:outline {
+          focus: none;
+        }
 
         &:hover {
           cursor: url("../../../images/icons/middle-finger.png") 5 5, default !important;

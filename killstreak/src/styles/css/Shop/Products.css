@@ -22,6 +22,8 @@
         height: 100%;
         filter: grayscale(0%);
         transition: 0.25s; }
+        .Shop .Products .grid .ProductItem .thumbnail:outline {
+          focus: none; }
         .Shop .Products .grid .ProductItem .thumbnail:hover {
           cursor: url("../../../images/icons/middle-finger.png") 5 5, default !important;
           filter: grayscale(100%); }
