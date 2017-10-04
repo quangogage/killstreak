@@ -13,9 +13,20 @@
   justify-content: center;
 
   .window {
+    position: relative;
     width: 80%;
     height: 80%;
     background: white;
+
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../../images/splatters/box.png");
+      background-size: cover;
+    }
 
     .section-container {
       display: flex;

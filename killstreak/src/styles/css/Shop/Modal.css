@@ -11,9 +11,18 @@
   align-items: center;
   justify-content: center; }
   .Modal .window {
+    position: relative;
     width: 80%;
     height: 80%;
     background: white; }
+    .Modal .window .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../../images/splatters/box.png");
+      background-size: cover; }
     .Modal .window .section-container {
       display: flex;
       position: relative;
