@@ -6,6 +6,7 @@ import Nav from "../Nav/Nav";
 import Header from "./Header";
 import Products from "./Products/Products";
 import Modal from "./Modal/Modal";
+import Cart from "./Cart/Cart";
 import productList from "./Products/list";
 
 // Random list of characters to be placed
@@ -69,6 +70,8 @@ class Shop extends Component {
           isOpen={this.state.modalIsOpen}
           close={() => this.toggleModal(false)}
         />
+
+        {/* Cart */}
       </div>
     );
   }
