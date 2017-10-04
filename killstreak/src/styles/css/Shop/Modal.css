@@ -84,27 +84,38 @@
           font-family: gothic;
           letter-spacing: 0.01em;
           line-height: 1.1em; }
-      .Modal .window .Details .button-container .button {
-        display: inline;
-        position: relative;
-        top: 50px;
-        background: red;
+      .Modal .window .Details .price {
+        color: #08d108;
         font-family: paint;
-        color: white;
-        font-size: 1.25vw;
-        padding: 13px 45px;
-        transition: 0.1s;
-        box-shadow: 0px 0px #9e0000;
-        transform: translateY(0px);
-        border-radius: 2px; }
-        .Modal .window .Details .button-container .button:hover {
-          cursor: pointer;
-          transition: 0.2s;
-          top: 45px;
-          box-shadow: 0px 5px #9e0000; }
-        .Modal .window .Details .button-container .button:active {
+        font-size: 2.5vw;
+        margin: auto;
+        margin-bottom: 0;
+        margin-left: 0; }
+      .Modal .window .Details .button-container {
+        margin: auto;
+        margin-top: 0;
+        margin-left: 0; }
+        .Modal .window .Details .button-container .button {
+          display: inline;
+          position: relative;
+          top: 50px;
+          background: red;
+          font-family: paint;
+          color: white;
+          font-size: 1.25vw;
+          padding: 13px 45px;
           transition: 0.1s;
-          top: 47px;
-          box-shadow: 0px 3px #9e0000; }
+          box-shadow: 0px 0px #9e0000;
+          transform: translateY(0px);
+          border-radius: 2px; }
+          .Modal .window .Details .button-container .button:hover {
+            cursor: pointer;
+            transition: 0.2s;
+            top: 45px;
+            box-shadow: 0px 5px #9e0000; }
+          .Modal .window .Details .button-container .button:active {
+            transition: 0.1s;
+            top: 47px;
+            box-shadow: 0px 3px #9e0000; }
 
 /*# sourceMappingURL=Modal.css.map */

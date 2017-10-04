@@ -65,6 +65,7 @@ class Shop extends Component {
           name={productList[this.state.selectedProduct].name}
           notes={productList[this.state.selectedProduct].notes}
           images={productList[this.state.selectedProduct].images}
+          price={productList[this.state.selectedProduct].price}
           isOpen={this.state.modalIsOpen}
           close={() => this.toggleModal(false)}
         />

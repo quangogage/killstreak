@@ -111,7 +111,19 @@
         }
       }
 
+      .price {
+        color: #08d108;
+        font-family: paint;
+        font-size: 2.5vw;
+        margin: auto;
+        margin-bottom: 0;
+        margin-left: 0;
+      }
+
       .button-container {
+        margin: auto;
+        margin-top: 0;
+        margin-left: 0;
         .button {
           display: inline;
           position: relative;

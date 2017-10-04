@@ -48,7 +48,11 @@ class Modal extends Component {
           <div className="background-image" />
           <div className="section-container">
             <Images list={this.props.images} />
-            <Details name={this.props.name} notes={this.props.notes} />
+            <Details
+              name={this.props.name}
+              notes={this.props.notes}
+              price={this.props.price}
+            />
           </div>
         </div>
       </div>
