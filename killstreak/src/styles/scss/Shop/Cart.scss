@@ -1,2 +1,23 @@
 .Cart {
+  .Tab {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    background: black;
+
+    .icon {
+      width: 25px;
+      padding-right: 10px;
+      align-self: center;
+    }
+    .amount {
+      padding-right: 15px;
+
+      font-size: 25px;
+      font-family: bubble;
+    }
+  }
 }
