@@ -32,13 +32,33 @@ class Modal extends Component {
   open() {
     var container = $(".Modal");
     this.images.resetImage();
-    container.css({ display: "flex" });
+
+    // Invisible
+    container.css({ opacity: 0 });
+
+    // Fade in
+    setTimeout(function() {
+      container.css({ display: "flex" });
+      container.animate({ opacity: 1 }, 150);
+    });
+
     this.setState({ isOpen: true });
   }
   close() {
     var container = $(".Modal");
-    container.css({ display: "none" });
+
+    // Fade Out
+    container.animate(
+      {
+        opacity: 0
+      },
+      250,
+      function() {
+        container.css({ display: "none" });
+      }
+    );
     this.setState({ isOpen: false });
+
     this.images.resetImage();
   }
 
