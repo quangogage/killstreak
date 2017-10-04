@@ -42,7 +42,8 @@ class Modal extends Component {
 
   render() {
     return (
-      <div className="Modal" onClick={this.props.close}>
+      <div className="Modal">
+        <div className="background-overlay" onClick={this.props.close} />
         <div className="window">
           <div className="background-image" />
           <div className="section-container">

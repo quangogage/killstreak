@@ -6,17 +6,26 @@
   width: 100%;
   height: 100%;
   transition: 0.5s;
-  background: RGBA(0, 0, 0, 0.5);
 
   display: none;
   align-items: center;
   justify-content: center;
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: RGBA(0, 0, 0, 0.5);
+    z-index: 9;
+  }
 
   .window {
     position: relative;
     width: 80%;
     height: 80%;
     background: white;
+    z-index: 11;
 
     .background-image {
       position: absolute;
