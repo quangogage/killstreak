@@ -83,11 +83,22 @@
     .Details {
       display: flex;
       flex-direction: column;
+
       .title {
         font-family: paint;
         font-size: 3vw;
         margin-top: 50px;
         white-space: nowrap;
+      }
+
+      .note-container {
+        padding-left: 1.4em;
+        width: 80%;
+        .note {
+          font-size: 1.7vw;
+          font-family: gothic;
+          letter-spacing: 0.01em;
+        }
       }
     }
   }

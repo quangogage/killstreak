@@ -5,11 +5,11 @@ class Details extends Component {
     return (
       <div className="Details section">
         <div className="title">{this.props.name}</div>
-        <ol className="note-container">
+        <ul className="note-container">
           {this.props.notes.map((note, index) => {
             return <li className="note">{note}</li>;
           })}
-        </ol>
+        </ul>
       </div>
     );
   }

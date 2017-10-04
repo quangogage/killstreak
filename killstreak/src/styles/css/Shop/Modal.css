@@ -68,5 +68,12 @@
         font-size: 3vw;
         margin-top: 50px;
         white-space: nowrap; }
+      .Modal .window .Details .note-container {
+        padding-left: 1.4em;
+        width: 80%; }
+        .Modal .window .Details .note-container .note {
+          font-size: 1.7vw;
+          font-family: gothic;
+          letter-spacing: 0.01em; }
 
 /*# sourceMappingURL=Modal.css.map */
