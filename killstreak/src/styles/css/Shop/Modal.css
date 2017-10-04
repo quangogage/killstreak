@@ -30,6 +30,9 @@
       cursor: pointer;
       transform: translateY(2px);
       text-shadow: 0px 1px red, 0px 2px red, 0px 2px red, 0px 2px red; }
+    .Modal .close-button:active {
+      transform: translateY(4px);
+      text-shadow: 0px 1px red, 0px 1px red, 0px 1px red, 0px 1px red; }
   .Modal .window {
     position: relative;
     width: 80%;
