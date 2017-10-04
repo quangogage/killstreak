@@ -90,6 +90,7 @@ var list = [
     name: "swag",
     images: ["/pants/swag/1.jpg", "/pants/swag/2.jpg", "/pants/swag/3.jpg"],
     tags: ["pants", "swaggy"],
+    price: 10,
     notes: [
       "It's tight.",
       "Buy dis shit.",
