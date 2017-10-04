@@ -10,6 +10,9 @@ class Details extends Component {
             return <li className="note">{note}</li>;
           })}
         </ul>
+        <div className="button-container">
+          <div className="button">Add To Cart</div>
+        </div>
       </div>
     );
   }
