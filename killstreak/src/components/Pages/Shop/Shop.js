@@ -18,7 +18,8 @@ class Shop extends Component {
     super(props);
     this.state = {
       selectedProduct: 1,
-      modalIsOpen: false
+      modalIsOpen: false,
+      cart: []
     };
 
     this.toggleModal = this.toggleModal.bind(this);
