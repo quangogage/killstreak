@@ -12,7 +12,11 @@ class Pages extends Component {
       {
         name: "Home",
         component: (
-          <Home pages={this.props.pages} currentPage={this.props.currentPage} />
+          <Home
+            pages={this.props.pages}
+            path={this.props.path}
+            currentPage={this.props.currentPage}
+          />
         )
       },
       {
@@ -20,6 +24,7 @@ class Pages extends Component {
         component: (
           <About
             pages={this.props.pages}
+            path={this.props.path}
             currentPage={this.props.currentPage}
           />
         )
@@ -29,6 +34,7 @@ class Pages extends Component {
         component: (
           <Contact
             pages={this.props.pages}
+            path={this.props.path}
             currentPage={this.props.currentPage}
           />
         )
@@ -36,7 +42,11 @@ class Pages extends Component {
       {
         name: "Shop",
         component: (
-          <Shop pages={this.props.pages} currentPage={this.props.currentPage} />
+          <Shop
+            pages={this.props.pages}
+            path={this.props.path}
+            currentPage={this.props.currentPage}
+          />
         )
       }
     ];

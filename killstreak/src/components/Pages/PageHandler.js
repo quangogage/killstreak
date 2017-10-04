@@ -102,7 +102,11 @@ class PageHandler extends Component {
   render() {
     return (
       <div className="PageHandler">
-        <Pages currentPage={this.state.currentPage} pages={this.state.pages} />
+        <Pages
+          currentPage={this.state.currentPage}
+          pages={this.state.pages}
+          path={this.props.location.pathname}
+        />
       </div>
     );
   }
