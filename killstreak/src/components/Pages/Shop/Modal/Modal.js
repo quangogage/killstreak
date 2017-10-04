@@ -42,6 +42,9 @@ class Modal extends Component {
       container.animate({ opacity: 1 }, 150);
     });
 
+    // Don't allow scrolling
+    $("body").addClass("noscroll");
+
     this.setState({ isOpen: true });
   }
   close() {
@@ -57,6 +60,9 @@ class Modal extends Component {
         container.css({ display: "none" });
       }
     );
+
+    // Reallow scrolling
+    $("body").removeClass("noscroll");
     this.setState({ isOpen: false });
 
     this.images.resetImage();
