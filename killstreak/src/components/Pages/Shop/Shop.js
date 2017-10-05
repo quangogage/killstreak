@@ -132,7 +132,6 @@ class Shop extends Component {
         {/* Cart */}
         <Cart
           items={this.state.cart}
-          currentPage={this.props.currentPage}
           panelIsOpen={this.state.panelIsOpen}
           openPanel={() => this.togglePanel(true)}
           closePanel={() => this.togglePanel(false)}
