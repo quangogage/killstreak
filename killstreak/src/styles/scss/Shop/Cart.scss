@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     padding: 10px 10px;
-    background: black;
+    background: red;
     z-index: 7;
 
     .icon {
@@ -18,7 +18,8 @@
       padding-right: 15px;
 
       font-size: 25px;
-      font-family: bubble;
+      font-family: gothic;
+      color: white;
     }
   }
 }

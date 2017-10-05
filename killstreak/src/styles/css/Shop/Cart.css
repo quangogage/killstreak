@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   padding: 10px 10px;
-  background: black;
+  background: red;
   z-index: 7; }
   .Cart .Tab .icon {
     width: 25px;
@@ -14,6 +14,7 @@
   .Cart .Tab .amount {
     padding-right: 15px;
     font-size: 25px;
-    font-family: bubble; }
+    font-family: gothic;
+    color: white; }
 
 /*# sourceMappingURL=Cart.css.map */
