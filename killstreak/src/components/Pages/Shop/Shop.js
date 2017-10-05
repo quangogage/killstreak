@@ -13,6 +13,16 @@ import productList from "./Products/list";
 // to the left and right of the grid header.
 var deathCharacters = ["K", "S", "t", "ò"];
 
+/*
+  This component is in charge of the shop!
+
+  It is reponsible for maintaining the user's
+  cart, what products they're looking at,
+  and wether or not the product modal ( that
+  appears when you click on a product ) is open
+  or not  
+*/
+
 class Shop extends Component {
   constructor(props) {
     super(props);

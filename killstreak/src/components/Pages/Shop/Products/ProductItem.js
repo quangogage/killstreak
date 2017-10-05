@@ -1,6 +1,16 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
+/*
+  This component renders it's corresponding
+  product thumbnail + other basic information.
+
+  It doesn't do much besides render info. Something
+  that may be helpful to note though - It is
+  responsable for linking to product URL' within the
+  shop ie, "/Shop/White Shirt".
+*/
+
 class ProductItem extends Component {
   render() {
     var thumbnail = require(`../../../../images/products${this.props

@@ -6,6 +6,15 @@ import $ from "jquery";
 import Images from "./Images";
 import Details from "./Details";
 
+/*
+  This component is in charge of the modal that
+  appears when you select an item.
+
+  It's content is broken up into two parts, the 
+  images and the details ( each rendered in their
+  respective components. )
+*/
+
 class Modal extends Component {
   constructor(props) {
     super(props);

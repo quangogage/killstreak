@@ -4,6 +4,13 @@ import "../../../../styles/css/Shop/Products.css";
 import list from "./list.js";
 import ProductItem from "./ProductItem";
 
+/*
+  This component is responsible for displaying
+  each product in a nice grid layout. It is
+  really just a middle man between the
+  ProductItem's it renders, and the shop component.
+*/
+
 class Products extends Component {
   constructor(props) {
     super(props);
