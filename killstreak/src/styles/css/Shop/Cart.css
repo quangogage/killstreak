@@ -1,20 +1,42 @@
 .Cart .Tab {
   position: fixed;
   top: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  padding: 10px 10px;
-  background: red;
-  z-index: 7; }
-  .Cart .Tab .icon {
-    width: 25px;
-    padding-right: 10px;
-    align-self: center; }
-  .Cart .Tab .amount {
-    padding-right: 15px;
-    font-size: 25px;
-    font-family: gothic;
-    color: white; }
+  right: 0; }
+  .Cart .Tab:hover {
+    cursor: pointer; }
+    .Cart .Tab:hover .background {
+      left: -115%; }
+  .Cart .Tab .background {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 115%;
+    height: 100%;
+    background: red;
+    font-family: paint;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.5s;
+    z-index: 7; }
+  .Cart .Tab .foreground {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 7px;
+    background: red;
+    z-index: 8; }
+    .Cart .Tab .foreground .icon {
+      width: 25px;
+      padding-right: 10px;
+      align-self: center; }
+    .Cart .Tab .foreground .amount {
+      padding-right: 15px;
+      font-size: 25px;
+      font-family: mexcellent2d;
+      font-weight: bold;
+      color: white; }
 
 /*# sourceMappingURL=Cart.css.map */

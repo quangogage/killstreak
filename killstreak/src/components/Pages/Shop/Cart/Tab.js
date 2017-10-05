@@ -30,8 +30,11 @@ class Tab extends Component {
   render() {
     return (
       <div className="Tab">
-        <img src={cartIcon} className="icon" alt="" />
-        <div className="amount">({this.props.amount})</div>
+        <div className="background">View Cart</div>
+        <div className="foreground">
+          <img src={cartIcon} className="icon" alt="" />
+          <div className="amount">({this.props.amount})</div>
+        </div>
       </div>
     );
   }
