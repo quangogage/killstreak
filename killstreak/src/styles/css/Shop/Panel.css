@@ -13,7 +13,7 @@
       transform: translateY(-2px);
       text-shadow: 0px 2px black; }
   .Panel.open {
-    width: 350px; }
+    width: 375px; }
   .Panel .open-container {
     position: absolute;
     top: 0;
