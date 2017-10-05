@@ -81,12 +81,18 @@ class Shop extends Component {
   toggleModal(state) {
     var newState = state || !this.state.modalIsOpen;
     this.setState({ modalIsOpen: newState });
+    if (this.state.panelIsOpen) {
+      this.togglePanel(false);
+    }
   }
 
   // Open/Close [ame;].
   togglePanel(state) {
     var newState = state || !this.state.panelIsOpen;
     this.setState({ panelIsOpen: newState });
+    if (this.state.modalIsOpen) {
+      this.toggleModal(false);
+    }
   }
 
   // Change selected item
