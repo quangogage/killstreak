@@ -5,7 +5,8 @@
   display: flex;
   justify-content: center;
   padding: 10px 10px;
-  background: black; }
+  background: black;
+  z-index: 7; }
   .Cart .Tab .icon {
     width: 25px;
     padding-right: 10px;
