@@ -8,11 +8,12 @@ class Tab extends Component {
     this.checkTab();
     $(window).scroll(
       function(e) {
-        if (this.props.currentPage.substring(0, 4) === "Shop") {
-          this.checkTab();
-        }
+        this.checkTab();
       }.bind(this)
     );
+  }
+  componentWillUnmount() {
+    $(window).off();
   }
 
   // Check and adjust if tab is overlapping with navigation menu
