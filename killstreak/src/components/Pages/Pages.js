@@ -57,10 +57,10 @@ class Pages extends Component {
       if (this.props.currentPage.substring(0, page.name.length) === page.name)
         renderedPage = <div>{page.component}</div>;
     });
+    // Special home page :-)
     if (this.props.currentPage === "") {
       renderedPage = pages[0].component;
     }
-    console.log(this.props.currentPage);
     return <div className="Pages">{renderedPage}</div>;
   }
 }

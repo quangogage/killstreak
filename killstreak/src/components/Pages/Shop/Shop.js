@@ -35,7 +35,7 @@ class Shop extends Component {
 
   checkPath(path) {
     // If there is a custom item entered in the URL
-    if (path.length > 6) {
+    if (path.length > 6 && path.substring(0, 5) === "/Shop") {
       var productName = path.substring(6);
       productName.replace("%20", "");
       var newProduct = this.getProduct(productName);
