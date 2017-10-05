@@ -100,6 +100,16 @@ class Shop extends Component {
     this.setState({ selectedProduct: index });
   }
 
+  // Add an item to your cart
+  addToCart(index) {
+    var product = productList[index];
+    var cartCopy = this.state.cart.slice();
+    cartCopy[cartCopy.length] = {
+      name: product.name,
+      price: product.price
+    };
+  }
+
   render() {
     var deathChar =
       deathCharacters[
