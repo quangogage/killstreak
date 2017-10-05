@@ -28,11 +28,13 @@ class Shop extends Component {
     super(props);
     this.state = {
       selectedProduct: 1,
-      modalIsOpen: false,
+      modalIsOpen: false, // Product Info Modal
+      panelIsOpen: false, // Cart Panel
       cart: []
     };
 
     this.toggleModal = this.toggleModal.bind(this);
+    this.togglePanel = this.togglePanel.bind(this);
     this.checkPath = this.checkPath.bind(this);
   }
 
@@ -81,6 +83,12 @@ class Shop extends Component {
     this.setState({ modalIsOpen: newState });
   }
 
+  // Open/Close [ame;].
+  togglePanel(state) {
+    var newState = state || !this.state.panelIsOpen;
+    this.setState({ panelIsOpen: newState });
+  }
+
   // Change selected item
   selectProduct(index) {
     this.setState({ selectedProduct: index });
@@ -122,7 +130,12 @@ class Shop extends Component {
         />
 
         {/* Cart */}
-        <Cart items={this.state.cart} currentPage={this.props.currentPage} />
+        <Cart
+          items={this.state.cart}
+          currentPage={this.props.currentPage}
+          openPanel={() => this.togglePanel(true)}
+          closePanel={() => this.togglePanel(false)}
+        />
       </div>
     );
   }
