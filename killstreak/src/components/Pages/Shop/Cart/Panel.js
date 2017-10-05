@@ -16,8 +16,10 @@ class Panel extends Component {
   // Check for opening/closing
   componentWillReceiveProps(nextProps) {
     if (nextProps.isOpen === true && this.state.isOpen === false) {
+      this.setState({ isOpen: true });
       this.open();
     } else if (nextProps.isOpen === false && this.state.isOpen === true) {
+      this.setState({ isOpen: false });
       this.close();
     }
   }
@@ -59,8 +61,6 @@ class Panel extends Component {
         500
       );
     }, 500);
-
-    this.setState({ isOpen: true, closedHeight: closedHeight });
   }
 
   // Shut 'er down.
@@ -73,7 +73,7 @@ class Panel extends Component {
     panel.css({ transitionDelay: "0.6s" });
 
     // Shrink vertically
-    panel.animate({ height: this.state.closedHeight }, 500);
+    panel.animate({ height: "45px" }, 500);
 
     // Hide open content
     openContainer.animate({ opacity: 0 }, { duration: 200, queue: false });
@@ -82,8 +82,6 @@ class Panel extends Component {
     setTimeout(function() {
       closedContainer.animate({ opacity: 1 }, { duration: 200, queue: false });
     }, 750);
-
-    this.setState({ isOpen: false });
   }
 
   render() {
