@@ -13,6 +13,30 @@ class Panel extends Component {
     this.close = this.close.bind(this);
   }
 
+  componentDidMount() {
+    this.handleScroll();
+    $(window).on(
+      "scroll",
+      function() {
+        this.handleScroll();
+      }.bind(this)
+    );
+  }
+  componentWillUnmount() {
+    $(window).off();
+  }
+
+  // Move if overlapping with nav meu
+  handleScroll() {
+    var panel = $(".Panel");
+    var nav = $(".Page-Nav");
+    if (window.scrollY < nav.height()) {
+      panel.css({ top: nav.height() - window.scrollY + "px" });
+    } else {
+      panel.css({ top: 0 });
+    }
+  }
+
   // Check for opening/closing
   componentWillReceiveProps(nextProps) {
     if (nextProps.isOpen === true && this.state.isOpen === false) {
@@ -94,7 +118,7 @@ class Panel extends Component {
         {/* Content that appears when panel is closed */}
         <div className="closed-container">
           <div className="text">View Cart</div>
-          <img src={cartIcon} className="icon" />
+          <img src={cartIcon} className="icon" alt="" />
           <div className="count">({this.props.itemCount})</div>
         </div>
         {/* Content that appears when panel is open */}
