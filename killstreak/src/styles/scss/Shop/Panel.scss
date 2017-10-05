@@ -1,2 +1,42 @@
 .Panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: red;
+  z-index: 20;
+
+  &.closed {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &.open {
+  }
+
+  .closed-container {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+
+    .icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .text {
+      font-family: paint;
+      color: white;
+      font-size: 20px;
+      margin-right: 20px;
+    }
+
+    .count {
+      font-size: 20px;
+      font-family: mexcellent2d;
+      font-weight: bold;
+      color: white;
+      float: right;
+    }
+  }
 }
