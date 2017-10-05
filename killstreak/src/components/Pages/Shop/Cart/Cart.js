@@ -23,6 +23,7 @@ class Cart extends Component {
         <Tab
           amount={this.props.items.length}
           currentPage={this.props.currentPage}
+          openPanel={this.props.openPanel}
         />
 
         {/* Cart Panel */}

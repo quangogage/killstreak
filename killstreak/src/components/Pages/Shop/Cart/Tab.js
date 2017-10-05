@@ -32,7 +32,7 @@ class Tab extends Component {
   }
   render() {
     return (
-      <div className="Tab">
+      <div className="Tab" onClick={this.props.openPanel}>
         <div className="background">View Cart</div>
         <div className="foreground">
           <img src={cartIcon} className="icon" alt="" />
