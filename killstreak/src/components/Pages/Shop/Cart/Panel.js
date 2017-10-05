@@ -70,7 +70,7 @@ class Panel extends Component {
     var openContainer = $(".open-container");
 
     // Wait to shrink horizontally
-    panel.css({ transitionDelay: "0.7s" });
+    panel.css({ transitionDelay: "0.6s" });
 
     // Shrink vertically
     panel.animate({ height: this.state.closedHeight }, 500);
