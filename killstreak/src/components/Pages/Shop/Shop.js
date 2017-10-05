@@ -112,7 +112,7 @@ class Shop extends Component {
         />
 
         {/* Cart */}
-        <Cart items={this.state.cart} />
+        <Cart items={this.state.cart} currentPage={this.props.currentPage} />
       </div>
     );
   }

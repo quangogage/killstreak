@@ -7,7 +7,10 @@ class Cart extends Component {
     return (
       <div className="Cart">
         {/* Cart Tab */}
-        <Tab amount={this.props.items.length} />
+        <Tab
+          amount={this.props.items.length}
+          currentPage={this.props.currentPage}
+        />
       </div>
     );
   }

@@ -8,7 +8,9 @@ class Tab extends Component {
     this.checkTab();
     $(window).scroll(
       function(e) {
-        this.checkTab();
+        if (this.props.currentPage.substring(0, 4) === "Shop") {
+          this.checkTab();
+        }
       }.bind(this)
     );
   }

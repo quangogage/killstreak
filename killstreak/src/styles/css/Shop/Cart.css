@@ -5,7 +5,8 @@
   .Cart .Tab:hover {
     cursor: pointer; }
     .Cart .Tab:hover .background {
-      left: -115%; }
+      left: -115%;
+      color: RGBA(255, 255, 255, 1); }
   .Cart .Tab .background {
     position: absolute;
     top: 0;
@@ -14,11 +15,11 @@
     height: 100%;
     background: red;
     font-family: paint;
-    color: white;
+    color: RGBA(255, 255, 255, 0);
     display: flex;
     align-items: center;
     padding-left: 10px;
-    transition: 0.5s;
+    transition: 0.2s;
     z-index: 7; }
   .Cart .Tab .foreground {
     position: relative;
