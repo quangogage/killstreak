@@ -1,3 +1,4 @@
+/* eslint array-callback-return: 0 */
 import React, { Component } from "react";
 
 /* Pages */
@@ -51,11 +52,10 @@ class Pages extends Component {
       }
     ];
 
-    var renderedPage;
-    pages.map((page, index) => {
+    var renderedPage = pages.map((page, index) => {
       // Most Pages
       if (this.props.currentPage.substring(0, page.name.length) === page.name)
-        renderedPage = <div>{page.component}</div>;
+        return <div key={index}>{page.component}</div>;
     });
     // Special home page :-)
     if (this.props.currentPage === "") {

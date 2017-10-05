@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../../../../styles/css/Shop/Modal.css";
-import productList from "../Products/list";
 import { Link } from "react-router-dom";
 import $ from "jquery";
 

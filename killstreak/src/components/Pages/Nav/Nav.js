@@ -22,7 +22,7 @@ class Nav extends Component {
         <div className="item-container">
           {renderedPages.map((page, index) => {
             return (
-              <div className="item">
+              <div className="item" key={index}>
                 <Link to={"/" + page} style={{ textDecoration: "none" }}>
                   <div className="text">{page}</div>
                 </Link>
