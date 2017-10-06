@@ -82,25 +82,27 @@ class Modal extends Component {
         <Link to="/Shop">
           <div className="background-overlay" onClick={this.props.close} />
         </Link>
-        <div className="window">
-          <Link to="/Shop">
-            <div className="close-button" onClick={this.props.close}>
-              &#10006;
+        <div className="window-container">
+          <div className="window">
+            <Link to="/Shop">
+              <div className="close-button" onClick={this.props.close}>
+                &#10006;
+              </div>
+            </Link>
+            <div className="background-image" />
+            <div className="section-container">
+              <Images
+                ref={instance => {
+                  this.images = instance;
+                }}
+                list={this.props.images}
+              />
+              <Details
+                name={this.props.name}
+                notes={this.props.notes}
+                price={this.props.price}
+              />
             </div>
-          </Link>
-          <div className="background-image" />
-          <div className="section-container">
-            <Images
-              ref={instance => {
-                this.images = instance;
-              }}
-              list={this.props.images}
-            />
-            <Details
-              name={this.props.name}
-              notes={this.props.notes}
-              price={this.props.price}
-            />
           </div>
         </div>
       </div>

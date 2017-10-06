@@ -5,9 +5,7 @@
   z-index: 50;
   width: 100%;
   height: 100%;
-  display: none;
-  align-items: center;
-  justify-content: center; }
+  display: none; }
   .Modal .background-overlay {
     position: absolute;
     top: 0;
@@ -33,105 +31,121 @@
     .Modal .close-button:active {
       transform: translateY(4px);
       text-shadow: 0px 1px red, 0px 1px red, 0px 1px red, 0px 1px red; }
-  .Modal .window {
-    position: relative;
-    width: 80%;
-    height: 80%;
-    background: white;
-    z-index: 11; }
-    .Modal .window .background-image {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url("../../../images/splatters/box.png");
-      background-size: cover; }
-    .Modal .window .section-container {
-      display: flex;
+  .Modal .window-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    overflow-y: scroll; }
+    .Modal .window-container .window {
       position: relative;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-      .Modal .window .section-container .section {
-        position: relative;
-        width: 50%;
-        height: 100%; }
-    .Modal .window .Images {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around; }
-      .Modal .window .Images img {
-        flex-grow: 0;
-        flex-shrink: 0;
-        align-self: center; }
-        .Modal .window .Images img.selected {
-          height: 70%;
-          max-width: 95%;
-          max-height: 80%; }
-      .Modal .window .Images .thumb-container {
-        position: relative;
+      width: 80%;
+      height: auto;
+      background: white;
+      z-index: 11;
+      margin: auto;
+      top: 50%;
+      transform: translateY(-50%); }
+      .Modal .window-container .window .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../../../images/splatters/box.png");
+        background-size: cover; }
+      .Modal .window-container .window .section-container {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%; }
-        .Modal .window .Images .thumb-container .thumb {
-          width: 50px;
-          margin: 0px 20px; }
-          .Modal .window .Images .thumb-container .thumb.selected {
-            border: 2px solid red; }
-          .Modal .window .Images .thumb-container .thumb:hover {
-            cursor: pointer; }
-    .Modal .window .Details {
-      display: flex;
-      flex-direction: column; }
-      .Modal .window .Details .title {
-        font-family: paint;
-        font-size: 3vw;
-        margin-top: 50px;
-        white-space: nowrap; }
-      .Modal .window .Details .note-container {
-        padding-left: 1.4em;
-        width: 80%; }
-        .Modal .window .Details .note-container .note {
-          font-size: 1.7vw;
-          font-family: gothic;
-          letter-spacing: 0.01em;
-          line-height: 1.1em; }
-      .Modal .window .Details .price {
-        color: #08d108;
-        font-family: paint;
-        font-size: 2.5vw;
-        margin: auto;
-        margin-bottom: 0;
-        margin-left: 0; }
-      .Modal .window .Details .button-container {
-        margin: auto;
-        margin-top: 0;
-        margin-left: 0; }
-        .Modal .window .Details .button-container .button {
-          display: inline;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+        .Modal .window-container .window .section-container .section {
           position: relative;
-          top: 50px;
-          background: red;
+          width: 50%;
+          height: 100%; }
+      .Modal .window-container .window .Images {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around; }
+        .Modal .window-container .window .Images img {
+          flex-grow: 0;
+          flex-shrink: 0;
+          align-self: center; }
+          .Modal .window-container .window .Images img.selected {
+            height: 70%;
+            max-width: 95%;
+            max-height: 80%; }
+        .Modal .window-container .window .Images .thumb-container {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%; }
+          .Modal .window-container .window .Images .thumb-container .thumb {
+            width: 50px;
+            margin: 0px 20px; }
+            .Modal .window-container .window .Images .thumb-container .thumb.selected {
+              border: 2px solid red; }
+            .Modal .window-container .window .Images .thumb-container .thumb:hover {
+              cursor: pointer; }
+      .Modal .window-container .window .Details {
+        display: flex;
+        flex-direction: column; }
+        .Modal .window-container .window .Details .title {
+          position: relative;
           font-family: paint;
-          color: white;
-          font-size: 1.25vw;
-          padding: 13px 45px;
-          transition: 0.1s;
-          box-shadow: 0px 0px #9e0000;
-          transform: translateY(0px);
-          border-radius: 2px; }
-          .Modal .window .Details .button-container .button:hover {
-            cursor: pointer;
-            transition: 0.2s;
-            top: 45px;
-            box-shadow: 0px 5px #9e0000; }
-          .Modal .window .Details .button-container .button:active {
+          font-size: 3vw;
+          margin-top: 50px;
+          white-space: nowrap; }
+        .Modal .window-container .window .Details .note-container {
+          padding-left: 1.4em;
+          width: 80%; }
+          .Modal .window-container .window .Details .note-container .note {
+            font-size: 1.7vw;
+            font-family: gothic;
+            letter-spacing: 0.01em;
+            line-height: 1.1em; }
+        .Modal .window-container .window .Details .price {
+          position: relative;
+          color: #08d108;
+          font-family: paint;
+          font-size: 2.5vw;
+          margin: auto;
+          margin-bottom: 0;
+          margin-left: 0; }
+        .Modal .window-container .window .Details .button-container {
+          position: relative;
+          margin: auto;
+          margin-top: 0;
+          margin-left: 0; }
+          .Modal .window-container .window .Details .button-container .button {
+            display: inline;
+            position: relative;
+            top: 50px;
+            background: red;
+            font-family: paint;
+            color: white;
+            font-size: 1.25vw;
+            padding: 13px 45px;
             transition: 0.1s;
-            top: 47px;
-            box-shadow: 0px 3px #9e0000; }
+            box-shadow: 0px 0px #9e0000;
+            transform: translateY(0px);
+            border-radius: 2px; }
+            .Modal .window-container .window .Details .button-container .button:hover {
+              cursor: pointer;
+              transition: 0.2s;
+              top: 45px;
+              box-shadow: 0px 5px #9e0000; }
+            .Modal .window-container .window .Details .button-container .button:active {
+              transition: 0.1s;
+              top: 47px;
+              box-shadow: 0px 3px #9e0000; }
 
 /*# sourceMappingURL=Modal.css.map */

@@ -7,8 +7,6 @@
   height: 100%;
 
   display: none;
-  align-items: center;
-  justify-content: center;
   .background-overlay {
     position: absolute;
     top: 0;
@@ -40,136 +38,153 @@
     }
   }
 
-  .window {
-    position: relative;
-    width: 80%;
-    height: 80%;
-    background: white;
-    z-index: 11;
-
-    .background-image {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url("../../../images/splatters/box.png");
-      background-size: cover;
-    }
-
-    .section-container {
-      display: flex;
+  .window-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    overflow-y: scroll;
+    .window {
       position: relative;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      width: 80%;
+      height: auto;
+      background: white;
+      z-index: 11;
+      margin: auto;
+      top: 50%;
+      transform: translateY(-50%);
 
-      .section {
-        position: relative;
-        width: 50%;
-        height: 100%;
-      }
-    }
-
-    .Images {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-
-      img {
-        flex-grow: 0;
-        flex-shrink: 0;
-        align-self: center;
-        &.selected {
-          height: 70%;
-          max-width: 95%;
-          max-height: 80%;
-        }
-      }
-
-      .thumb-container {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-
-        .thumb {
-          width: 50px;
-          margin: 0px 20px;
-          &.selected {
-            border: 2px solid red;
-          }
-          &:hover {
-            cursor: pointer;
-          }
-        }
-      }
-    }
-
-    .Details {
-      display: flex;
-      flex-direction: column;
-
-      .title {
-        font-family: paint;
-        font-size: 3vw;
-        margin-top: 50px;
-        white-space: nowrap;
+        height: 100%;
+        background-image: url("../../../images/splatters/box.png");
+        background-size: cover;
       }
 
-      .note-container {
-        padding-left: 1.4em;
-        width: 80%;
-        .note {
-          font-size: 1.7vw;
-          font-family: gothic;
-          letter-spacing: 0.01em;
-          line-height: 1.1em;
-        }
-      }
+      .section-container {
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
 
-      .price {
-        color: #08d108;
-        font-family: paint;
-        font-size: 2.5vw;
-        margin: auto;
-        margin-bottom: 0;
-        margin-left: 0;
-      }
-
-      .button-container {
-        margin: auto;
-        margin-top: 0;
-        margin-left: 0;
-        .button {
-          display: inline;
+        .section {
           position: relative;
-          top: 50px;
+          width: 50%;
+          height: 100%;
+        }
+      }
 
-          background: red;
-          font-family: paint;
-          color: white;
-          font-size: 1.25vw;
-          padding: 13px 45px;
+      .Images {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
 
-          transition: 0.1s;
-          box-shadow: 0px 0px #9e0000;
-          transform: translateY(0px);
-          border-radius: 2px;
-
-          &:hover {
-            cursor: pointer;
-            transition: 0.2s;
-            top: 45px;
-            box-shadow: 0px 5px #9e0000;
+        img {
+          flex-grow: 0;
+          flex-shrink: 0;
+          align-self: center;
+          &.selected {
+            height: 70%;
+            max-width: 95%;
+            max-height: 80%;
           }
-          &:active {
+        }
+
+        .thumb-container {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+          .thumb {
+            width: 50px;
+            margin: 0px 20px;
+            &.selected {
+              border: 2px solid red;
+            }
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .Details {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          position: relative;
+          font-family: paint;
+          font-size: 3vw;
+          margin-top: 50px;
+          white-space: nowrap;
+        }
+
+        .note-container {
+          padding-left: 1.4em;
+          width: 80%;
+          .note {
+            font-size: 1.7vw;
+            font-family: gothic;
+            letter-spacing: 0.01em;
+            line-height: 1.1em;
+          }
+        }
+
+        .price {
+          position: relative;
+          color: #08d108;
+          font-family: paint;
+          font-size: 2.5vw;
+          margin: auto;
+          margin-bottom: 0;
+          margin-left: 0;
+        }
+
+        .button-container {
+          position: relative;
+          margin: auto;
+          margin-top: 0;
+          margin-left: 0;
+          .button {
+            display: inline;
+            position: relative;
+            top: 50px;
+
+            background: red;
+            font-family: paint;
+            color: white;
+            font-size: 1.25vw;
+            padding: 13px 45px;
+
             transition: 0.1s;
-            top: 47px;
-            box-shadow: 0px 3px #9e0000;
+            box-shadow: 0px 0px #9e0000;
+            transform: translateY(0px);
+            border-radius: 2px;
+
+            &:hover {
+              cursor: pointer;
+              transition: 0.2s;
+              top: 45px;
+              box-shadow: 0px 5px #9e0000;
+            }
+            &:active {
+              transition: 0.1s;
+              top: 47px;
+              box-shadow: 0px 3px #9e0000;
+            }
           }
         }
       }
