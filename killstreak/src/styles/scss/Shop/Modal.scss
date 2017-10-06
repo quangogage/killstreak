@@ -5,16 +5,16 @@
   z-index: 50;
   width: 100%;
   height: 100%;
-
+  overflow-y: scroll;
   display: none;
   .background-overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: RGBA(0, 0, 0, 0.5);
-    z-index: 9;
+    z-index: 10;
   }
   .close-button {
     position: absolute;
@@ -38,154 +38,145 @@
     }
   }
 
-  .window-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    overflow-y: scroll;
-    .window {
+  .window {
+    position: relative;
+    width: 80%;
+    height: auto;
+    background: white;
+    z-index: 11;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../../images/splatters/box.png");
+      background-size: cover;
+    }
+
+    .section-container {
+      display: flex;
       position: relative;
-      width: 80%;
-      height: auto;
-      background: white;
-      z-index: 11;
-      margin: auto;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
 
-      .background-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url("../../../images/splatters/box.png");
-        background-size: cover;
-      }
-
-      .section-container {
-        display: flex;
+      .section {
+        padding: 100px 0px;
         position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
+        width: 50%;
         height: 100%;
+      }
+    }
 
-        .section {
-          padding: 100px 0px;
-          position: relative;
-          width: 50%;
-          height: 100%;
+    .Images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      img {
+        flex-grow: 0;
+        flex-shrink: 0;
+        align-self: center;
+        &.selected {
+          height: 70%;
+          max-width: 95%;
+          max-height: 80%;
         }
       }
 
-      .Images {
+      .thumb-container {
+        position: relative;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
+        width: 100%;
 
-        img {
-          flex-grow: 0;
-          flex-shrink: 0;
-          align-self: center;
+        margin-top: 20px;
+
+        .thumb {
+          width: 50px;
+          margin: 0px 20px;
           &.selected {
-            height: 70%;
-            max-width: 95%;
-            max-height: 80%;
+            border: 2px solid red;
           }
-        }
-
-        .thumb-container {
-          position: relative;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 100%;
-
-          margin-top: 20px;
-
-          .thumb {
-            width: 50px;
-            margin: 0px 20px;
-            &.selected {
-              border: 2px solid red;
-            }
-            &:hover {
-              cursor: pointer;
-            }
+          &:hover {
+            cursor: pointer;
           }
         }
       }
+    }
 
-      .Details {
-        display: flex;
-        flex-direction: column;
+    .Details {
+      display: flex;
+      flex-direction: column;
 
-        .title {
-          position: relative;
-          font-family: paint;
-          font-size: 3vw;
-          white-space: nowrap;
+      .title {
+        position: relative;
+        font-family: paint;
+        font-size: 3vw;
+        white-space: nowrap;
+      }
+
+      .note-container {
+        padding-left: 1.4em;
+        width: 80%;
+        .note {
+          font-size: 1.7vw;
+          font-family: gothic;
+          letter-spacing: 0.01em;
+          line-height: 1.1em;
         }
+      }
 
-        .note-container {
-          padding-left: 1.4em;
-          width: 80%;
-          .note {
-            font-size: 1.7vw;
-            font-family: gothic;
-            letter-spacing: 0.01em;
-            line-height: 1.1em;
+      .price {
+        position: relative;
+        color: #08d108;
+        font-family: paint;
+        font-size: 2.5vw;
+        margin: auto;
+        margin-bottom: 0;
+        margin-left: 0;
+      }
+
+      .button-container {
+        position: relative;
+        margin: auto;
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 50px;
+        .button {
+          display: inline;
+          position: relative;
+          top: 50px;
+
+          background: red;
+          font-family: paint;
+          color: white;
+          font-size: 1.25vw;
+          padding: 13px 45px;
+
+          transition: 0.1s;
+          box-shadow: 0px 0px #9e0000;
+          transform: translateY(0px);
+          border-radius: 2px;
+
+          &:hover {
+            cursor: pointer;
+            transition: 0.2s;
+            top: 45px;
+            box-shadow: 0px 5px #9e0000;
           }
-        }
-
-        .price {
-          position: relative;
-          color: #08d108;
-          font-family: paint;
-          font-size: 2.5vw;
-          margin: auto;
-          margin-bottom: 0;
-          margin-left: 0;
-        }
-
-        .button-container {
-          position: relative;
-          margin: auto;
-          margin-top: 0;
-          margin-left: 0;
-          margin-bottom: 50px;
-          .button {
-            display: inline;
-            position: relative;
-            top: 50px;
-
-            background: red;
-            font-family: paint;
-            color: white;
-            font-size: 1.25vw;
-            padding: 13px 45px;
-
+          &:active {
             transition: 0.1s;
-            box-shadow: 0px 0px #9e0000;
-            transform: translateY(0px);
-            border-radius: 2px;
-
-            &:hover {
-              cursor: pointer;
-              transition: 0.2s;
-              top: 45px;
-              box-shadow: 0px 5px #9e0000;
-            }
-            &:active {
-              transition: 0.1s;
-              top: 47px;
-              box-shadow: 0px 3px #9e0000;
-            }
+            top: 47px;
+            box-shadow: 0px 3px #9e0000;
           }
         }
       }
