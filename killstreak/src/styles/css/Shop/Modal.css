@@ -64,12 +64,11 @@
         width: 100%;
         height: 100%; }
         .Modal .window-container .window .section-container .section {
+          padding: 100px 0px;
           position: relative;
           width: 50%;
           height: 100%; }
       .Modal .window-container .window .Images {
-        margin-top: 50px;
-        margin-bottom: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -102,7 +101,6 @@
           position: relative;
           font-family: paint;
           font-size: 3vw;
-          margin-top: 50px;
           white-space: nowrap; }
         .Modal .window-container .window .Details .note-container {
           padding-left: 1.4em;
@@ -124,7 +122,8 @@
           position: relative;
           margin: auto;
           margin-top: 0;
-          margin-left: 0; }
+          margin-left: 0;
+          margin-bottom: 50px; }
           .Modal .window-container .window .Details .button-container .button {
             display: inline;
             position: relative;

@@ -75,6 +75,7 @@
         height: 100%;
 
         .section {
+          padding: 100px 0px;
           position: relative;
           width: 50%;
           height: 100%;
@@ -82,8 +83,6 @@
       }
 
       .Images {
-        margin-top: 50px;
-        margin-bottom: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -128,7 +127,6 @@
           position: relative;
           font-family: paint;
           font-size: 3vw;
-          margin-top: 50px;
           white-space: nowrap;
         }
 
@@ -158,6 +156,7 @@
           margin: auto;
           margin-top: 0;
           margin-left: 0;
+          margin-bottom: 50px;
           .button {
             display: inline;
             position: relative;
