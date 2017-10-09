@@ -105,6 +105,9 @@ class Panel extends Component {
     // Reveal closed content
     setTimeout(function() {
       closedContainer.animate({ opacity: 1 }, { duration: 200, queue: false });
+
+      // Reset transition delay
+      panel.css({ transitionDelay: "0s" });
     }, 750);
   }
 

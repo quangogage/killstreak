@@ -1,3 +1,5 @@
+$riseSpeed: 0.25s;
+
 .Panel {
   position: fixed;
   top: 0;
@@ -6,12 +8,22 @@
   z-index: 7;
   width: 220px;
   height: 45px;
-  transition: width 0.5s;
+  transition: width 0.5s, box-shadow $riseSpeed, transform $riseSpeed;
+  box-shadow: 0px 4px #690000;
+  transform: translateY(0px);
 
   &.closed {
     &:hover {
       cursor: pointer;
+      box-shadow: 0px 2px #690000;
+      transform: translateY(2px);
+
+      /* Text Rise Effect */
       .closed-container .text {
+        transform: translateY(-2px);
+        text-shadow: 0px 2px black;
+      }
+      .closed-container .count {
         transform: translateY(-2px);
         text-shadow: 0px 2px black;
       }
@@ -72,6 +84,7 @@
       width: 30px;
       height: 30px;
       margin-right: 10px;
+      image-rendering: crisp-edges;
     }
 
     .text {
@@ -92,6 +105,8 @@
       color: white;
       float: right;
       white-space: nowrap;
+      text-shadow: 0px 0px black;
+      transition: $riseSpeed;
     }
   }
 }

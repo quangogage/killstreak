@@ -6,10 +6,18 @@
   z-index: 7;
   width: 220px;
   height: 45px;
-  transition: width 0.5s; }
+  transition: width 0.5s, box-shadow 0.25s, transform 0.25s;
+  box-shadow: 0px 4px #690000;
+  transform: translateY(0px); }
   .Panel.closed:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    box-shadow: 0px 2px #690000;
+    transform: translateY(2px);
+    /* Text Rise Effect */ }
     .Panel.closed:hover .closed-container .text {
+      transform: translateY(-2px);
+      text-shadow: 0px 2px black; }
+    .Panel.closed:hover .closed-container .count {
       transform: translateY(-2px);
       text-shadow: 0px 2px black; }
   .Panel.open {
@@ -53,7 +61,8 @@
     .Panel .closed-container .icon {
       width: 30px;
       height: 30px;
-      margin-right: 10px; }
+      margin-right: 10px;
+      image-rendering: crisp-edges; }
     .Panel .closed-container .text {
       font-family: paint;
       color: white;
@@ -69,6 +78,8 @@
       font-weight: bold;
       color: white;
       float: right;
-      white-space: nowrap; }
+      white-space: nowrap;
+      text-shadow: 0px 0px black;
+      transition: 0.25s; }
 
 /*# sourceMappingURL=Panel.css.map */
