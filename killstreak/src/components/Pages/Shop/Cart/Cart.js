@@ -10,8 +10,10 @@ import Panel from "./Panel";
   except the cart itself - The user's cart is 
   maintained within the 'Shop' component's state.
 
-  The main purpose of this is to mediate both the
-  cart tab, and the cart window.
+  The main purpose is to act as a middle man between
+  the 'Panel' component and the 'Shop' component.
+  Handling higher level cart functionalities, while
+  leaving the interface stuff to the 'Panel'.
 */
 
 class Cart extends Component {
