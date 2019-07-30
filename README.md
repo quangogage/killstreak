@@ -1,4 +1,4 @@
-# ***This Repo is no longer being used - but kept bc its cool.***
+# *** This project is no longer going into production. ***
 
 # Killstreak
 
